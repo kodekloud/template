@@ -226,7 +226,7 @@
         }
             
     });
-    setEndPoint('svgrouting.lvh.me:3000/api/v2/svgrouting/all.json');
+    setEndPoint('http://svgrouting.lvh.me:3000/api/v2/svgrouting/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
     
