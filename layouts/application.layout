@@ -226,7 +226,7 @@
     //     }
             
     // });
-    setEndPoint('http://londonderry.mallmaverick.com/api/v2/londonderry/all.json');
+    setEndPoint('http://northpark.mallmaverickstaging.com/api/v2/northpark/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
     
