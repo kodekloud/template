@@ -13,42 +13,7 @@
           </ul>
      </div>
 </section>
-<div class="home">
-        <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
-          <!-- Indicators -->
-            <ol class="carousel-indicators" id="banner_indicator" style="{{show_style}}">
-                <script id="indicator_template" type="x-tmpl-mustache">
-                    <li data-slide-to="{{slide_number}}" data-target="#carousel-example-generic" class="{{active_carousel}}"></li>                        
-                </script>
-            </ol>
-            
-              <!-- Wrapper for slides -->
-            <div class="carousel-inner" id="home_banner">
-            
-                <script id="banner_template" type="x-tmpl-mustache">
-               <div class="item">
-                        <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                      <img alt="..." src="{{photo_url_abs}}">
-                      </a>
-                </div>
-            
-                </script>
-            </div>
-            
-            <div id="controls">
-              <!-- Controls -->
-              <a data-slide="prev" role="button" href="#carousel-example-generic" class="left carousel-control">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a data-slide="next" role="button" href="#carousel-example-generic" class="right carousel-control">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
-              </div>
-        </div>
 
-
-
-</div>
 <div class="main">
      <div class="container">
            <section class="call_to_action">
@@ -140,7 +105,7 @@
     }
     loadMallData(renderPageData);
     
-    function renderBanner(banner_template, home_banner, repo){
+    function renderBanner(banner_template,repo){
     
         var item_list = [];
         var item_rendered = [];
@@ -169,10 +134,5 @@
                 item_rendered.push(repo_rendered);
                
         });
-        
-       
-        $(home_banner).show();
-        $(home_banner).html(item_rendered.join(''));
-        $('.item').first().addClass('active');
     }
     </script>
