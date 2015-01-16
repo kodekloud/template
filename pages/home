@@ -10,25 +10,6 @@
                               <span class="round_badge"><strong><i class="fa fa-twitter"></i></strong><strong>V3</strong></span> </div>
                     </div> -->
                </li>
-               <li class="item" style="background-image: url(images/banner_2.jpg)">
-                    <!-- <div class="container">
-                         <div class="carousel-caption">
-                              <h1>makes <strong>real use</strong><br>
-                                   of the power of <strong>{LESS}</strong> syntax!</h1>
-                              <p class="lead skincolored">Restart was built with heavy use of {less} technology, making the life of the web developer easier!</p>
-                         </div>
-                    </div> -->
-               </li>
-               <li class="item" style="background-image: url(images/banner_3.jpg)">
-                    <!-- <div class="container">
-                         <div class="carousel-caption">
-                              <h1 class="skincolored"><strong>subtle</strong> animations<br>
-                                   &amp; a <strong>fresh</strong> collapsing <strong>header effect</strong></h1>
-                              <p class="lead">if you are looking for <a href="services.html"><strong>a bold approach</strong></a> you will love the header effect,<br>
-                                   but even if you like <a href="page_alternative.html"><strong>a more conservative feel</strong></a>, you can always try the boxed alternative!</p>
-                         </div>
-                    </div> -->
-               </li>
           </ul>
      </div>
 </section>
@@ -117,9 +98,45 @@
      </div>
 </div>
 <script>
-    function test (){
-        var i = getRepoList();
-        console.log (i);
+    function renderPageData (){
+        var repoList = getRepoList();
+        renderBanner('#banner_template','#home_banner',repoList);
     }
-    loadMallData(test);
-</script>
+    loadMallData(renderPageData);
+    
+    function renderBanner(banner_template, home_banner, repo){
+    
+        var item_list = [];
+        var item_rendered = [];
+        var banner_template_html = $(banner_template).html();
+        Mustache.parse(banner_template_html);   // optional, speeds up future uses
+    
+        $.each( repo , function( key, val ) {
+            if( val.name == "banner"){
+                $.each( val.images , function( key, val ) {
+                   if(val.url == ""){
+                       val.css = "style=cursor:default;";
+                       val.noLink = "return false";
+                   }
+                    item_list.push(val);
+                   
+                });
+            }
+        });
+        item_list.sort(function(a, b){
+            if(a.name < b.name) return -1;
+            if(a.name > b.name) return 1;
+            return 0;
+        });
+        $.each( item_list , function( key, val ) {
+                var repo_rendered = Mustache.render(banner_template_html,val);
+                item_rendered.push(repo_rendered);
+               
+        });
+        
+       
+        $(home_banner).show();
+        $(home_banner).html(item_rendered.join(''));
+        $('.item').first().addClass('active');
+    }
+    </script>
