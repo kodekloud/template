@@ -9,7 +9,7 @@
 <link href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/flexslider.css" type="text/css" media="screen">
 <link rel="stylesheet" href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" type="text/css" media="screen">
-<link href="" rel="stylesheet" type="text/css">
+<link href="/application.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" media="screen">
 <script type="text/javascript" src="js/modernizr.custom.48287.js"></script>
 <!-- Fav and touch icons -->
