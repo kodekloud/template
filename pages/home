@@ -15,13 +15,13 @@
 <!--</section>-->
 
 <section>
+    <div id="home_banner">    
     <script id="banner_template" type="x-tmpl-mustache">
-    <div id id="home_banner">    
         <li class="item">
             <p>{{photo_url_abs}}</p>
         </li>
-    </div>
     </script>
+    </div>
 </section>
 
 <div class="main">
