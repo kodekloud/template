@@ -117,5 +117,9 @@
      </div>
 </div>
 <script>
-    var mallDataJSON = loadMallData();
+    function test (){
+        var i = getRepoList();
+        console.log (i);
+    }
+    loadMallData(test);
 </script>
