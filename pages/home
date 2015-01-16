@@ -16,9 +16,11 @@
 
 <section>
     <script id="banner_template" type="x-tmpl-mustache">
-        <li>
+    <div id id="home_banner">    
+        <li class="item">
             <img src="{{photo_url_abs}}"/>
         </li>
+    </div>
     </script>
 </section>
 
@@ -113,9 +115,11 @@
     }
     loadMallData(renderPageData);
     
-    function renderBanner(banner_template,repo){
+    function renderBanner(banner_template,home_banner,repo){
         var item_list = [];
-        var template_html = $('#banner_template').html();
+        var item_rendered = [];
+        var banner_template_html = $(banner_template).html();
+        Mustache.parse(banner_template_html);   // optional, speeds up future uses
         $.each( repo , function( key, val ) {
             if( val.name == "banner"){
                 $.each( val.images , function( key, val ) {
@@ -123,6 +127,15 @@
                 });
             }
         });
-        $("#banner_template").html(item_list.join(''));
+        $.each( item_list , function( key, val ) {
+            var repo_rendered = Mustache.render(banner_template_html,val);
+            item_rendered.push(repo_rendered);
+           
+        });
+        
+       
+        $(home_banner).show();
+        $(home_banner).html(item_rendered.join(''));
+        $('.item').first().addClass('active');
     }
     </script>
