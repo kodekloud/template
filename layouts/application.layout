@@ -145,3 +145,14 @@
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/snap.svg-min.js"></script>
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/restart_theme.js"></script>
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/collapser.js"></script>
+<script>
+    setEndPoint('http://londonderry.mallmaverick.com/api/v2/londonderry/all.json');
+    sessionStorage.setItem('primary_locale', 'en-CA');
+    sessionStorage.setItem('secondary_locale', 'fr-CA');
+    
+    if(getRequestParam('lang') == 'fr'){
+        sessionStorage.setItem('current_locale',sessionStorage.secondary_locale);
+    }else if(getRequestParam('lang') == 'en'){
+        sessionStorage.setItem('current_locale',sessionStorage.primary_locale);
+    }
+</script>
