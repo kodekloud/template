@@ -117,5 +117,5 @@
      </div>
 </div>
 <script>
-    var mallDataJSON = loadMallData();
+    
 </script>
