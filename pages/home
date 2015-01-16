@@ -123,6 +123,6 @@
                 });
             }
         });
-        
+        $("#banner_template").html(item_list.join(''));
     }
     </script>
