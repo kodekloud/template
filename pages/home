@@ -2,12 +2,7 @@
      <div id="main_flexslider" class="flexslider">
           <ul class="slides">
                 <script id="banner_template" type="x-tmpl-mustache">
-               <div class="item">
-                        <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                      <img alt="..." src="{{photo_url_abs}}">
-                      </a>
-                </div>
-            
+               <div class='item'><a href='{{url}}' {{css}} onclick='{{noLink}}'><img alt='...' src='{{photo_url_abs}}'></a></div>
                 </script>
                <li class="item" style="background-image: url(images/banner_1.jpg)">
                     <!-- <div class="container">
