@@ -1,6 +1,6 @@
 <section id="slider_wrapper" class="slider_wrapper full_page_photo">
      <div id="main_flexslider" class="flexslider">
-          <ul class="slides">
+          <ul class="slides" id="home_banner">
             <script id="banner_template" type="x-tmpl-mustache">
                <li class="item" style="background-image: url({{photo_url_abs}})">
                     <!-- <div class="container">-->
@@ -113,7 +113,7 @@
 <script>
     function renderPageData (){
         var repoList = getRepoList();
-        renderBanner('#banner_template','#main_flexslider',repoList);
+        renderBanner('#banner_template','#home_banner',repoList);
     }
     loadMallData(renderPageData);
     
