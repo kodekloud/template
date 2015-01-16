@@ -113,7 +113,7 @@
 <script>
     function renderPageData (){
         var repoList = getRepoList();
-        renderBanner('#banner_template','#slider_wrapper',repoList);
+        renderBanner('#banner_template','#main_flexslider',repoList);
     }
     loadMallData(renderPageData);
     
