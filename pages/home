@@ -117,10 +117,5 @@
      </div>
 </div>
 <script>
-    var mallDataJSON = JSON.parse(sessionStorage.mallData);
-    for(var i = 0; i < mallDataJSON.repos.length;i++){
-        if (mallDataJSON.repos[i].name == "banner"){
-            console.log (mallDataJSON.repos[i])
-        }    
-    }
+    var mallDataJSON = loadMallData();
 </script>
