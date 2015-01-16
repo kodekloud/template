@@ -222,4 +222,5 @@
     setEndPoint('http://10dundaseast.mallmaverick.com/api/v2/10dundaseast/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
+    var mallDataJSON = JSON.parse(sessionStorage.mallData);
 </script>
