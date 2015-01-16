@@ -111,8 +111,10 @@
      </div>
 </div>
 <script>
-    var f = getFeatureItems();
-    console.log (f);
+
+    var mallDataJSON = JSON.parse(sessionStorage.mallData);
+    console.log (mallDataJSON.feature_items);
+
     function renderPageData (){
         var repoList = getRepoList();
         renderBanner('#banner_template','#home_banner',repoList);
