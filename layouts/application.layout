@@ -235,5 +235,6 @@
     }else if(getRequestParam('lang') == 'en'){
         sessionStorage.setItem('current_locale',sessionStorage.primary_locale);
     }
-    console.log(sessionStorage);
+    var mallDataJSON = JSON.parse(sessionStorage.mallData);
+    console.log (mallDataJSON);
 </script>
