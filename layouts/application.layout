@@ -219,7 +219,7 @@
     //     }
             
     // });
-    setEndPoint('http://svgrouting.lvh.me:3000/api/v2/svgrouting/all.json');
+    setEndPoint('http://northpark.mallmaverick.com/api/v2/northpark/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
 </script>
