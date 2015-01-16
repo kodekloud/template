@@ -112,6 +112,7 @@
 </div>
 <script>
     var f = getFeatureItems();
+    console.log (f);
     function renderPageData (){
         var repoList = getRepoList();
         renderBanner('#banner_template','#home_banner',repoList);
