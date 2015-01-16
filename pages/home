@@ -1,6 +1,7 @@
 <section id="slider_wrapper" class="slider_wrapper full_page_photo">
      <div id="main_flexslider" class="flexslider">
-          <ul class="slides" id="home_banner">
+          <div id="home_banner">
+          <ul class="slides">
             <script id="banner_template" type="x-tmpl-mustache">
                <li class="item" style="background-image: url({{photo_url_abs}})">
                     <!-- <div class="container">-->
@@ -13,6 +14,7 @@
                </li>
             </script>
           </ul>
+          </div>
      </div>
 </section>
 
