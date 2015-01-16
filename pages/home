@@ -116,3 +116,23 @@
           </section> -->
      </div>
 </div>
+<script>
+    $(document).ready(function() {
+        function renderPageData(){
+            //console.log('rendering page data');
+            holiday_hours = findClosestHoliday(getPropertyHours());
+            renderHolidayHours('#holiday_hours_template','#holiday-hours','#hours_not_empty_section_id','#hours_empty_section_id',holiday_hours,2);
+            
+            renderTodaysHours('#todays_hours_template','#todays-hours');
+            $('#loading').hide();
+            $('#page_content').fadeIn('fast');
+            
+            
+                 var repoList = getRepoList();
+                 renderIndicator('#indicator_template','#banner_indicator', repoList);
+                renderBanner('#banner_template','#home_banner',repoList);
+        }
+        loadMallData(renderPageData);
+    });
+    
+</script>
