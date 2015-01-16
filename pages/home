@@ -18,7 +18,7 @@
     <script id="banner_template" type="x-tmpl-mustache">
     <div id id="home_banner">    
         <li class="item">
-            <img src="{{photo_url_abs}}"/>
+            <p>{{photo_url_abs}}</p>
         </li>
     </div>
     </script>
