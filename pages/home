@@ -3,13 +3,6 @@
           <ul class="slides" id="home_banner">
             <script id="banner_template" type="x-tmpl-mustache">
                <li class="item" style="background-image: url({{alt_url}})">
-                    <!-- <div class="container">-->
-                    <!--     <div class="carousel-caption">-->
-                    <!--          <h1>a <strong>flexible</strong> theme<br>-->
-                    <!--               you can <strong>trust</strong> &amp; <strong>build upon</strong>!</h1>-->
-                    <!--          <p class="lead skincolored">Re<strong>start</strong> is based on <strong>good typography</strong> and <strong>large photography</strong>, serving as a foundation for your creative projects. Feel free to browse its templates and discover its features.</p>-->
-                    <!--          <span class="round_badge"><strong><i class="fa fa-twitter"></i></strong><strong>V3</strong></span> </div>-->
-                    <!--</div> -->
                </li>
             </script>
           </ul>
