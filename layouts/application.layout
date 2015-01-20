@@ -105,7 +105,7 @@
         var item_rendered = [];
         var logo_template_html = $(logo_template).html();
         Mustache.parse(logo_template_html);   // optional, speeds up future uses
-        Mustache.render(banner_template_html,propertyDetails)
+        Mustache.render(logo_template_html,propertyDetails)
     }
     
     function getImageURL(existing_url){
