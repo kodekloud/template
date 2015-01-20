@@ -51,7 +51,7 @@
           <section class="portfolio_teasers_wrapper">
                <!--<h2 class="section_header fancy centered">Recent Work or Projects from Portfolio<small>we take pride in our work</small></h2> -->
                <div class="portfolio_strict row">
-               <script id="feature_template" type="x-tmpl-mustache">
+               
                     <div class="col-sm-4 col-md-4">
                          <div class="portfolio_item wow animated flipInX"> <a href="photo.html" data-path-hover="M 180,190 0,158 0,0 180,0 z">
                               <figure style="background-image:url(images/portfolio/p4.jpg)">
@@ -69,7 +69,7 @@
                               </div>
                          </div>
                     </div>
-                </script>
+                
                </div>
           </section>
           <!-- <section class="clients_section wow animated fadeInUp">
