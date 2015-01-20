@@ -3,6 +3,7 @@
           <ul class="slides" id="home_banner">
             <script id="banner_template" type="x-tmpl-mustache">
                <li class="item" style="background-image: url({{alt_url}})">
+                    TEST
                     <!-- <div class="container">-->
                     <!--     <div class="carousel-caption">-->
                     <!--          <h1>a <strong>flexible</strong> theme<br>-->
