@@ -109,6 +109,7 @@
         $.each( item_list , function( key, val ) {
             console.log(key)
             console.log(val)
+            console.log("uyuyuyuyuyuy")
            
         });
     }
