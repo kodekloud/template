@@ -56,14 +56,15 @@
 <script>
 
    
-
+    loadMallData(renderPageData);
+    
     function renderPageData (){
         var repoList = getRepoList();
         var featureList = getFeatureList();
         renderBanner('#banner_template','#home_banner',repoList);
         renderFeatureItems('#feature_template', '#feature_items', featureList)
     }
-    loadMallData(renderPageData);
+    
     
     function renderBanner(banner_template,home_banner,repo){
         var item_list = [];
