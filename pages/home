@@ -105,7 +105,7 @@
         var item_rendered = [];
         var feature_template_html = $(feature_template).html();
         Mustache.parse(feature_template_html);   // optional, speeds up future uses
-        $.each( repo , function( key, val ) {
+        $.each( featureList , function( key, val ) {
             val.alt_url = getAbsoluteImageURL(val.image_url);
         });
         $.each( featureList , function( key, val ) {
