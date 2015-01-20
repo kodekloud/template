@@ -108,7 +108,7 @@
         item_list.push(propertyDetails);
         $.each( item_list , function( key, val ) {
             
-            console.log(val)
+            console.log(val.site_logo)
            
         });
     }
