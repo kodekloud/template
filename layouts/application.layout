@@ -102,15 +102,14 @@
         var item_list = [];
         var item_rendered = [];
         var logo_template_html = $(logo_template).html();
-        // Mustache.parse(logo_template_html);   // optional, speeds up future uses
-        // document.body.innerHTML = Mustache.render(template, data);
-        
+        Mustache.parse(logo_template_html);   // optional, speeds up future uses
         item_list.push(propertyDetails);
         $.each( item_list , function( key, val ) {
-            
-            console.log(val.site_logo)
-           
+            val.alt_site_logo = getImageURL(val.site_logo);
+            var logo_rendered = Mustache.render(logo_template_html,val);
+            item_rendered.push(logo_rendered);
         });
+        $(site_logo).html(item_rendered.join(''));
     }
     
     function getImageURL(existing_url){
