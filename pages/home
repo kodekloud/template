@@ -98,6 +98,4 @@
         $(feature_items).show();
         $(feature_items).html(item_rendered.join(''));
     }
-    
-    
     </script>
