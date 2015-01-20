@@ -90,10 +90,24 @@
     
     function renderPageData (){
         var propertyDetails = getPropertyDetails();
-        renderPropertyLogo('#banner_template','#home_banner',repoList);
-        renderPropertyDescription('#banner_template','#home_banner',repoList);
+        renderPropertyLogo('#banner_template','#home_banner',propertyDetails);
+        // renderPropertyDescription('#banner_template','#home_banner',repoList);
     }
-    
+    function renderPropertyLogo(feature_template,feature_items,propertyDetails){
+        var item_rendered = [];
+        var feature_template_html = $(feature_template).html();
+        Mustache.parse(feature_template_html);   // optional, speeds up future uses
+        $.each( featureList , function( key, val ) {
+            val.alt_url = getImageURL(val.image_url);
+            var featureitem_rendered = Mustache.render(feature_template_html,val);
+            item_rendered.push(featureitem_rendered);
+           
+        });
+        
+       
+        $(feature_items).show();
+        $(feature_items).html(item_rendered.join(''));
+    }
     
     function getImageURL(existing_url){
         if(!existing_url ||  existing_url.indexOf('missing.png') > -1 || existing_url.length === 0){
