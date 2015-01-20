@@ -117,6 +117,7 @@
     function renderPageData (){
         var repoList = getRepoList();
         var feature_list = getFeatureList();
+        console.log (feature_list);
         renderBanner('#banner_template','#home_banner',repoList);
     }
     loadMallData(renderPageData);
