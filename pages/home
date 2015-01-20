@@ -112,8 +112,8 @@
 </div>
 <script>
 
-    var mallDataJSON = JSON.parse(sessionStorage.mallData);
-    console.log (mallDataJSON.feature_items);
+    // var mallDataJSON = JSON.parse(sessionStorage.mallData);
+    // console.log (mallDataJSON.feature_items);
 
     function renderPageData (){
         var repoList = getRepoList();
