@@ -118,7 +118,7 @@
 
     function renderPageData (){
         var repoList = getRepoList();
-        var feature_list = getFeatureList();
+        var featureList = getFeatureList();
         console.log (feature_list);
         renderBanner('#banner_template','#home_banner',repoList);
         renderFeatureItems('#feature_template', '#feature_items', featureList)
