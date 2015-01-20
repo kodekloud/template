@@ -16,16 +16,6 @@
      </div>
 </section>
 
-<!--<section>-->
-<!--    <div id="home_banner">    -->
-<!--    <script id="banner_template" type="x-tmpl-mustache">-->
-<!--        <li class="item">-->
-<!--            <img src='{{photo_url_abs}}'/>-->
-<!--        </li>-->
-<!--    </script>-->
-<!--    </div>-->
-<!--</section>-->
-
 <div class="main">
      <div class="container">
             <section class="call_to_action">
@@ -95,7 +85,6 @@
            
         });
         
-        console.log (item_list);
         $(home_banner).show();
         $(home_banner).html(item_rendered.join(''));
         $('.item').first().addClass('active');
