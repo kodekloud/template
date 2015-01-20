@@ -101,7 +101,8 @@
         $.each( propertyDetails , function( key, val ) {
             
             if (key == "site_logo") {
-                
+                console.log (key)
+                console.log(val)
             }
             
             // val.alt_site_logo = getImageURL(val.site_logo);
