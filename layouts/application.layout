@@ -35,9 +35,9 @@
           <div class="navbar navbar-default" role="navigation">
                <div class="navbar-header"><a class="navbar-brand" href="/home" id="site_logo">
                <script id="logo_template" type="x-tmpl-mustache"> 
-               {{#site_logo}}
-               <img src="{{.}}" height="70%" width="70%">
-                {{/site_logo}} 
+               {{#property}}
+               <img src="{{site_logo}}" height="70%" width="70%">
+                {{/property}} 
                </script>
                    
                </a><a class="btn btn-navbar btn-default navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="nb_left pull-left"> <span class="fa fa-reorder"></span></span> <!--  <span class="nb_right pull-right">menu</span> --> </a></div>
@@ -104,9 +104,13 @@
         var item_list = [];
         var item_rendered = [];
         var logo_template_html = $(logo_template).html();
-        Mustache.parse(logo_template_html);   // optional, speeds up future uses
-        Mustache.render(logo_template_html,propertyDetails)
-        console.log(propertyDetails)
+        // Mustache.parse(logo_template_html);   // optional, speeds up future uses
+        // document.body.innerHTML = Mustache.render(template, data);
+        
+        
+        var template = $('#logo_template').html();
+        var html = Mustache.to_html(template, propertyDetails);
+        $('#site_logo').html(html)
     }
     
     function getImageURL(existing_url){
