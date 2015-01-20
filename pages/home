@@ -28,34 +28,10 @@
 
 <div class="main">
      <div class="container">
-           <section class="call_to_action">
+            <section class="call_to_action">
                <h3>"An Edmonton Power Centre!"</h3>
                <h4>Located in the hub of Edmonton’s west side retail area are 40 shops and services serving a diversity of needs. Whether you want to shop organic, get some custom framing, pick up a prescription or dry cleaning, get your hair done, grab some flowers or simply hide behind a perfectly pressed cup of cappuccino.</h4>
-               </section>
-          <section class="portfolio_teasers_wrapper">
-               <!--<h2 class="section_header fancy centered">Recent Work or Projects from Portfolio<small>we take pride in our work</small></h2> -->
-               <div class="portfolio_strict row">
-                    <div class="col-sm-4 col-md-4">
-                         <div class="portfolio_item wow animated flipInX"> <a href="photo.html" data-path-hover="M 180,190 0,158 0,0 180,0 z">
-                              <figure style="background-image:url(images/portfolio/p4.jpg)">
-                                   <svg viewBox="0 0 180 320" preserveAspectRatio="none">
-                                        <!-- <path d="M 180,0 0,0 0,0 180,0 z"/> -->
-                                   </svg>
-                                   <figcaption>
-                                        <p>{{description}}</p>
-                                        <div class="view_button">View</div>
-                                   </figcaption>
-                              </figure>
-                              </a>
-                              <div class="portfolio_description">
-                                   <h3><a href="photo.html">Photos</a></h3>
-                              </div>
-                         </div>
-                    </div>
-                
-               </div>
-          </section>
-          
+            </section>
           <section class="portfolio_teasers_wrapper">
                <!--<h2 class="section_header fancy centered">Recent Work or Projects from Portfolio<small>we take pride in our work</small></h2> -->
                <div class="portfolio_strict row" id="feature_items">
