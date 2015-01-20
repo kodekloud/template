@@ -95,7 +95,7 @@
            
         });
         
-       
+        console.log (item_list);
         $(home_banner).show();
         $(home_banner).html(item_rendered.join(''));
         $('.item').first().addClass('active');
