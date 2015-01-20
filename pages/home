@@ -2,7 +2,7 @@
      <div id="main_flexslider" class="flexslider">
           <ul class="slides" id="home_banner">
             <script id="banner_template" type="x-tmpl-mustache">
-               <li class="item" style="background-image: url({{photo_url_abs}})">
+               <li class="item" style="background-image: url({{alt_url}})">
                     <!-- <div class="container">-->
                     <!--     <div class="carousel-caption">-->
                     <!--          <h1>a <strong>flexible</strong> theme<br>-->
@@ -38,7 +38,7 @@
                     <script id="feature_template" type="x-tmpl-mustache">
                     <div class="col-sm-4 col-md-4">
                          <div class="portfolio_item wow animated flipInX"> <a href="photo.html" data-path-hover="M 180,190 0,158 0,0 180,0 z">
-                              <figure style="background-image:url(images/portfolio/p4.jpg)">
+                              <figure style="background-image:url({{alt_url}})">
                                    <svg viewBox="0 0 180 320" preserveAspectRatio="none">
                                         <!-- <path d="M 180,0 0,0 0,0 180,0 z"/> -->
                                    </svg>
@@ -84,6 +84,7 @@
         $.each( repo , function( key, val ) {
             if( val.name == "banner"){
                 $.each( val.images , function( key, val ) {
+                    val.alt_url = getAbsoluteImageURL(val.photo_url);
                     item_list.push(val);
                 });
             }
@@ -104,6 +105,9 @@
         var item_rendered = [];
         var feature_template_html = $(feature_template).html();
         Mustache.parse(feature_template_html);   // optional, speeds up future uses
+        $.each( repo , function( key, val ) {
+            val.alt_url = getAbsoluteImageURL(val.image_url);
+        });
         $.each( featureList , function( key, val ) {
             var featureitem_rendered = Mustache.render(feature_template_html,val);
             item_rendered.push(featureitem_rendered);
