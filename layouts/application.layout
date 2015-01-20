@@ -106,6 +106,7 @@
             var logo_rendered = Mustache.render(logo_template_html,val);
             item_rendered.push(logo_rendered);
             console.log(item_rendered)
+            console.log(val)
         });
         $(site_logo).html(item_rendered.join(''));
     }
