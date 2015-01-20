@@ -99,8 +99,12 @@
         var logo_template_html = $(logo_template).html();
         Mustache.parse(logo_template_html);   // optional, speeds up future uses
         $.each( propertyDetails , function( key, val ) {
+            if (key == "site_logo"){
+                val.alt_site_logo = getImageURL(val);
+                var logo_rendered = Mustache.render(logo_template_html,val);
+                item_rendered.push(logo_rendered);
+            }
             
-            val.alt_site_logo = getImageURL(val.site_logo);
            
         });
         
