@@ -107,8 +107,6 @@
         Mustache.parse(feature_template_html);   // optional, speeds up future uses
         $.each( featureList , function( key, val ) {
             val.alt_url = getImageURL(val.image_url);
-        });
-        $.each( featureList , function( key, val ) {
             var featureitem_rendered = Mustache.render(feature_template_html,val);
             item_rendered.push(featureitem_rendered);
            
