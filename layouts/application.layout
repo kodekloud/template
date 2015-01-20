@@ -101,10 +101,7 @@
         $.each( propertyDetails , function( key, val ) {
             if (key == "site_logo"){
                 val = getImageURL(val);
-                var logo_rendered = Mustache.render(logo_template_html,val);
-                item_rendered.push(logo_rendered);
-                console.log (val)
-                console.log(item_rendered)
+                var logo_rendered = Mustache.render(logo_template_html,propertyDetails);
             }
             
            
