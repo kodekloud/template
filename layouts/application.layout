@@ -108,6 +108,7 @@
             console.log(item_rendered)
             console.log(val.alt_site_logo)
         });
+        $(site_logo).show();
         $(site_logo).html(item_rendered.join(''));
     }
     
