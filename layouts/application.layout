@@ -98,7 +98,7 @@
         var item_rendered = [];
         var logo_template_html = $(logo_template).html();
         Mustache.parse(logo_template_html);   // optional, speeds up future uses
-        console.log (propertyDetails)
+        console.log (propertyDetails.site_logo)
         
        
         $(site_logo).show();
