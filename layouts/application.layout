@@ -105,11 +105,12 @@
         // Mustache.parse(logo_template_html);   // optional, speeds up future uses
         // document.body.innerHTML = Mustache.render(template, data);
         
-        var propertyDetails = {"property": propertyDetails};
-        var template = $('#logo_template').html();
-        var html = Mustache.to_html(template, propertyDetails);
-        $('#site_logo').html(html)
-        console.log(propertyDetails);
+        item_list.push(propertyDetails);
+        $.each( item_list , function( key, val ) {
+            console.log(key)
+            console.log(val)
+           
+        });
     }
     
     function getImageURL(existing_url){
