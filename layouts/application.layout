@@ -100,7 +100,7 @@
         Mustache.parse(logo_template_html);   // optional, speeds up future uses
         $.each( propertyDetails , function( key, val ) {
             if (key == "site_logo"){
-                val.alt_site_logo = getImageURL(val);
+                val = getImageURL(val);
                 var logo_rendered = Mustache.render(logo_template_html,val);
                 item_rendered.push(logo_rendered);
                 console.log (val)
