@@ -103,6 +103,7 @@
                 val.alt_site_logo = getImageURL(val);
                 var logo_rendered = Mustache.render(logo_template_html,val);
                 item_rendered.push(logo_rendered);
+                console.log (val)
                 console.log(item_rendered)
             }
             
