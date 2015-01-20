@@ -110,7 +110,7 @@
         
         var template = $('#logo_template').html();
         var html = Mustache.to_html(template, propertyDetails);
-        $('#site_logo').html(html)
+        // $('#site_logo').html(html)
     }
     
     function getImageURL(existing_url){
