@@ -105,6 +105,8 @@
             val.alt_site_logo = getImageURL(val.site_logo);
             var logo_rendered = Mustache.render(logo_template_html,val);
             item_rendered.push(logo_rendered);
+            console.log (item_rendered)
+            console.log (logo_rendered)
         });
         $(site_logo).show();
         $(site_logo).html(item_rendered.join(''));
