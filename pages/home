@@ -56,7 +56,7 @@
                </div>
           </section>
           
-          <section class="portfolio_teasers_wrapper">
+          <section class="portfolio_teasers_wrapper" id="feature_items">
                <!--<h2 class="section_header fancy centered">Recent Work or Projects from Portfolio<small>we take pride in our work</small></h2> -->
                <div class="portfolio_strict row">
                     <div class="col-sm-4 col-md-4">
