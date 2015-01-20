@@ -126,7 +126,7 @@
         var item_rendered = [];
         var feature_template_html = $(feature_template).html();
         Mustache.parse(feature_template_html);   // optional, speeds up future uses
-        $.each( item_list , function( key, val ) {
+        $.each( featureList , function( key, val ) {
             var featureitem_rendered = Mustache.render(feature_template_html,val);
             item_rendered.push(featureitem_rendered);
            
