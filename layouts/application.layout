@@ -71,7 +71,7 @@
             <div class="row">
                  <div class="footer_teaser col-sm-6 col-md-6">
                       <h3>{{name}}</h3>
-                      <p>Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>
+                      <p>{{address1}}</p>
                       <p><i class="fa fa-map-marker"></i> 3 Athens street</p>
                       <p><i class="fa fa-phone"></i> (+30) 265-9987</p>
                       <p><i class="fa fa-print"></i> (+30) 9854-7855</p>
