@@ -3,7 +3,7 @@
 <head>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-<title>MALL NAME</title>
+<title>10 Dundas</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
@@ -71,8 +71,9 @@
             <div class="row">
                  <div class="footer_teaser col-sm-6 col-md-6">
                       <h3>{{name}}</h3>
-                      <p>{{address1}}</p>
-                      <p><i class="fa fa-map-marker"></i> 3 Athens street</p>
+                      <p class="address">{{address1}}</p>
+                      <p class="address">{{city}}, {{province_state}}</p>
+                      </br>
                       <p><i class="fa fa-phone"></i> (+30) 265-9987</p>
                       <p><i class="fa fa-print"></i> (+30) 9854-7855</p>
                       <p><i class="fa fa-envelope"></i> hello@restarttheme.com</p>
