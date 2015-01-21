@@ -18,7 +18,7 @@
             <div id="description_div">
                 <script id="description_template" type="x-tmpl-mustache">
                     <section>
-                    <h3> TEST </h3>    
+                    <p> TEST </p>    
                     </section>
                 </script>
             </div>
