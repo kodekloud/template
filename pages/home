@@ -58,6 +58,9 @@
         renderFeatureItems('#feature_template', '#feature_items', featureList)
     }
     
+    function renderPropertyDescription(description_template, description_div, propertyDetails){
+        
+    }
     
     function renderBanner(banner_template,home_banner,repo){
         var item_list = [];
