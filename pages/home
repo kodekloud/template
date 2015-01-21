@@ -15,6 +15,10 @@
                <h3>"An Edmonton Power Centre!"</h3>
                <h4>Located in the hub of Edmonton’s west side retail area are 40 shops and services serving a diversity of needs. Whether you want to shop organic, get some custom framing, pick up a prescription or dry cleaning, get your hair done, grab some flowers or simply hide behind a perfectly pressed cup of cappuccino.</h4>
             </section>
+            <section class="call_to_action">
+               <h3>"An Edmonton Power Centre!"</h3>
+               <h4>Located in the hub of Edmonton’s west side retail area are 40 shops and services serving a diversity of needs. Whether you want to shop organic, get some custom framing, pick up a prescription or dry cleaning, get your hair done, grab some flowers or simply hide behind a perfectly pressed cup of cappuccino.</h4>
+            </section>
           <section class="portfolio_teasers_wrapper">
                <!--<h2 class="section_header fancy centered">Recent Work or Projects from Portfolio<small>we take pride in our work</small></h2> -->
                <div class="portfolio_strict row" id="feature_items">
