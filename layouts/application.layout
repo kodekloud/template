@@ -151,6 +151,7 @@
     function renderPageData (){
         var propertyDetails = getPropertyDetails();
         renderPropertyLogo('#logo_template','#site_logo',propertyDetails);
+        renderPropertyFooter('#footer_template','#footer_teasers_wrapper',propertyDetails);
         // renderPropertyDescription('#banner_template','#home_banner',repoList);
     }
     function renderPropertyLogo(logo_template,site_logo,propertyDetails){
@@ -168,6 +169,19 @@
         $(site_logo).html(item_rendered.join(''));
     }
     
+    function renderPropertyFooter(footer_template,footer_teasers_wrapper,propertyDetails){
+        var item_list = [];
+        var item_rendered = [];
+        var footer_template_html = $(footer_template).html();
+        Mustache.parse(footer_template_html);   // optional, speeds up future uses
+        item_list.push(propertyDetails);
+        $.each( item_list , function( key, val ) {
+            var footer_rendered = Mustache.render(footer_template_html,val);
+            item_rendered.push(footer_rendered);
+        });
+        $(footer_teasers_wrapper).show();
+        $(footer_teasers_wrapper).html(item_rendered.join(''));
+    }
     
     function getImageURL(existing_url){
         if(!existing_url ||  existing_url.indexOf('missing.png') > -1 || existing_url.length === 0){
