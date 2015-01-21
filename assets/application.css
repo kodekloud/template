@@ -206,6 +206,7 @@ th {
     height:40px;
     display:inline-block;
     width:10%;
+    text-transform:upcase;
 }
 
 @media print {
