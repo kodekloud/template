@@ -67,7 +67,7 @@
     <section id="footer_teasers_wrapper">
         <div class="container">
             <div class="row">
-                 <div class="footer_teaser col-sm-4 col-md-4">
+                 <div class="footer_teaser col-sm-6 col-md-6">
                       <h3>About us</h3>
                       <p>Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>
                       <p><i class="fa fa-map-marker"></i> 3 Athens street</p>
@@ -75,7 +75,7 @@
                       <p><i class="fa fa-print"></i> (+30) 9854-7855</p>
                       <p><i class="fa fa-envelope"></i> hello@restarttheme.com</p>
                  </div>
-                 <div class="footer_teaser col-sm-4 col-md-4">
+                 <div class="footer_teaser col-sm-6 col-md-6">
                       <h3>Sign up and save</h3>
                       <ul class="media-list">
                            <li class="media"> <a href="#" class="media-photo" style="background-image:url(images/portfolio/t5.jpg)"></a> <a href="#" class="media-date">19<span>FEB</span></a>
