@@ -14,8 +14,8 @@
             <section class="call_to_action">
             <div id="description_div">
             <script id="description_template" type="x-tmpl-mustache">
-               <h3>{{welcome_message}}</h3>
-               <h4>{{description}}</h4>
+               <h3>{{welcome_message}}TEST</h3>
+               <h4>{{description}}TEST</h4>
             </script>
             </div>
             </section>
