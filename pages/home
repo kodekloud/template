@@ -13,10 +13,8 @@
      <div class="container">
             <section class="call_to_action" id="description_div">
             <script id="description_template" type="x-tmpl-mustache">
-            {% raw %}
                <h3>{{welcome_message}}</h3>
                <h4>{{description}}</h4>
-            {% endraw %}
             </script>
             </section>
           <section class="portfolio_teasers_wrapper">
