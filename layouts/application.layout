@@ -42,17 +42,19 @@
                          <li class="active"><a href="/home">Home</a></li>
                          <li><a href="store.html">Store Directory</a></li>
                          <li><a href="leasing.html">Events</a></li>
-                         <li><a href="photo.html">Promotions</a></li>
                          <li><a href="find_us.html">Leasing</a></li>
-                         <li><a href="contact_us.html">Contact Us</a></li>
+                         <li><a href="photo.html">Photos</a></li>
+                         <li><a href="contact_us.html">find Us</a></li>
+                         <li><a href="photo.html">contact us</a></li>
                          <!-- <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Pages<span class="caret"></span></a> -->
                               <ul class="dropdown-menu">
-                                   <li><a href="/home">Home</a></li>
-                                   <li><a href="store.html">Store Directory</a></li>
-                                   <li><a href="leasing.html">Events</a></li>
-                                   <li><a href="photo.html">Promotions</a></li>
-                                   <li><a href="find_us.html">Leasing</a></li>
-                                   <li><a href="contact_us.html">Contact Us</a></li>
+                                    <li><a href="/home">Home</a></li>
+                                    <li><a href="store.html">Store Directory</a></li>
+                                    <li><a href="leasing.html">Events</a></li>
+                                    <li><a href="find_us.html">Leasing</a></li>
+                                    <li><a href="photo.html">Photos</a></li>
+                                    <li><a href="contact_us.html">find Us</a></li>
+                                    <li><a href="photo.html">contact us</a></li>
                               </ul>
                          <!--</li>-->
                     </ul>
@@ -104,13 +106,16 @@
                     <a href="/home">Events</a>
                 </li>
                 <li>
-                    <a href="/home">Promotions</a>
+                    <a href="/home">leasing</a>
                 </li>
                 <li>
-                    <a href="/home">Leasing</a>
+                    <a href="/home">photos</a>
                 </li>
                 <li>
-                    <a href="/home">Contact Us</a>
+                    <a href="/home">find Us</a>
+                </li>
+                <li>
+                    <a href="/home">contact Us</a>
                 </li>
                 
             </ul>
