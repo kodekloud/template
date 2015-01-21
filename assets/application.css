@@ -196,7 +196,7 @@ th {
 .site-map-section{}
 .site-map-section a{
     color:white !important;
-    text-transform:upcase;
+    text-transform:uppercase;
 }
 .bottom-site-map{}
 .bottom-site-map ul{
