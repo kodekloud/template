@@ -71,6 +71,7 @@
         $.each( item_list , function( key, val ) {
             var description_rendered = Mustache.render(description_template_html,val);
             item_rendered.push(description_rendered);
+            console.log (item_rendered);
         });
         $(description_div).show();
         $(description_div).html(item_rendered.join(''));
