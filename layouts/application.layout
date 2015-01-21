@@ -64,7 +64,7 @@
 </header>
 {{yield}}
 <footer>
-    <section class="site-map">
+    <section class="site-map-section">
         <div class="bottom-site-map">
             <ul>
                 <li>
