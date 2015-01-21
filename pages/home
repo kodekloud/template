@@ -11,11 +11,13 @@
 
 <div class="main">
      <div class="container">
-            <section class="call_to_action" id="description_div">
+            <section class="call_to_action">
+            <div id="description_div">
             <script id="description_template" type="x-tmpl-mustache">
                <h3>{{welcome_message}}</h3>
                <h4>{{description}}</h4>
             </script>
+            </div>
             </section>
           <section class="portfolio_teasers_wrapper">
                <!--<h2 class="section_header fancy centered">Recent Work or Projects from Portfolio<small>we take pride in our work</small></h2> -->
