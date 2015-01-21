@@ -204,6 +204,8 @@ th {
 .bottom-site-map ul li{
     list-style:none;
     height:40px;
+    display:inline-block;
+    width:10%;
 }
 
 @media print {
