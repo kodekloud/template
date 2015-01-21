@@ -56,13 +56,24 @@
     function renderPageData (){
         var repoList = getRepoList();
         var featureList = getFeatureList();
+        var propertyDetails = getPropertyDetails();
         renderBanner('#banner_template','#home_banner',repoList);
         renderPropertyDescription('#description_template', 'description_div',propertyDetails);
         renderFeatureItems('#feature_template', '#feature_items', featureList)
     }
     
     function renderPropertyDescription(description_template, description_div, propertyDetails){
-        
+        var item_list = [];
+        var item_rendered = [];
+        var description_template_html = $(description_template).html();
+        Mustache.parse(description_template_html);   // optional, speeds up future uses
+        item_list.push(propertyDetails);
+        $.each( item_list , function( key, val ) {
+            var description_rendered = Mustache.render(description_template_html,val);
+            item_rendered.push(description_rendered);
+        });
+        $(description_div).show();
+        $(description_div).html(item_rendered.join(''));
     }
     
     function renderBanner(banner_template,home_banner,repo){
