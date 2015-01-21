@@ -55,6 +55,7 @@
         var repoList = getRepoList();
         var featureList = getFeatureList();
         renderBanner('#banner_template','#home_banner',repoList);
+        renderPropertyDescription('#description_template', 'description_div',propertyDetails);
         renderFeatureItems('#feature_template', '#feature_items', featureList)
     }
     
