@@ -194,6 +194,9 @@ th {
   padding: 0;
 }
 .site-map-section{}
+.site-map-section{
+    color:white !important;
+}
 .bottom-site-map{}
 .bottom-site-map ul{}
 .bottom-site-map ul li{}
