@@ -17,7 +17,7 @@
             </section>
             <section class="call_to_action" id="description_section">
                 <script id="description_template" type="x-tmpl-mustache">
-                   <h3>"An Edmonton Power Centre!"</h3>
+                   <h3>{{name}}</h3>
                    <h4>Located in the hub of Edmonton’s west side retail area are 40 shops and services serving a diversity of needs. Whether you want to shop organic, get some custom framing, pick up a prescription or dry cleaning, get your hair done, grab some flowers or simply hide behind a perfectly pressed cup of cappuccino.</h4>
                 </script>
             </section>
