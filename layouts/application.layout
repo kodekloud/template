@@ -64,6 +64,9 @@
 </header>
 {{yield}}
 <footer>
+    <section class="site-map">
+        home - store directory - events - promotions - leasing - contact us
+    </section>
       <section class="copyright">
            <div class="container">
                 <div class="row">
