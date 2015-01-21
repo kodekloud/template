@@ -198,8 +198,12 @@ th {
     color:white !important;
 }
 .bottom-site-map{}
-.bottom-site-map ul{}
-.bottom-site-map ul li{}
+.bottom-site-map ul{
+    text-align:center;
+}
+.bottom-site-map ul li{
+    list-style:none;
+}
 
 @media print {
   * {
