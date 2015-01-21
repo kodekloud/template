@@ -69,12 +69,23 @@
             <ul>
                 <li>
                     <a href="/home">Home</a>
+                </li>
+                <li>
                     <a href="/home">Store Directory</a>
+                </li>
+                <li>
                     <a href="/home">Events</a>
+                </li>
+                <li>
                     <a href="/home">Promotions</a>
+                </li>
+                <li>
                     <a href="/home">Leasing</a>
+                </li>
+                <li>
                     <a href="/home">Contact Us</a>
                 </li>
+                
             </ul>
         </div>
     </section>
