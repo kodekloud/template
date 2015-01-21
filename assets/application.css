@@ -203,6 +203,7 @@ th {
 }
 .bottom-site-map ul li{
     list-style:none;
+    height:40px;
 }
 
 @media print {
