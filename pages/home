@@ -67,7 +67,17 @@
     }
     
     function renderPropertyDescription(description_template, description_section, propertyDetails){
-        
+        var item_list = [];
+        var item_rendered = [];
+        var description_template_html = $(description_template).html();
+        Mustache.parse(description_template_html);   // optional, speeds up future uses
+        item_list.push(propertyDetails);
+        $.each( item_list , function( key, val ) {
+            var description_rendered = Mustache.render(description_template_html,val);
+            item_rendered.push(description_rendered);
+        });
+        $(description_section).show();
+        $(description_section).html(item_rendered.join(''));
     }
     
     function renderBanner(banner_template,home_banner,repo){
