@@ -12,7 +12,7 @@
 <div class="main">
      <div class="container">
             <section class="call_to_action" id="description_div">
-            <script id="feature_template" type="x-tmpl-mustache">
+            <script id="description_template" type="x-tmpl-mustache">
                <h3>{{welcome_message}}</h3>
                <h4>{{description}}</h4>
             </script>
