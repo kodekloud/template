@@ -65,6 +65,8 @@
 {{yield}}
 <footer>
     <section id="footer_teasers_wrapper">
+        <script id="footer_template" type="x-tmpl-mustache">
+        {% raw %}
         <div class="container">
             <div class="row">
                  <div class="footer_teaser col-sm-6 col-md-6">
@@ -90,6 +92,10 @@
                  </div>
             </div>
         </div>
+        {% endraw %}
+            
+        </script>
+        
     </section>
     <section class="site-map-section">
         <div class="bottom-site-map">
