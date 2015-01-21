@@ -74,6 +74,7 @@
                       {{address1}}
                       {{city}}, {{province_state}}
                       </br>
+                      </br>
                       <p><i class="fa fa-phone"></i> {{contact_phone}}</p>
                       <p><i class="fa fa-print"></i> (+30) 9854-7855</p>
                       <p><i class="fa fa-envelope"></i> {{contact_email}}</p>
