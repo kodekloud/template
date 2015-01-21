@@ -60,11 +60,13 @@
     function renderPageData (){
         var repoList = getRepoList();
         var featureList = getFeatureList();
+        var propertyDetails = getPropertyDetails();
         renderBanner('#banner_template','#home_banner',repoList);
         renderFeatureItems('#feature_template', '#feature_items', featureList)
+        renderPropertyDescription('#description_template','#description_section', propertyDetails )
     }
     
-    function renderPropertyDescription(description_template, description_div, propertyDetails){
+    function renderPropertyDescription(description_template, description_section, propertyDetails){
         
     }
     
