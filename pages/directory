@@ -17,6 +17,9 @@
                     <li class="active">Store Directory</li>
                </ul>
           </section>
+          <a href="store_item_2.html" class="btn btn-primary pull-right">view detail</a>
+          <a href="store_item_2.html" class="btn btn-primary pull-right">view detail</a>
+          <a href="store_item_2.html" class="btn btn-primary pull-right">view detail</a>
           <section class="service_teasers" id="store_list_container">
             <script id="store_list_template" type="x-tmpl-mustache">
                <div class="service_teaser">
