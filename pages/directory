@@ -52,6 +52,8 @@
     });
     
     function renderPageData(container, template, list){
-        
+        var item_list = [];
+        var item_rendered = [];
+        var template_html = $(template).html();
     };
 </script>
