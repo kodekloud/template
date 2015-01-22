@@ -52,7 +52,7 @@
         renderPageData('#store_list_container','#store_list_template', stores);
     });
     
-    function renderPageData(container, template, list){
+    function renderPageData(container, template, collection){
         var item_list = [];
         var item_rendered = [];
         var template_html = $(template).html();
