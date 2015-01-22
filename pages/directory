@@ -48,6 +48,6 @@
 <script>
     $(document).ready(function() {
         var stores = getStoresList();
-        
+        var category_stores = getStoresListByCategory();
     });
 </script>
