@@ -44,3 +44,9 @@
           </section>          
      </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        var stores = 
+    });
+</script>
