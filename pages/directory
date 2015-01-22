@@ -49,6 +49,7 @@
     $(document).ready(function() {
         var stores = getStoresList();
         var category_stores = getStoresListByCategory();
+        renderPageData('#store_list_container','#store_list_template', stores);
     });
     
     function renderPageData(container, template, list){
