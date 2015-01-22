@@ -67,6 +67,7 @@
     var categories = getStoreCategories();
     console.log (categories);
     renderPageData('#store_list_container','#store_list_template', stores, "stores");
+    renderPageData('#categories_container', '#categories_list_template', categories, "categories");
     
     function renderPageData(container, template, collection, type){
         var item_list = [];
