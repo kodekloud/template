@@ -51,6 +51,7 @@
         var category_stores = getStoresListByCategory();
     });
     
-    function renderStoresList(){};
-    function renderCategoryStores();
+    function renderPageData(container, template, list){
+        
+    };
 </script>
