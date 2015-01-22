@@ -8,7 +8,7 @@
           </ul>
      </div>
 </section>
-
+<!--the welcome box colour : #98add0 (outside)   #d2d9e9 (inside)-->
 <div class="main">
      <div class="container">
             <section class="call_to_action" id="description_section">
