@@ -18,10 +18,16 @@
                </ul>
           </section>
           <div class="categories_list" id="categories_container">
-            <a href="store_item_2.html" class="btn btn-primary">View All</a>
-            <script id="categories_list_template" type="x-tmpl-mustache">
-                <a href="#" class="btn btn-primary">{{name}}</a>
-            </script>
+            <ul>
+                <li>
+                    <a href="store_item_2.html" class="btn btn-primary">View All</a>
+                </li>
+                <script id="categories_list_template" type="x-tmpl-mustache">
+                <li>
+                    <a href="#" class="btn btn-primary">{{name}}</a>
+                </li>
+                </script>
+            </ul>
           </div>
           
           <section class="service_teasers" id="store_list_container">
@@ -65,7 +71,6 @@
     var stores = getStoresList();
     var category_stores = getStoresListByCategory();
     var categories = getStoreCategories();
-    console.log (categories);
     renderPageData('#store_list_container','#store_list_template', stores, "stores");
     renderPageData('#categories_container', '#categories_list_template', categories, "categories");
     
@@ -77,6 +82,10 @@
         $.each( collection , function( key, val ) {
             if (type == "stores"){
                 val.alt_store_front_url = getImageURL(val.store_front_url);    
+            }
+            if (type == "categories"){
+                val.link = (val.name).replace(/\s/g, '');
+                console.log (val.link)
             }
             
             var rendered = Mustache.render(template_html,val);
