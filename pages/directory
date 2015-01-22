@@ -50,4 +50,7 @@
         var stores = getStoresList();
         var category_stores = getStoresListByCategory();
     });
+    
+    function renderStoresList(){};
+    function renderCategoryStores();
 </script>
