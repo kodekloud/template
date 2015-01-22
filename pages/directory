@@ -17,7 +17,7 @@
                     <li class="active">Store Directory</li>
                </ul>
           </section>
-          <section class="service_teasers">
+          <section class="service_teasers" id="store_list_container">
                <div class="service_teaser">
                     <div class="row">
                          <div class="service_photo col-sm-4 col-md-4">
@@ -29,19 +29,20 @@
                               <!-- <a class="btn btn-primary pull-right" href="documentation/index.html"><i class="fa fa-gears"></i>&nbsp; Read Full Documentation</a> --> <a href="store_item_2.html" class="btn btn-primary pull-right">view detail</a> </div>
                     </div>
                </div>
+          </section> 
+          <section class="service_teasers" id="store_category_container">
                <div class="service_teaser">
                     <div class="row">
                          <div class="service_photo col-sm-4 col-md-4">
                               <figure style="background-image:url(images/serv_2.jpg)"></figure>
                          </div>
                          <div class="service_details col-sm-8 col-md-8">
-                              <h2 class="section_header skincolored"><b>A&W Restaurant</b> <!-- <small>(604) 815-0833</small> --> </h2>
-                              <p><strong>Phone :</strong> (604) 815-0833</p>
-                              <a href="store_item_2.html" class="btn btn-primary pull-right">view detail</a>
-                         </div>
+                              <h2 class="section_header skincolored"><b>AC&D (Squamish) Insurance Services Ltd.</b></h2>
+                              <p><strong>Phone :</strong> (604) 892-1033</p>
+                              <!-- <a class="btn btn-primary pull-right" href="documentation/index.html"><i class="fa fa-gears"></i>&nbsp; Read Full Documentation</a> --> <a href="store_item_2.html" class="btn btn-primary pull-right">view detail</a> </div>
                     </div>
                </div>
-          </section>          
+          </section>  
      </div>
 </div>
 
