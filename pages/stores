@@ -17,9 +17,11 @@
                     <li class="active">Store Directory</li>
                </ul>
           </section>
-          <div>
+          <div class="categories_list" id="categories_container">
             <a href="store_item_2.html" class="btn btn-primary">View All</a>
-            <a href="store_item_2.html" class="btn btn-primary">view detail</a>
+            <script id="categories_list_template" type="x-tmpl-mustache">
+                <a href="store_item_2.html" class="btn btn-primary">view detail</a>
+            </script>
           </div>
           
           <section class="service_teasers" id="store_list_container">
