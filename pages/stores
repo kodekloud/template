@@ -84,8 +84,7 @@
                 val.alt_store_front_url = getImageURL(val.store_front_url);    
             }
             if (type == "categories"){
-                val.link = (val.name).replace(/\s/g, '');
-                console.log (val.link)
+                val.link = "cat" + val.id;
             }
             
             var rendered = Mustache.render(template_html,val);
