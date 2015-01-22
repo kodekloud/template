@@ -162,7 +162,7 @@
         Mustache.parse(logo_template_html);   // optional, speeds up future uses
         item_list.push(propertyDetails);
         $.each( item_list , function( key, val ) {
-            val.alt_site_logo = getImageURL(val.site_logo);
+            val.alt_site_logo = getStagingImageURL(val.site_logo);
             var logo_rendered = Mustache.render(logo_template_html,val);
             item_rendered.push(logo_rendered);
         });
@@ -184,7 +184,7 @@
         $(footer_teasers_wrapper).html(item_rendered.join(''));
     }
     
-    function getImageURL(existing_url){
+    function getStagingImageURL(existing_url){
         if(!existing_url ||  existing_url.indexOf('missing.png') > -1 || existing_url.length === 0){
             //http://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/
             return "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
