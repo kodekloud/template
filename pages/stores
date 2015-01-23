@@ -97,7 +97,9 @@
     };
     
     function render_category_stores(categories, category_stores){
-        
+        $.each( categories , function( key, val ) {
+            
+        });
     };
     
     function getImageURL(existing_url){
