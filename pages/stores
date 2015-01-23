@@ -24,7 +24,7 @@
                 </li>
                 <script id="categories_list_template" type="x-tmpl-mustache">
                 <li>
-                    <a href="javascript:show_cat({{link}});" class="btn btn-primary">{{name}}</a>
+                    <a href="show_cat("{{link}}");" class="btn btn-primary">{{name}}</a>
                 </li>
                 </script>
             </ul>
