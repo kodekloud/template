@@ -112,6 +112,7 @@
         for (i = 0; i < all_categories.length; i++) {
             for (j = 0; j < all_stores.length; j++) {
                 if($.inArray(parseInt(all_categories[i].id), all_stores[j].categories) > -1){
+                    all_stores[j].cat_name = all_categories[i].name;
                     category_stores.push(all_stores[j]);
                 }
             }
