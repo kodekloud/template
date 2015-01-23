@@ -156,7 +156,7 @@
     
     function populate_stores_for_cat (categoryid, store){
         console.log (categoryid);
-        console.log(store);
+        console.log(store.name);
     }
     
     function show_cat(link){
