@@ -98,8 +98,11 @@
     
     function render_category_stores(categories, category_stores){
         $.each( category_stores , function( key, val ) {
-            
+            console.log("--------------")
             console.log(val);
+            console.log("--------------")
+            console.log(key);
+            console.log("--------------")
         });
         // var category_stores = [];
     
