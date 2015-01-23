@@ -109,7 +109,7 @@
                 }
             
             }
-            console.log all_categories[i]
+            console.log (all_categories[i])
         }
         
     };
