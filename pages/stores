@@ -100,6 +100,9 @@
         cat_array = [];
         $.each( categories , function( key, val ) {
             stores_array = [];
+            $.each( category_stores , function( key2, val2 ) {
+                console.log (key2, val2)
+            });
             console.log (key, val);
         });
     };
