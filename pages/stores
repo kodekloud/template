@@ -97,10 +97,9 @@
     };
     
     function render_category_stores(categories, category_stores){
-        cat_array = [];
         $.each( categories , function( key, val ) {
             
-            console.log(val.store_ids);
+            console.log(val);
         });
     };
     
