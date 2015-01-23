@@ -107,6 +107,7 @@
     function render_category_stores(){
         
         var category_stores = [];
+        var item_rendered = [];
         var all_stores = getStoresList();
         var all_categories = getStoreCategories();
         var template_html = $("#category_store_list_template").html();
