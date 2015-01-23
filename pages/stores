@@ -103,7 +103,7 @@
             $.each( categories , function( key2, val2 ) {
                 console.log (key2, val2)
             });
-            console.log (key, val);
+            
         });
     };
     
