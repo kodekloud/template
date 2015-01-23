@@ -97,7 +97,7 @@
     };
     
     function render_category_stores(){
-     
+        var stores_per_cat = [];
         var category_stores = [];
         var all_stores = getStoresList();
         var all_categories = getStoreCategories();
