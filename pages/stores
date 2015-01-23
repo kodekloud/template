@@ -62,7 +62,7 @@
           <!--</section>  -->
           <section>
               <script id="category_store_list_template" type="x-tmpl-mustache">
-                  <h1>cat label<h1>
+                  <h1>{{name}}<h1>
                     <section>
                       
                     </section>
@@ -109,6 +109,7 @@
         var category_stores = [];
         var all_stores = getStoresList();
         var all_categories = getStoreCategories();
+        var template_html = $("#category_store_list_template").html();
         for (i = 0; i < all_categories.length; i++) {
             var stores_per_cat = [];
             for (j = 0; j < all_stores.length; j++) {
@@ -120,6 +121,7 @@
             
             }
             console.log (stores_per_cat)
+            
         }
         
     };
