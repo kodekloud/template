@@ -141,9 +141,6 @@
         }
         $("#store_category_list_container").show();
         $("#store_category_list_container").html(item_rendered.join(''));
-        $.each( collection , function( key, val ) {
-            
-        });
         
     };
     
