@@ -137,7 +137,7 @@
             }
             var rendered = Mustache.render(template_html,all_categories[i]);
             item_rendered.push(rendered);
-            $("#store_for_"+all_categories[1].id).append("TEST");
+            $("#store_for_"+all_categories[1].id).append('<div>TEST12345</div>');
             
             
         }
