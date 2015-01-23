@@ -61,10 +61,10 @@
           <!--  </script>-->
           <!--</section>  -->
           <section>
-              <script>
+              <script id="category_store_list_template" type="x-tmpl-mustache">
                   <h1>cat label<h1>
                     <section>
-                      <script>
+                      <script id="category_store_list_template2" type="x-tmpl-mustache">
                           store object
                       </script>
                     </section>
