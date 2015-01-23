@@ -123,8 +123,12 @@
             
             }
             console.log (stores_per_cat)
+            var rendered = Mustache.render(template_html,all_categories[i]);
+            item_rendered.push(rendered);
             
         }
+        $("#store_category_list_container").show();
+        $("#store_category_list_container").html(item_rendered.join(''));
         
     };
     
