@@ -87,6 +87,7 @@
                 $.each( val.images , function( key, val ) {
                     val.alt_url = getImageURL(val.photo_url);
                     item_list.push(val);
+                    console.log(val.alt_url)
                 });
             }
         });
