@@ -64,7 +64,7 @@
               <script id="category_store_list_template" type="x-tmpl-mustache">
                 <div class="cat_list_div" id="cat{{id}}" style="display:none">
                     <h1>{{name}}<h1>
-                    <section class="service_teasers">
+                    <section class="service_teasers" id="store_for_{{id}}">
                         <div class="service_teaser">
                             <div class="row">
                                 <div class="service_photo col-sm-4 col-md-4">
@@ -137,6 +137,8 @@
             }
             var rendered = Mustache.render(template_html,all_categories[i]);
             item_rendered.push(rendered);
+            $("#store_for_"+all_categories[1].id).append("TEST");
+            
             
         }
         $("#store_category_list_container").show();
