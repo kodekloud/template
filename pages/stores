@@ -123,6 +123,7 @@
         var item_rendered = [];
         var all_stores = getStoresList();
         var all_categories = getStoreCategories();
+        var test = []
         var template_html = $("#category_store_list_template").html();
         Mustache.parse(template_html);
         for (i = 0; i < all_categories.length; i++) {
@@ -137,14 +138,18 @@
             }
             var rendered = Mustache.render(template_html,all_categories[i]);
             item_rendered.push(rendered);
-            $("#store_for_"+all_categories[1].id).append('<div>TEST12345</div>');
-            
-            
         }
         $("#store_category_list_container").show();
         $("#store_category_list_container").html(item_rendered.join(''));
+        $.each( collection , function( key, val ) {
+            
+        });
         
     };
+    
+    function populate_stores_for_cat (){
+        
+    }
     
     function show_cat(link){
         $(".cat_list_div").hide();
