@@ -146,6 +146,7 @@
     
     function show_cat(link){
         console.log(link)
+        $(".cat_list_div").hide();
         $("#"+link).show();
     }
     
