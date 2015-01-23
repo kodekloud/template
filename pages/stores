@@ -64,7 +64,7 @@
               <script id="category_store_list_template" type="x-tmpl-mustache">
                 <div class="cat_list_div" id="cat{{id}}" style="display:none">
                     <h1>{{name}}<h1>
-                    <section class="service_teasers" id="store_for_{{id}}">
+                    // <section class="service_teasers" id="store_for_{{id}}">
                         // <div class="service_teaser">
                         //     <div class="row">
                         //         <div class="service_photo col-sm-4 col-md-4">
