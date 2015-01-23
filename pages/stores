@@ -64,7 +64,7 @@
               <script id="category_store_list_template" type="x-tmpl-mustache">
                   <h1>{{name}}<h1>
                     <section>
-                      
+                        STORES SECTION
                     </section>
               </script>
           </section>
