@@ -98,9 +98,9 @@
     
     function render_category_stores(categories, category_stores){
         cat_array = [];
-        $.each( categories , function( key, val ) {
+        $.each( category_stores , function( key, val ) {
             stores_array = [];
-            $.each( category_stores , function( key2, val2 ) {
+            $.each( categories , function( key2, val2 ) {
                 console.log (key2, val2)
             });
             console.log (key, val);
