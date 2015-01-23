@@ -97,7 +97,9 @@
     };
     
     function render_category_stores(categories, category_stores){
+        cat_array = [];
         $.each( categories , function( key, val ) {
+            stores_array = [];
             console.log (key, val);
         });
     };
