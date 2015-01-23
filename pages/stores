@@ -137,7 +137,6 @@
             }
             var rendered = Mustache.render(template_html,all_categories[i]);
             item_rendered.push(rendered);
-            console.log(rendered)
             
         }
         $("#store_category_list_container").show();
@@ -146,7 +145,7 @@
     };
     
     function show_cat(link){
-    
+        $("#"+link).show();
     }
     
     function getImageURL(existing_url){
