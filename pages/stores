@@ -62,10 +62,12 @@
           <!--</section>  -->
           <section id="store_category_list_container">
               <script id="category_store_list_template" type="x-tmpl-mustache">
-                  <h1>{{name}}<h1>
+                <div id="cat{{id}}">
+                    <h1>{{name}}<h1>
                     <section>
                         STORES SECTION
                     </section>
+                </div>
               </script>
           </section>
      </div>
@@ -122,9 +124,9 @@
                 }
             
             }
-            console.log (stores_per_cat)
             var rendered = Mustache.render(template_html,all_categories[i]);
             item_rendered.push(rendered);
+            console.log(rendered)
             
         }
         $("#store_category_list_container").show();
