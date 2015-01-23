@@ -74,7 +74,7 @@
     var categories = getStoreCategories();
     // renderPageData('#store_list_container','#store_list_template', stores, "stores");
     renderPageData('#categories_container', '#categories_list_template', categories, "categories");
-    renderPageData('#store_category_container', '#category_store_list_template', '#category_stores', category_stores)
+    renderPageData('#store_category_container', '#category_store_list_template', category_stores, "category_stores")
     function renderPageData(container, template, collection, type){
         var item_list = [];
         var item_rendered = [];
