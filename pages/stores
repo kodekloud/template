@@ -89,7 +89,6 @@
             
             var rendered = Mustache.render(template_html,val);
             item_rendered.push(rendered);
-            console.log(val)
         });
         
         $(container).show();
@@ -97,7 +96,7 @@
         
     };
     
-    function render_category_stores(){
+    function render_category_stores(categories, category_stores){
         
     };
     
