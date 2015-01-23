@@ -62,7 +62,7 @@
           <!--</section>  -->
           <section id="store_category_list_container">
               <script id="category_store_list_template" type="x-tmpl-mustache">
-                <div id="cat{{id}}" style="display:none">
+                <div class="cat_list_div" id="cat{{id}}" style="display:none">
                     <h1>{{name}}<h1>
                     <section class="service_teasers">
                         <div class="service_teaser">
