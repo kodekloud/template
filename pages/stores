@@ -62,7 +62,7 @@
     
     function render_categories(categories){
         for (i = 0; i < categories.length; i++) {
-            console.log (i)
+            console.log (categories(i))
         }
         
     };
