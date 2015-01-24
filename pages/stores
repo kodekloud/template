@@ -255,4 +255,9 @@
         }
         
     };
+    function getSVGMapURL(){
+        initData();
+        var mallDataJSON = JSON.parse(sessionStorage.mallData);
+        return 'http://cdn.mallmaverickstaging.com' + mallDataJSON.property.svgmap_url;
+    }
 </script>
