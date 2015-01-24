@@ -40,7 +40,7 @@
           <section id="store_category_list_container">
               <script id="category_store_list_template" type="x-tmpl-mustache">
                 <div class="cat_list_div" id="cat{{id}}" style="display:none">
-                    <h1 stype="margin-top:0px">{{name}}</h1>
+                    <h1 style="margin-top:0px">{{name}}</h1>
                 </div>
               </script>
           </section>
