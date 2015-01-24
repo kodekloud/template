@@ -86,7 +86,7 @@
         
         $(container).show();
         $(container).html(item_rendered.join(''));
-        
+        console.log ($("#categories_container").html)
     };
     
     function render_category_stores(){
