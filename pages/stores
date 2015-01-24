@@ -92,6 +92,7 @@
     function render_categories (categories){
         $.each( categories , function( key, val ) {
             val.link = "cat" + val.id;
+            console.log(val);
             $("#categories_container").append("TEST");
         }
     }
