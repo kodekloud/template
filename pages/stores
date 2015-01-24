@@ -136,7 +136,7 @@
         console.log(link.id)
         // $("#store_list_container").hide();
         // $(".cat_list_div").hide();
-        $("#"+link).show();
+        $("#"+link.id).show();
         
     }
     
