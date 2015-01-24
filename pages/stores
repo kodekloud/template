@@ -87,13 +87,12 @@
         
         $(container).show();
         $(container).html(item_rendered.join(''));
-        console.log ($("#categories_container").html())
     };
     
     function render_categories (categories){
         $.each( categories , function( key, val ) {
             val.link = "cat" + val.id;
-            ("#categories_container").append("TEST");
+            $("#categories_container").append("TEST");
         }
     }
     
