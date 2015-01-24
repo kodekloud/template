@@ -18,7 +18,7 @@
                </ul>
           </section>
           <div class="categories_list" id="categories_container">
-            <ul class="cat_list_link_ul">
+            <ul>
                 <li>
                     <a href="store_item_2.html" class="btn btn-primary">View All</a>
                 </li>
