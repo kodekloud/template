@@ -132,8 +132,8 @@
     }
     
     function show_cat(link){
-        console.log("=-=-=-=-=-=-")
-        console.log(link.id)
+        // console.log("=-=-=-=-=-=-")
+        // console.log(link.id)
         $("#store_list_container").hide();
         $(".cat_list_div").hide();
         $("#"+link.id).show();
