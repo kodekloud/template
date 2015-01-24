@@ -65,7 +65,7 @@
         $.each( categories , function( key, val ) {
             val.link = "cat" + val.id;
             console.log(val);
-            $("#categories_container").append('<a onclick=(show_cat('+val.link+')) class="btn btn-primary">View All</a>');
+            $("#categories_container").append('<a onclick=(show_cat('+val.link+')) class="btn btn-primary">'+val.name+'</a>');
         });
         // for (i = 0; i < categories.length; i++) {
         //     console.log (categories[i])
