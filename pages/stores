@@ -139,7 +139,7 @@
         } else {
             $("#store_list_container").hide();
             $(".cat_list_div").hide();
-            $("#"+link.id).show();    
+            $("#"+link).show();    
         }
         
         
