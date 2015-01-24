@@ -56,9 +56,11 @@
     var category_stores = getStoresListByCategory();
     var categories = getStoreCategories();
     renderPageData('#store_list_container','#store_list_template', stores, "stores");
-    renderPageData('#categories_container', '#categories_list_template', categories, "categories");
-    // render_categories(categories);
+    // renderPageData('#categories_container', '#categories_list_template', categories, "categories");
+    render_categories(categories);
     render_category_stores();
+    
+    function render_categories(categories){};
     function renderPageData(container, template, collection, type){
         var item_list = [];
         var item_rendered = [];
