@@ -18,16 +18,7 @@
                </ul>
           </section>
           <div class="categories_list" id="categories_container">
-            <ul>
-                <li>
-                    <a href="store_item_2.html" class="btn btn-primary">View All</a>
-                </li>
-                 <script id="categories_list_template" type="x-tmpl-mustache">
-                <li>
-                    <a href="javascript:show_cat('{{link}}');" class="btn btn-primary">{{name}}</a>
-                </li>
-                 </script>
-            </ul>
+                <a href="store_item_2.html" class="btn btn-primary">View All</a>
           </div>
           
           <section class="service_teasers" id="store_list_container">
