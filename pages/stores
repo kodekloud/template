@@ -5,6 +5,14 @@
                <br>
                <h4 class="animated bounceInUp">our <strong>customers</strong> are always <strong>happy</strong>!</h4>
           </section> -->
+            <div style="overflow:hidden">
+                <div id="zControls">
+                    <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
+                    <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
+                    
+                </div>
+                <div id="map" class="panzoom-elements" style=""></div>
+            </div>
      </div>
 </div>
 <div class="main">
