@@ -162,6 +162,7 @@
         }
         return "http://cdn.mallmaverickstaging.com"+existing_url;
     }
+    
     function renderSVGMap(){
             if(navigator.appVersion.indexOf("MSIE 9.") == -1){
                 
