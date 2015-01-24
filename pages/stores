@@ -19,7 +19,7 @@
           </section>
           
           <div class="categories_list" id="categories_container">
-                <a href="store_item_2.html" class="btn btn-primary">View All</a>
+                <a onclick="show_cat('nil','all')" class="btn btn-primary">View All</a>
           </div>
           
           <section class="service_teasers" id="store_list_container">
