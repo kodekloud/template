@@ -158,7 +158,7 @@
     function populate_stores_for_cat (categoryid, store){
         // console.log (categoryid);
         // console.log(store);
-        $('#cat'+ categoryid).append('<section class="service_teasers" id="store_for_'+store.id+'"><div class="service_teaser"><div class="row"></div></div></section>');
+        $('#cat'+ categoryid).append('<section class="service_teasers" id="store_for_'+store.id+'"><div class="service_teaser"><div class="row"><div class="service_photo col-sm-4 col-md-4"><figure style="background-image:url('+store.alt_store_front_url+')"></figure></div></div></div></section>');
     }
     
     function show_cat(link){
