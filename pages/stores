@@ -17,6 +17,7 @@
                     <li class="active">Store Directory</li>
                </ul>
           </section>
+          
           <div class="categories_list" id="categories_container">
                 <a href="store_item_2.html" class="btn btn-primary">View All</a>
           </div>
