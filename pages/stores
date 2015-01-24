@@ -167,10 +167,10 @@
     
     function renderSVGMap(){
         if(navigator.appVersion.indexOf("MSIE 9.") == -1){
-            // $('#map').bind('mousemove', function(e){
-            //     //console.log(e.pageX+","+e.pageY);
-            //   $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
-            // });
+            $('#map').bind('mousemove', function(e){
+                //console.log(e.pageX+","+e.pageY);
+              $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
+            });
             var s = Snap("#map");
             //var stores = [{'svg_id':'#goldsgym','store_id':'14336'},{'svg_id':'#_x38_0','store_id':'14342'},{'svg_id':'#_x37_7','store_id':'14386'},{'svg_id':'#_x31_05','store_id':'14334'},{'svg_id':'#_x31_62','store_id':'14344'},{'svg_id':'#_x31_61','store_id':'14345'} ];
             var stores = getStoresList();
@@ -178,34 +178,34 @@
             Snap.load(getSVGMapURL(), function (f) {
                 $.each( stores, function( key, value ) {
                     if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
-                        var svg_id = "#" + value.svgmap_region;
-                        f.select(svg_id).mouseover(function() {
-                            if(typeof(value) != 'undefined' && value != null){
-                                this.addClass("map-mouse-over");
-                                $("#pop-over").show();
-                                $("#pop-over-map-name").html(value.name);
-                                $("#pop-over-map-phone").html(value.phone);
-                            }
+                        // var svg_id = "#" + value.svgmap_region;
+                        // f.select(svg_id).mouseover(function() {
+                        //     if(typeof(value) != 'undefined' && value != null){
+                        //         this.addClass("map-mouse-over");
+                        //         $("#pop-over").show();
+                        //         $("#pop-over-map-name").html(value.name);
+                        //         $("#pop-over-map-phone").html(value.phone);
+                        //     }
                                   
-                        });
+                        // });
                         
-                        //add the mouse up handler for hiding the pop over when done hovering
-                        f.select(svg_id).mouseout(function() {
-                            this.removeClass("map-mouse-over");
-                            $("#pop-over").hide(0);
+                        // //add the mouse up handler for hiding the pop over when done hovering
+                        // f.select(svg_id).mouseout(function() {
+                        //     this.removeClass("map-mouse-over");
+                        //     $("#pop-over").hide(0);
                             
-                        });
+                        // });
                         
-                        //add the mouse up function for when the user clicks a store
-                        f.select(svg_id).mouseup(function() {
+                        // //add the mouse up function for when the user clicks a store
+                        // f.select(svg_id).mouseup(function() {
                             
-                            if(!isMobile && !didPanZoom){
+                        //     if(!isMobile && !didPanZoom){
                                 
-                                goToStore(value);
-                            }
-                            didPanZoom = false;
+                        //         goToStore(value);
+                        //     }
+                        //     didPanZoom = false;
                                   
-                        });
+                        // });
                     }
                 });
                 s.append(f.select("svg"));
