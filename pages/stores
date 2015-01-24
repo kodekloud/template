@@ -252,7 +252,7 @@
         $('#zControls').hide();
         $('#map').hide();
         $( "#page_content" ).fadeIn( "fast");
-        
+    }
     }
         
     });
