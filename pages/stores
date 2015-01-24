@@ -146,6 +146,7 @@
             for (j = 0; j < all_stores.length; j++) {
                 if($.inArray(parseInt(all_categories[i].id), all_stores[j].categories) > -1){
                     all_stores[j].cat_name = all_categories[i].name;
+                    all_stores[j].alt_store_front_url = getImageURL(all_stores[j].store_front_url);    
                     populate_stores_for_cat(all_categories[i].id, all_stores[j]);
                 }
             
@@ -157,7 +158,7 @@
     function populate_stores_for_cat (categoryid, store){
         // console.log (categoryid);
         // console.log(store);
-        $('#cat'+ categoryid).append('<section class="service_teasers" id="store_for_'+store.id+'"><div class="service_teaser"></div></section>');
+        $('#cat'+ categoryid).append('<section class="service_teasers" id="store_for_'+store.id+'"><div class="service_teaser"><div class="row"></div></div></section>');
     }
     
     function show_cat(link){
