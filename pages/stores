@@ -89,14 +89,7 @@
         $(container).html(item_rendered.join(''));
     };
     
-    // function render_categories (categories){
-    //     $.each( categories , function( key, val ) {
-    //         val.link = "cat" + val.id;
-    //         console.log(val);
-    //         $("#categories_container").append("TEST");
-    //     }
-    // };
-    
+
     function render_category_stores(){
         
         var category_stores = [];
