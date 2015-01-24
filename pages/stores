@@ -60,7 +60,12 @@
     render_categories(categories);
     render_category_stores();
     
-    function render_categories(categories){};
+    function render_categories(categories){
+        for (i = 0; i < categories.length; i++) {
+            console.log (i)
+        }
+        
+    };
     function renderPageData(container, template, collection, type){
         var item_list = [];
         var item_rendered = [];
