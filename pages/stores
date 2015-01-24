@@ -67,6 +67,7 @@
     // renderPageData('#categories_container', '#categories_list_template', categories, "categories");
     render_categories(categories);
     render_category_stores();
+    renderSVGMap();
     
     function render_categories(categories){
         
