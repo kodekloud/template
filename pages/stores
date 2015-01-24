@@ -138,10 +138,11 @@
     }
     
     function show_cat(link){
+        console.log(link)
         $("#store_list_container").hide();
         $(".cat_list_div").hide();
         $("#"+link).show();
-        console.log(link)
+        
     }
     
     function getImageURL(existing_url){
