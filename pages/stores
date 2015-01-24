@@ -132,7 +132,7 @@
     }
     
     function show_cat(link){
-        console.log(link)
+        console.log(this)
         // $("#store_list_container").hide();
         // $(".cat_list_div").hide();
         // $("#"+link).show();
