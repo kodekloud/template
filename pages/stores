@@ -27,8 +27,9 @@
                 <li>
                     <a href="javascript:show_cat('{{link}}');" class="btn btn-primary">{{name}}</a>
                 </li>
-                </script>
+                
             </ul>
+            </script>
           </div>
           
           <section class="service_teasers" id="store_list_container">
