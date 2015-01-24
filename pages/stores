@@ -62,13 +62,14 @@
     
     function render_categories(categories){
         
-        $.each( collection , function( key, val ) {
+        $.each( categories , function( key, val ) {
             val.link = "cat" + val.id;
+            console.log(val);
         });
-        for (i = 0; i < categories.length; i++) {
-            console.log (categories[i])
-            $("#categories_container").append('<a href="store_item_2.html" class="btn btn-primary">View All</a>');
-        }
+        // for (i = 0; i < categories.length; i++) {
+        //     console.log (categories[i])
+        //     $("#categories_container").append('<a href="store_item_2.html" class="btn btn-primary">View All</a>');
+        // }
         
     };
     function renderPageData(container, template, collection, type){
