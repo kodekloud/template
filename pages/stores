@@ -172,6 +172,7 @@
             var s = Snap("#map");
             //var stores = [{'svg_id':'#goldsgym','store_id':'14336'},{'svg_id':'#_x38_0','store_id':'14342'},{'svg_id':'#_x37_7','store_id':'14386'},{'svg_id':'#_x31_05','store_id':'14334'},{'svg_id':'#_x31_62','store_id':'14344'},{'svg_id':'#_x31_61','store_id':'14345'} ];
             var stores = getStoresList();
+            console.log(getSVGMapURL());
             Snap.load(getSVGMapURL(), function (f) {
                 $.each( stores, function( key, value ) {
                     if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
