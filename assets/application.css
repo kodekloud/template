@@ -208,6 +208,11 @@ th {
     display:inline-block;
     width:10%;
 }
+
+.categories_list{
+    margin-bottom:40px;
+}
+
 .categories_list a{
     margin:3px;
 }
