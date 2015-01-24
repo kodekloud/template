@@ -114,7 +114,7 @@
             item_rendered.push(rendered);
         }
         $("#store_category_list_container").show();
-        $("#store_category_list_container").html(item_rendered.join(''));
+        $("#store_category_list_container").append(item_rendered);
         for (i = 0; i < all_categories.length; i++) {
             var stores_per_cat = [];
             for (j = 0; j < all_stores.length; j++) {
