@@ -45,7 +45,7 @@
                </div>
             </script>
           </section> 
-          <section id="store_category_list_container">
+          <section id="store_category_list_container" style="display:none">
               <script id="category_store_list_template" type="x-tmpl-mustache">
                 <div class="cat_list_div" id="cat{{id}}" style="display:none">
                     <h1>{{name}}</h1>
