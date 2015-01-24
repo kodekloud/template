@@ -208,7 +208,7 @@ th {
     display:inline-block;
     width:10%;
 }
-
+.categories_list a{}
 @media print {
   * {
     text-shadow: none !important;
