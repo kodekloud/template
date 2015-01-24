@@ -165,12 +165,10 @@
     
     function renderSVGMap(){
         if(navigator.appVersion.indexOf("MSIE 9.") == -1){
-                
             $('#map').bind('mousemove', function(e){
                 //console.log(e.pageX+","+e.pageY);
               $('#pop-over').css({'top':e.pageY+20,'left':e.pageX-70});
             });
-            
             var s = Snap("#map");
             //var stores = [{'svg_id':'#goldsgym','store_id':'14336'},{'svg_id':'#_x38_0','store_id':'14342'},{'svg_id':'#_x37_7','store_id':'14386'},{'svg_id':'#_x31_05','store_id':'14334'},{'svg_id':'#_x31_62','store_id':'14344'},{'svg_id':'#_x31_61','store_id':'14345'} ];
             var stores = getStoresList();
@@ -207,9 +205,7 @@
                         });
                     }
                 });
-               
                 s.append(f.select("svg"));
-                
             });
                 
                 
@@ -247,13 +243,12 @@
                   didPanZoom = false;
                 });
             });
-    }else{
+        }else{
             $('#loading').hide();
             $('#zControls').hide();
             $('#map').hide();
             $( "#page_content" ).fadeIn( "fast");
-            
-    }
+        }
         
-    });
+    };
 </script>
