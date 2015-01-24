@@ -86,7 +86,6 @@
         
         $(container).show();
         $(container).html(item_rendered.join(''));
-        console.log($(container).html);
         
     };
     
