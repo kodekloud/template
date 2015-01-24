@@ -65,7 +65,7 @@
         $.each( categories , function( key, val ) {
             val.link = "cat" + val.id;
             console.log(val);
-            $("#categories_container").append('<a onclick=(show_cat('+val.link+')) class="btn btn-primary">'+val.name+'</a>');
+            $("#categories_container").append('<a href=(show_cat('+val.link+')) class="btn btn-primary">'+val.name+'</a>');
         });
         // for (i = 0; i < categories.length; i++) {
         //     console.log (categories[i])
@@ -138,7 +138,7 @@
     }
     
     function show_cat(link){
-        alert("triggered")
+        console.log(link)
         $("#store_list_container").hide();
         $(".cat_list_div").hide();
         $("#"+link).show();
