@@ -221,7 +221,7 @@
                 s.append(f.select("svg"));
             });
                 
-            console.log (snap)
+            console.log (s)
             var startingMapTransform = 'scale(0.43)';
             var startingPanX = -250;
             var startingPanY = -200;
