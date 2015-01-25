@@ -77,9 +77,9 @@
         colors: {stroke: '#aaaaaa', selected: -20, hover: "#a6a6a6"},
         disableAll: true,  
         regions: {
-                for (i = 0; i < stores.length; i++) {
-                    console.log (stores[i])
-                };
+                // for (i = 0; i < stores.length; i++) {
+                //     console.log (stores[i])
+                // };
         },
         height:696,
         width:682,
@@ -89,7 +89,8 @@
         pan:true,
         cursor:'pointer',
         responsive:true,
-        zoomLimit: [0,10]
+        zoomLimit: [0,10],
+        viewBox:[100,100,650,650]
     });
     
     function render_categories(categories){
