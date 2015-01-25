@@ -55,8 +55,12 @@
      </div>
 </div>
 <!--For more information please see http://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
-<script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
-<script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>-->
+<!--<script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>-->
+<script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/6518eb104d01f030f09e4fd7341912cf/jquery.js"></script>
+<script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/6518eb104d01f030f09e4fd7341912cf/raphael.js"></script>
+<script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/6518eb104d01f030f09e4fd7341912cf/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/6518eb104d01f030f09e4fd7341912cf/mallmaverick_svgmap.js"></script>
 <script>
     $(document).ready(function() {
         
