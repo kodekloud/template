@@ -189,7 +189,7 @@
                 $.each( stores, function( key, value ) {
                     if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
                         var svg_id = "#" + value.svgmap_region;
-                        f.select(svg_id).mouseover(function() {
+                        (svg_id).mouseover(function() {
                             if(typeof(value) != 'undefined' && value != null){
                                 this.addClass("map-mouse-over");
                                 $("#pop-over").show();
@@ -200,14 +200,14 @@
                         });
                             
                         //add the mouse up handler for hiding the pop over when done hovering
-                        f.select(svg_id).mouseout(function() {
+                        (svg_id).mouseout(function() {
                             this.removeClass("map-mouse-over");
                             $("#pop-over").hide(0);
                             
                         });
                             
                         //add the mouse up function for when the user clicks a store
-                        f.select(svg_id).mouseup(function() {
+                       (svg_id).mouseup(function() {
                             
                             if(!isMobile && !didPanZoom){
                                 
