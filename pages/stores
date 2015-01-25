@@ -1,3 +1,10 @@
+<div id="pop-over">
+    <span class="pull-left">
+        <div id="pop-over-map-name">Default Name</div>
+        <div id="pop-over-map-phone">Phone Number</div>
+    </span>
+    <span class="pullright"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/04dd4f94364d574f0365c89cbafa12c4/btn_search_arrow.png"></span>
+</div>
 <div class="full_page_photo" style="background-image: url(images/services.jpg);">
      <div class="container">
           <!-- <section class="call_to_action">
