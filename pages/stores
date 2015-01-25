@@ -61,30 +61,25 @@
         
     });
     
+    
+    
+    var stores = getStoresList();
+    var category_stores = getStoresListByCategory();
+    var categories = getStoreCategories();
+    renderPageData('#store_list_container','#store_list_template', stores, "stores");
+    // renderPageData('#categories_container', '#categories_list_template', categories, "categories");
+    render_categories(categories);
+    render_category_stores();
+    // renderSVGMap();
+    
     var map = $('#mapsvg_store_detail').mapSvg({
         source:getSVGMapURL() ,    // Path to SVG map
         colors: {stroke: '#aaaaaa', selected: -20, hover: "#a6a6a6"},
         disableAll: true,  
         regions: {
-                {% for store in stores %}
-                    {% if store.svgmap_region != nil %}
-                        "{{ store.svgmap_region }}":{
-                            disabled: false,
-                            tooltip:"<div class='tooltip_div'><p class='tooltip_name'>{{store.name}}</p>{% if store.store_front_url contains 'original/missing.png' %}{% else %}<img class='tooltip_image' src='{{store.store_front_url}}'/>{% endif %}<span><div class='tooltip_phone_div'><img class='tooltip_phone_icon' src='{{3999 | get_image_url}}'/><p class='tooltip_phone'>{{store.phone}}</p></div>{% assign store_promo = store.current_promotions | size %}<div class='tooltip_promo_div'>{% if store_promo > 0%}<img class='tooltip_promo_icon' src='{{4000 | get_image_url}}' /><p class='tooltip_promo'>{{store_promo}}</p>{% endif %}</div></span></div>",
-                        attr:{
-        						href:'/stores/{{store.slug}}'
-        					}
-        				},
-        			{% endif %}
-        		{% endfor %}
-                {% for landmark in site.property.landmarks %}
-                    {% if landmark.svgmap_region != nil %}
-                        "{{landmark.svgmap_region}}":{
-                            disabled:false, 
-                            tooltip:"{{landmark.name}}"
-                        },
-                    {% endif %}
-                {% endfor %}  
+                for (i = 0; i < stores.length; i++) {
+                    console.log (stores[i])
+                }
         },
         height:696,
         width:682,
@@ -96,15 +91,6 @@
         responsive:true,
         zoomLimit: [0,10]
     });
-    
-    var stores = getStoresList();
-    var category_stores = getStoresListByCategory();
-    var categories = getStoreCategories();
-    renderPageData('#store_list_container','#store_list_template', stores, "stores");
-    // renderPageData('#categories_container', '#categories_list_template', categories, "categories");
-    render_categories(categories);
-    render_category_stores();
-    // renderSVGMap();
     
     function render_categories(categories){
         
