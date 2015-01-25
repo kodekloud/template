@@ -222,15 +222,15 @@
             });
                 
                 
-                var startingMapTransform = 'scale(0.43)';
-                var startingPanX = -250;
-                var startingPanY = -200;
-                if(isMobile) {
-                        startingMapTransform = 'scale(0.20)';
-                        startingPanX = -170;
-                        startingPanY = -200;
-                }
-                $('#loading').hide();
+            var startingMapTransform = 'scale(0.43)';
+            var startingPanX = -250;
+            var startingPanY = -200;
+            if(isMobile) {
+                    startingMapTransform = 'scale(0.20)';
+                    startingPanX = -170;
+                    startingPanY = -200;
+            }
+                // $('#loading').hide();
                 $( "#page_content" ).fadeIn( "fast", function() {
                     var panzoom = $(".panzoom-elements").panzoom({
                         cursor: "move",
