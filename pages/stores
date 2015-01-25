@@ -5,11 +5,11 @@
                <br>
                <h4 class="animated bounceInUp">our <strong>customers</strong> are always <strong>happy</strong>!</h4>
           </section> -->
-            <section class="call_to_action">
+            
                 <div class="main-map">
                     <div id="mapsvg_store_detail"></div>
                 </div>
-            </section>
+       
      </div>
 </div>
 <div class="main">
