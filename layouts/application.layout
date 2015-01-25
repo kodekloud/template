@@ -64,7 +64,7 @@
           <!-- <div id="sign"><a href="register.html"><i class="fa fa-user"></i><span>Register/Sign in</span></a></div> -->
      </div>
 </header>
-{{yield}}
+<div id="page_content">{{yield}}</div>
 <footer>
     <section id="footer_teasers_wrapper">
         <script id="footer_template" type="x-tmpl-mustache">
