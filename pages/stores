@@ -263,8 +263,7 @@
                 $( "#page_content" ).fadeIn( "fast");
             }
         }
-        
-    });
+
     function getSVGMapURL(){
         initData();
         var mallDataJSON = JSON.parse(sessionStorage.mallData);
