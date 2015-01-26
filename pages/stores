@@ -5,6 +5,8 @@
     </span>
     <span class="pullright"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/04dd4f94364d574f0365c89cbafa12c4/btn_search_arrow.png"></span>
 </div>
+<div id="back-top">BACK TOP</div>
+
 <div class="full_page_photo" style="overflow:hidden">
      <!--<div class="container">-->
           <!-- <section class="call_to_action">
@@ -268,4 +270,31 @@
         var mallDataJSON = JSON.parse(sessionStorage.mallData);
         return 'http://cdn.mallmaverickstaging.com' + mallDataJSON.property.svgmap_url;
     }
+    
+    // hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if (p.length === 0 || p === "/" || p.match(/^\/?index/)) {
+    		    $('#back-top').css("display:none");
+			} else{
+    		    if ($(this).scrollTop() > 300) {
+        			$('#back-top').fadeIn();
+    			} else {
+    				$('#back-top').fadeOut();
+    			}
+			}
+                
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
 </script>
