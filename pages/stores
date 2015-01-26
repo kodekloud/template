@@ -277,6 +277,7 @@
 	// fade in #back-top
 	$(function () {
 		$(window).scroll(function () {
+		    alert("123")
 			if (p.length === 0 || p === "/" || p.match(/^\/?index/)) {
     		    $('#back-top').css("display:none");
 			} else{
