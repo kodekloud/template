@@ -185,6 +185,7 @@
             });
             var s = Snap("#map");
             var stores = getStoresList();
+            console.log (getSVGMapURL())
             Snap.load(getSVGMapURL(), function (f) {
                 $.each( stores, function( key, value ) {
                     if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
@@ -220,8 +221,6 @@
                 });
                 s.append(f.select("svg"));
             });
-                
-            console.log (s)
             var startingMapTransform = 'scale(0.43)';
             var startingPanX = -250;
             var startingPanY = -200;
