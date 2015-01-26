@@ -258,6 +258,11 @@ th {
     height:400px;
     margin:15px;
 }
+
+#zControls {
+    position: relative;
+    z-index: 1;
+}
 @media print {
   * {
     text-shadow: none !important;
