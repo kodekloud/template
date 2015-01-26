@@ -189,7 +189,6 @@
                 $.each( stores, function( key, value ) {
                     if(value.svgmap_region != null && typeof(value.svgmap_region)  != 'undefined'){
                         var svg_id = "#" + value.svgmap_region;
-                        console.log (svg_id);
                         if(document.getElementById(value.svgmap_region)){
                             console.log ("FOUND")
                         } else {
