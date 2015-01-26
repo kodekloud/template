@@ -6,7 +6,7 @@
     <span class="pullright"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/04dd4f94364d574f0365c89cbafa12c4/btn_search_arrow.png"></span>
 </div>
 <div class="full_page_photo" style="overflow:hidden">
-     <div class="container">
+     <!--<div class="container">-->
           <!-- <section class="call_to_action">
                <h3 class="animated bounceInDown skincolored">we design <strong>value</strong> into profit</h3>
                <br>
@@ -21,7 +21,7 @@
             <div id="map" class="panzoom-elements"></div>
         </div>
             
-     </div>
+     <!--</div>-->
 </div>
 <div class="main">
      <div class="container">
