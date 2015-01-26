@@ -264,7 +264,10 @@ th {
     z-index: 1;
 }
 #back-top{
-    position:static;
+    position:absolute;
+    z-index:9999;
+    bottom:0;
+    right:15px;
 }
 @media print {
   * {
