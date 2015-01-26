@@ -28,6 +28,7 @@
 <!--MallMaverick v=0.3-->
 <script src="http://mallmaverick.kodekloud.io/mallmaverick.js?v=0.3"></script>
 <script src="http://mallmaverick.kodekloud.io/mustache_mallmaverick.js?v=0.3"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
 </head>
 <body>
 <header>
