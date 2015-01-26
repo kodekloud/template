@@ -64,11 +64,7 @@
           <!-- <div id="sign"><a href="register.html"><i class="fa fa-user"></i><span>Register/Sign in</span></a></div> -->
      </div>
 </header>
-<div id="page_content">
-<div id="back-top"><img src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/></div>
-{{yield}}
-    
-</div>
+<div id="page_content">{{yield}}</div>
 <footer>
     <section id="footer_teasers_wrapper">
         <script id="footer_template" type="x-tmpl-mustache">
