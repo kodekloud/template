@@ -263,6 +263,9 @@ th {
     position: relative;
     z-index: 1;
 }
+#back-top{
+    position:static;
+}
 @media print {
   * {
     text-shadow: none !important;
