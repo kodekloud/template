@@ -269,6 +269,11 @@ th {
     bottom:30px;
     right:30px;
 }
+
+.map-mouse-over {
+   stroke: #000;
+   fill:   #66FFFF;
+}
 @media print {
   * {
     text-shadow: none !important;
