@@ -249,6 +249,15 @@ th {
    font-size:12px;
    opacity:1.0;
 }
+
+.map{
+    margin-bottom:20px;
+}
+
+#map{
+    height:400px;
+    margin:15px;
+}
 @media print {
   * {
     text-shadow: none !important;
