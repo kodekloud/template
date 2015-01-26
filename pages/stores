@@ -50,7 +50,7 @@
                          <div class="service_details col-sm-8 col-md-8">
                               <h2 class="section_header skincolored"><b>{{name}}</b></h2>
                               <p>{{description}}</p>
-                              <a href="store_item_2.html" class="btn btn-primary pull-right">view detail</a> </div>
+                              <a href="../stores/{{slug}}" class="btn btn-primary pull-right">view detail</a> </div>
                     </div>
                </div>
             </script>
