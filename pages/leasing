@@ -12,7 +12,7 @@
                <h1>Leasing</h1>
                <h2>Sunwood Square - 3025 Lougheed Highway Coquitlam, BC</h2>
                <ul class="breadcrumb pull-right">
-                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="/home">Home</a> </li>
                     <li class="active">Leasing</li>
                </ul>
           </section>
