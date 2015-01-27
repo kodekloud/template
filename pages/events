@@ -37,8 +37,8 @@
 
 <script>
     $(document).ready(function() {
-        all_promos = getPromotionsList();
-        renderTemplate("#promo_list_container","#promo_list_template", all_promos);
+        all_events = getEventsList();
+        renderTemplate("#promo_list_container","#promo_list_template", all_events);
         
         function renderTemplate(container, template, collection){
             var item_list = [];
