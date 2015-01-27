@@ -49,15 +49,13 @@
                     $.each( val.images , function( key, val ) {
                         val.alt_url = getImageURL(val.photo_url);
                         item_list.push(val);
-                        console.log(val.alt_url)
+                        
                     });
                 }
             });
             $.each( item_list , function( key, val ) {
                 var repo_rendered = Mustache.render(template_html,val);
                 item_rendered.push(repo_rendered);
-                console.log(repo_rendered)
-               
             });
             
             $(container).show();
