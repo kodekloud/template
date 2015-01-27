@@ -73,10 +73,10 @@
     
     $(document).ready(function() {
         
-        $("#submit_btn").click(function(){
-            console.log("HELLO")
-            return false;
-         });
+        // $("#submit_btn").click(function(){
+        //     console.log("HELLO")
+        //     return false;
+        //  });
                 
         function renderPageData(){
             var propertyDetails = getPropertyDetails();
