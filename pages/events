@@ -25,7 +25,7 @@
                               <figure style="background-image:url('{{alt_promo_image_url}}')"></figure>
                          </div>
                          <div class="service_details col-sm-8 col-md-8">
-                              <h2 class="section_header skincolored"><b>{{name}}</b></h2>
+                              <h2 class="section_header skincolored"><b>{{name}}</b><p style="font-size:14px;color:gray;margin-bottom:0;line-height:14px">{{dates}}</p></h2>
                               <p>{{description}}</p>
                               <a href="../events/{{slug}}" class="btn btn-primary pull-right">view detail</a> </div>
                     </div>
@@ -58,7 +58,9 @@
                 } else {
                     val.alt_promo_image_url = getImageURL(val.event_image_url);
                 }
-                
+                start = new Date (val.start_date);
+                end = new Date (val.end_date);
+                val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
                 
@@ -69,4 +71,46 @@
             
         }
     });
+    function get_month (id){
+            switch(id) {
+                case 0:
+                    month = "Jan"
+                    break;
+                case 1:
+                    month = "Feb"
+                    break;
+                case 2:
+                    month = "Mar"
+                    break;
+                case 3:
+                    month = "Apr"
+                    break;
+                case 4:
+                    month = "May"
+                    break;
+                case 5:
+                    month = "June"
+                    break;
+                case 6:
+                    month = "July"
+                    break;
+                case 6:
+                    month = "Aug"
+                    break;
+                case 6:
+                    month = "Sep"
+                    break;
+                case 6:
+                    month = "Oct"
+                    break;
+                case 6:
+                    month = "Nov"
+                    break;
+                case 6:
+                    month = "Dec"
+                    break;
+                    
+            }
+            return month;
+        }
 </script>
