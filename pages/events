@@ -47,7 +47,7 @@
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
 
-                if ((val.promo_image_url).indexOf('missing.png') > -1){
+                if ((val.event_image_url).indexOf('missing.png') > -1){
                     if (val.eventable_type == "Store") {
                         var store_details = getStoreDetailsByID(val.promotionable_id);
                         val.alt_event_image_url = getImageURL(store_details.store_front_url);    
