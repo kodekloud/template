@@ -18,7 +18,7 @@
           <section class="article-text">
                <div class="row">
                     <div class="contact_form col-sm-8 col-md-8">
-                         <form name="contact_form" id="contact_form" method="post" action="/">
+                         <form name="contact_form" id="contact_form" method="post">
                               <div class="row">
                                    <div class="col-sm-6 col-md-6">
                                         <label>Name</label>
@@ -41,7 +41,7 @@
                                         <textarea name="message" id="message" rows="8" class="form-control"></textarea>
                                    </div>
                                    <div class="col-sm-12 col-md-12"><br/>
-                                        <a id="submit_btn" class="btn btn-primary" name="submit">Submit Message</a> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span> </div>
+                                        <a id="submit_btn" class="btn btn-primary" name="submit">Submit</a> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span> </div>
                               </div>
                          </form>
                     </div>
@@ -70,11 +70,7 @@
 
 <script>
 
-    $("#contact_form").submit(function(event) {
-        // event.preventDefault();
-        console.log(event)
-    });
-
+    
     $(document).ready(function() {
         
         function renderPageData(){
