@@ -28,6 +28,11 @@
 <!--MallMaverick v=0.3-->
 <script src="http://mallmaverick.kodekloud.io/mallmaverick.js?v=0.3"></script>
 <script src="http://mallmaverick.kodekloud.io/mustache_mallmaverick.js?v=0.3"></script>
+<script>
+    setEndPoint('http://northpark.mallmaverickstaging.com/api/v2/northpark/all.json');
+    sessionStorage.setItem('primary_locale', 'en-CA');
+    sessionStorage.setItem('secondary_locale', 'fr-CA');
+</script>
 </head>
 <body>
 <header>
@@ -270,7 +275,5 @@
     //     }
             
     // });
-    setEndPoint('http://northpark.mallmaverickstaging.com/api/v2/northpark/all.json');
-    sessionStorage.setItem('primary_locale', 'en-CA');
-    sessionStorage.setItem('secondary_locale', 'fr-CA');
+    
 </script>
