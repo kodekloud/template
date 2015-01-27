@@ -9,8 +9,12 @@
 <div class="main">
      <div class="container">
           <section class="hgroup">
-               <h1>Leasing</h1>
-               <h2>Sunwood Square - 3025 Lougheed Highway Coquitlam, BC</h2>
+               <h1>Contact Us</h1>
+               <div id = "contact_template">
+               <script id="contact_template" type="x-tmpl-mustache">
+                <h2><strong>{{contact_name}}</strong> - {{contact_phone}} - {{contact_email}}</h2>
+               </script>
+               </div>
                <ul class="breadcrumb pull-right">
                     <li><a href="/home">Home</a> </li>
                     <li class="active">Contact Us</li>
@@ -48,6 +52,7 @@
         function renderPageData(){
             var propertyDetails = getPropertyDetails();
             renderTemplate("#centre_info_container", "#centre_info_template", propertyDetails)
+            renderTemplate("#contact_container", "#contact_template", propertyDetails)
         }
         
         function renderTemplate(container, template, collection){
