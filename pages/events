@@ -37,8 +37,12 @@
 
 <script>
     $(document).ready(function() {
-        all_events = getEventsList();
-        renderTemplate("#promo_list_container","#promo_list_template", all_events);
+        
+        function renderPageData (){
+            all_events = getEventsList();
+            renderTemplate("#promo_list_container","#promo_list_template", all_events);    
+        }
+        
         
         function renderTemplate(container, template, collection){
             var item_list = [];
@@ -113,6 +117,8 @@
             }
             return month;
         }
+        
+        loadMallData(renderPageData);
     });
     
 </script>
