@@ -52,7 +52,7 @@
 <script>
     $(document).ready(function() {
    
-        loadMallData(renderPageData);
+        
         
         function renderPageData (){
             var repoList = getRepoList();
@@ -118,5 +118,6 @@
             $(feature_items).show();
             $(feature_items).html(item_rendered.join(''));
         }
+        loadMallData(renderPageData);
     });
     </script>
