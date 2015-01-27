@@ -275,7 +275,7 @@ th {
    fill:   #66FFFF;
 }
 
-#property_logo{
+.property_logo{
     position:absolute;
     right:15px;
     top:0;
