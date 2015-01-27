@@ -42,7 +42,7 @@
                          <li class="active"><a href="/home">Home</a></li>
                          <li><a href="/stores">Store Directory</a></li>
                          <li><a href="/events">Events</a></li>
-                         <li><a href="find_us.html">Promotions</a></li>
+                         <li><a href="/promotions">Promotions</a></li>
                          <li><a href="photo.html">Leasing</a></li>
                          <li><a href="photo.html">contact us</a></li>
                          <!-- <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Pages<span class="caret"></span></a> -->
@@ -50,7 +50,7 @@
                                     <li><a href="/home">Home</a></li>
                                     <li><a href="/stores">Store Directory</a></li>
                                     <li><a href="/events">Events</a></li>
-                                    <li><a href="find_us.html">Promotions</a></li>
+                                    <li><a href="/promotions">Promotions</a></li>
                                     <li><a href="photo.html">Leasing</a></li>
                                     <li><a href="photo.html">contact us</a></li>
                               </ul>
@@ -103,10 +103,10 @@
                     <a href="/stores">Store Directory</a>
                 </li>
                 <li>
-                    <a href="/home">Events</a>
+                    <a href="/events">Events</a>
                 </li>
                 <li>
-                    <a href="/home">Promotions</a>
+                    <a href="/promotions">Promotions</a>
                 </li>
                 <li>
                     <a href="/home">Leasing</a>
