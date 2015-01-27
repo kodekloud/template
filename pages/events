@@ -70,8 +70,8 @@
             $(container).html(item_rendered.join(''));
             
         }
-    });
-    function get_month (id){
+        
+        function get_month (id){
             switch(id) {
                 case 0:
                     month = "Jan"
@@ -113,4 +113,6 @@
             }
             return month;
         }
+    });
+    
 </script>
