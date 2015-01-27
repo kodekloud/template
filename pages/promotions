@@ -37,6 +37,8 @@
 
 <script>
     $(document).ready(function() {
+        renderTemplate("#promo_list_container","#promo_list_template", all_promos);
+        
         function renderTemplate(container, template, collection){
             var item_list = [];
             var item_rendered = [];
