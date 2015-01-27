@@ -28,3 +28,49 @@
           </section>
      </div>
 </div>
+
+
+<script>
+    $(document).ready(function() {
+         
+        function renderPageDate(){
+            var repoList = getRepoList();  
+            renderPhotos("#photo_container", "#photo_template", repoList);
+        }
+        function renderPhotos(container, template, collection){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+                if( val.name == "photos"){
+                    $.each( val.images , function( key, val ) {
+                        val.alt_url = getImageURL(val.photo_url);
+                        item_list.push(val);
+                        console.log(val.alt_url)
+                    });
+                }
+            });
+            $.each( item_list , function( key, val ) {
+                var repo_rendered = Mustache.render(template_html,val);
+                item_rendered.push(repo_rendered);
+                console.log(repo_rendered)
+               
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));    
+        }
+         
+        function getImageURL(existing_url){
+            if(!existing_url ||  existing_url.indexOf('missing.png') > -1 || existing_url.length === 0){
+                //http://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/
+                return "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+                
+            }
+            return "http://cdn.mallmaverickstaging.com"+existing_url;
+        }
+        loadMallData(renderPageData);
+     });
+     
+</script>
