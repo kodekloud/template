@@ -17,24 +17,50 @@
                     <li class="active">Promotions</li>
                </ul>
           </section>
-          <section class="service_teasers">
+        <section class="service_teasers" id="promo_list_container">
+            <script id="promo_list_template" type="x-tmpl-mustache">
                <div class="service_teaser">
                     <div class="row">
                          <div class="service_photo col-sm-4 col-md-4">
-                              <figure style="background-image:url(images/serv_2.jpg)"></figure>
+                              <figure style="background-image:url('{{alt_promo_image_url}}')"></figure>
                          </div>
                          <div class="service_details col-sm-8 col-md-8">
-                              <h2 class="section_header skincolored"><b>AC&D (Squamish) Insurance Services Ltd.</b></h2>
-                              <p><strong>Phone :</strong> (604) 892-1033</p>
-                              <!-- <a class="btn btn-primary pull-right" href="documentation/index.html"><i class="fa fa-gears"></i>&nbsp; Read Full Documentation</a> --> <a href="store_item_2.html" class="btn btn-primary pull-right">view detail</a> </div>
+                              <h2 class="section_header skincolored"><b>{{name}}</b></h2>
+                              <p>{{description}}</p>
+                              <a href="../promotions/{{slug}}" class="btn btn-primary pull-right">view detail</a> </div>
                     </div>
                </div>
-          </section>          
+            </script>
+        </section>         
      </div>
 </div>
 
 <script>
     $(document).ready(function() {
-        
+        function renderTemplate(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+
+                if ((val.promo_image_url).indexOf('missing.png') > -1){
+                    var pathArray = window.location.pathname.split( '/' );
+                    var slug = pathArray[pathArray.length-1];
+                    var store_details = getStoreDetailsBySlug(slug);
+                    val.alt_promo_image_url = getImageURL(store_details.store_front_url);
+                } else {
+                    val.alt_promo_image_url = getImageURL(val.promo_image_url);
+                }
+                
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+                
+                
+            });
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+            
+        }
     });
 </script>
