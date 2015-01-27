@@ -50,72 +50,73 @@
      </div>
 </div>
 <script>
-
+    $(document).ready(function() {
    
-    loadMallData(renderPageData);
-    
-    function renderPageData (){
-        var repoList = getRepoList();
-        var featureList = getFeatureList();
-        var propertyDetails = getPropertyDetails();
-        renderBanner('#banner_template','#home_banner',repoList);
-        renderFeatureItems('#feature_template', '#feature_items', featureList)
-        renderPropertyDescription('#description_template','#description_section', propertyDetails )
-    }
-    
-    function renderPropertyDescription(description_template, description_section, propertyDetails){
-        var item_list = [];
-        var item_rendered = [];
-        var description_template_html = $(description_template).html();
-        Mustache.parse(description_template_html);   // optional, speeds up future uses
-        item_list.push(propertyDetails);
-        $.each( item_list , function( key, val ) {
-            var description_rendered = Mustache.render(description_template_html,val);
-            item_rendered.push(description_rendered);
-        });
-        $(description_section).show();
-        $(description_section).html(item_rendered.join(''));
-    }
-    
-    function renderBanner(banner_template,home_banner,repo){
-        var item_list = [];
-        var item_rendered = [];
-        var banner_template_html = $(banner_template).html();
-        Mustache.parse(banner_template_html);   // optional, speeds up future uses
-        $.each( repo , function( key, val ) {
-            if( val.name == "banner"){
-                $.each( val.images , function( key, val ) {
-                    val.alt_url = getImageURL(val.photo_url);
-                    item_list.push(val);
-                    console.log(val.alt_url)
-                });
-            }
-        });
-        $.each( item_list , function( key, val ) {
-            var repo_rendered = Mustache.render(banner_template_html,val);
-            item_rendered.push(repo_rendered);
-            console.log(repo_rendered)
-           
-        });
+        loadMallData(renderPageData);
         
-        $(home_banner).show();
-        $(home_banner).html(item_rendered.join(''));
-        $('.item').first().addClass('active');
-    }
-    function renderFeatureItems(feature_template,feature_items,featureList){
-        var item_list = [];
-        var item_rendered = [];
-        var feature_template_html = $(feature_template).html();
-        Mustache.parse(feature_template_html);   // optional, speeds up future uses
-        $.each( featureList , function( key, val ) {
-            val.alt_url = getImageURL(val.image_url);
-            var featureitem_rendered = Mustache.render(feature_template_html,val);
-            item_rendered.push(featureitem_rendered);
-           
-        });
+        function renderPageData (){
+            var repoList = getRepoList();
+            var featureList = getFeatureList();
+            var propertyDetails = getPropertyDetails();
+            renderBanner('#banner_template','#home_banner',repoList);
+            renderFeatureItems('#feature_template', '#feature_items', featureList)
+            renderPropertyDescription('#description_template','#description_section', propertyDetails )
+        }
         
-       
-        $(feature_items).show();
-        $(feature_items).html(item_rendered.join(''));
-    }
+        function renderPropertyDescription(description_template, description_section, propertyDetails){
+            var item_list = [];
+            var item_rendered = [];
+            var description_template_html = $(description_template).html();
+            Mustache.parse(description_template_html);   // optional, speeds up future uses
+            item_list.push(propertyDetails);
+            $.each( item_list , function( key, val ) {
+                var description_rendered = Mustache.render(description_template_html,val);
+                item_rendered.push(description_rendered);
+            });
+            $(description_section).show();
+            $(description_section).html(item_rendered.join(''));
+        }
+        
+        function renderBanner(banner_template,home_banner,repo){
+            var item_list = [];
+            var item_rendered = [];
+            var banner_template_html = $(banner_template).html();
+            Mustache.parse(banner_template_html);   // optional, speeds up future uses
+            $.each( repo , function( key, val ) {
+                if( val.name == "banner"){
+                    $.each( val.images , function( key, val ) {
+                        val.alt_url = getImageURL(val.photo_url);
+                        item_list.push(val);
+                        console.log(val.alt_url)
+                    });
+                }
+            });
+            $.each( item_list , function( key, val ) {
+                var repo_rendered = Mustache.render(banner_template_html,val);
+                item_rendered.push(repo_rendered);
+                console.log(repo_rendered)
+               
+            });
+            
+            $(home_banner).show();
+            $(home_banner).html(item_rendered.join(''));
+            $('.item').first().addClass('active');
+        }
+        function renderFeatureItems(feature_template,feature_items,featureList){
+            var item_list = [];
+            var item_rendered = [];
+            var feature_template_html = $(feature_template).html();
+            Mustache.parse(feature_template_html);   // optional, speeds up future uses
+            $.each( featureList , function( key, val ) {
+                val.alt_url = getImageURL(val.image_url);
+                var featureitem_rendered = Mustache.render(feature_template_html,val);
+                item_rendered.push(featureitem_rendered);
+               
+            });
+            
+           
+            $(feature_items).show();
+            $(feature_items).html(item_rendered.join(''));
+        }
+    });
     </script>
