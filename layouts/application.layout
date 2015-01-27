@@ -150,56 +150,52 @@
 
     $(document).ready(function() {
           
-    
-
-    
-    
-    function renderPageData (){
-        var propertyDetails = getPropertyDetails();
-        renderPropertyLogo('#logo_template','#site_logo',propertyDetails);
-        renderPropertyFooter('#footer_template','#footer_teasers_wrapper',propertyDetails);
-        renderPropertyDescription('#banner_template','#home_banner',repoList);
-    }
-    function renderPropertyLogo(logo_template,site_logo,propertyDetails){
-        var item_list = [];
-        var item_rendered = [];
-        var logo_template_html = $(logo_template).html();
-        Mustache.parse(logo_template_html);   // optional, speeds up future uses
-        item_list.push(propertyDetails);
-        $.each( item_list , function( key, val ) {
-            val.alt_site_logo = getImageURL(val.site_logo);
-            var logo_rendered = Mustache.render(logo_template_html,val);
-            item_rendered.push(logo_rendered);
-        });
-        $(site_logo).show();
-        $(site_logo).html(item_rendered.join(''));
-    }
-    
-    function renderPropertyFooter(footer_template,footer_teasers_wrapper,propertyDetails){
-        var item_list = [];
-        var item_rendered = [];
-        var footer_template_html = $(footer_template).html();
-        Mustache.parse(footer_template_html);   // optional, speeds up future uses
-        item_list.push(propertyDetails);
-        $.each( item_list , function( key, val ) {
-            var footer_rendered = Mustache.render(footer_template_html,val);
-            item_rendered.push(footer_rendered);
-        });
-        $(footer_teasers_wrapper).show();
-        $(footer_teasers_wrapper).html(item_rendered.join(''));
-    }
-    
-    function getImageURL(existing_url){
-        if(!existing_url ||  existing_url.indexOf('missing.png') > -1 || existing_url.length === 0){
-            //http://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/
-            return "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
-            
+        function renderPageData (){
+            var propertyDetails = getPropertyDetails();
+            renderPropertyLogo('#logo_template','#site_logo',propertyDetails);
+            renderPropertyFooter('#footer_template','#footer_teasers_wrapper',propertyDetails);
+            renderPropertyDescription('#banner_template','#home_banner',repoList);
         }
-        return "http://cdn.mallmaverickstaging.com"+existing_url;
-    }
-    
-    
-    loadMallData(renderPageData);  
+        function renderPropertyLogo(logo_template,site_logo,propertyDetails){
+            var item_list = [];
+            var item_rendered = [];
+            var logo_template_html = $(logo_template).html();
+            Mustache.parse(logo_template_html);   // optional, speeds up future uses
+            item_list.push(propertyDetails);
+            $.each( item_list , function( key, val ) {
+                val.alt_site_logo = getImageURL(val.site_logo);
+                var logo_rendered = Mustache.render(logo_template_html,val);
+                item_rendered.push(logo_rendered);
+            });
+            $(site_logo).show();
+            $(site_logo).html(item_rendered.join(''));
+        }
+        
+        function renderPropertyFooter(footer_template,footer_teasers_wrapper,propertyDetails){
+            var item_list = [];
+            var item_rendered = [];
+            var footer_template_html = $(footer_template).html();
+            Mustache.parse(footer_template_html);   // optional, speeds up future uses
+            item_list.push(propertyDetails);
+            $.each( item_list , function( key, val ) {
+                var footer_rendered = Mustache.render(footer_template_html,val);
+                item_rendered.push(footer_rendered);
+            });
+            $(footer_teasers_wrapper).show();
+            $(footer_teasers_wrapper).html(item_rendered.join(''));
+        }
+        
+        function getImageURL(existing_url){
+            if(!existing_url ||  existing_url.indexOf('missing.png') > -1 || existing_url.length === 0){
+                //http://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/
+                return "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+                
+            }
+            return "http://cdn.mallmaverickstaging.com"+existing_url;
+        }
+        
+        
+        loadMallData(renderPageData);  
     
     });
     
