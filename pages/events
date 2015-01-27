@@ -94,19 +94,19 @@
                 case 6:
                     month = "July"
                     break;
-                case 6:
+                case 7:
                     month = "Aug"
                     break;
-                case 6:
+                case 8:
                     month = "Sep"
                     break;
-                case 6:
+                case 9:
                     month = "Oct"
                     break;
-                case 6:
+                case 10:
                     month = "Nov"
                     break;
-                case 6:
+                case 11:
                     month = "Dec"
                     break;
                     
