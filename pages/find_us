@@ -56,7 +56,6 @@
             var propertyDetails = getPropertyDetails();
             renderTemplate("#centre_info_container", "#centre_info_template", propertyDetails)
             renderTemplate("#contact_container", "#contact_template", propertyDetails)
-            renderTemplate("#contact_form_container", "#contact_form_template", propertyDetails)
         }
         
         function renderTemplate(container, template, collection){
