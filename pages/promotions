@@ -68,7 +68,7 @@
                 start = new Date (val.start_date);
                 end = new Date (val.end_date);
                 console.log(start.getMonth())
-                console.log(start.getDay())
+                console.log(start.getDate())
                 
                
                 
