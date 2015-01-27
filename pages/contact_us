@@ -18,7 +18,8 @@
           <section class="article-text">
                <div class="row">
                     <div class="contact_form col-sm-8 col-md-8">
-                         <form name="contact_form" id="contact_form" method="post" action="mailto:test@test.com">
+                    
+                         <form name="contact_form" id="contact_form" method="get" enctype="text/plain" action="mailto:test@test.com">
                               <div class="row">
                                    <div class="col-sm-6 col-md-6">
                                         <label>Name</label>
