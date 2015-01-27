@@ -8,8 +8,8 @@
                     <li class="active">Photos</li>
                </ul>
           </section>
-          <section class="portfolio_strict">
-                <div class="row isotope_portfolio_container" id="photo_container">
+          <section class="portfolio_strict" id="photo_container">
+                <div class="row isotope_portfolio_container">
                     <script id="photo_template" type="x-tmpl-mustache">
                         <div class="cat_travel col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="portfolio_item"> 
