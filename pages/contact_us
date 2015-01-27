@@ -41,6 +41,7 @@
                                         <textarea name="message" id="message" rows="8" class="form-control"></textarea>
                                    </div>
                                    <div class="col-sm-12 col-md-12"><br/>
+                                        <button id="submit" class="btn btn-primary" type="submit">Submit..</button>
                                         <a id="submit_btn" class="btn btn-primary" name="submit" type="submit">Submit</a> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span> </div>
                               </div>
                          </form>
