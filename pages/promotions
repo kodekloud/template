@@ -69,6 +69,7 @@
                 end = new Date (val.end_date);
                 console.log(start.getMonth())
                 console.log(start.getDate())
+                val.dates = get_month(start.getMonth())+" "+start.getDate()
                 
                
                 
