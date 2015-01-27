@@ -275,9 +275,13 @@ th {
    fill:   #66FFFF;
 }
 
-#promo_list_container{
-    
+#property_logo{
+    position:absolute;
+    right:15px;
+    top:0;
 }
+
+
 @media print {
   * {
     text-shadow: none !important;
@@ -6148,7 +6152,7 @@ header .container {
   display: inline-block;
   position: absolute;
   top: 0px;
-  right: 15px;
+  right: 180px;
   z-index: 101;
   overflow: hidden;
   padding: 10px;
