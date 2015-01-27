@@ -1,10 +1,9 @@
 <div class="full_page_photo" style="margin-bottom:60px">
-    <iframe class="hidden-phone" frameborder="0" height="480" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2886.574530718601!2d-79.3804447!3d43.6570197!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cacb611c5f%3A0x4c69204eabe095dc!2s10+Dundas+St+E%2C+Ryerson+University%2C+Toronto%2C+ON+M5B!5e0!3m2!1sen!2sca!4v1422385569071" style="border:0" title="Map" width="100%">Directions</iframe>
 </div>
 <div class="main">
      <div class="container">
           <section class="hgroup">
-               <h1>Contact Us</h1>
+               <h1>Find Us</h1>
                <div id = "contact_container">
                <script id="contact_template" type="x-tmpl-mustache">
                 <h2><strong>{{contact_name}}</strong> - {{contact_phone}} - {{contact_email}}</h2>
@@ -12,43 +11,13 @@
                </div>
                <ul class="breadcrumb pull-right">
                     <li><a href="/home">Home</a> </li>
-                    <li class="active">Contact Us</li>
+                    <li><a href="/home">Contact Us</a> </li>
+                    <li class="active">Find Us</li>
                </ul>
           </section>
           <section class="article-text">
-            <h1>Customer Feedback</h1>
                <div class="row">
-                    <div class="contact_form col-sm-8 col-md-8" id="contact_form_container">
-                        <script id="contact_form_template" type="x-tmpl-mustache">
-                         <form name="contact_form" id="contact_form" method="post" action="mailto:{{contact_email}}?subject={{name}} Website Feedback." enctype="text/plain" >
-                              <div class="row">
-                                   <div class="col-sm-6 col-md-6">
-                                        <label>Name</label>
-                                        <input name="name" id="name" class="form-control" type="text" value="" required>
-                                   </div>
-                                   <div class="col-sm-6 col-md-6">
-                                        <label>E-mail</label>
-                                        <input name="email" id="email" class="form-control" type="text" value="" required>
-                                   </div>
-                              </div>
-                              <div class="row">
-                                   <div class="col-sm-12 col-md-12">
-                                        <label>Subject</label>
-                                        <input name="subject" id="subject" class="form-control" type="text" required>
-                                   </div>
-                              </div>
-                              <div class="row">
-                                   <div class="col-sm-12 col-md-12">
-                                        <label>Message</label>
-                                        <textarea name="message" id="message" rows="8" class="form-control" required></textarea>
-                                   </div>
-                                   <div class="col-sm-12 col-md-12"><br/>
-                                        <button id="submit" class="btn btn-primary" type="submit">Submit</button>
-                                   </div>
-                              </div>
-                         </form>
-                        </script>
-                    </div>
+                    
                     <div class="col-sm-4 col-md-4">
                          <div class="service_teaser vertical">
                             <div class="service_photo">
@@ -64,6 +33,10 @@
                                 </script>
                             </div>
                         </div>
+                    </div>
+                    <div class="contact_form col-sm-8 col-md-8">
+                            <iframe class="hidden-phone" frameborder="0" height="480" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2886.574530718601!2d-79.3804447!3d43.6570197!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cacb611c5f%3A0x4c69204eabe095dc!2s10+Dundas+St+E%2C+Ryerson+University%2C+Toronto%2C+ON+M5B!5e0!3m2!1sen!2sca!4v1422385569071" style="border:0" title="Map" width="100%">Directions</iframe>
+
                     </div>
                </div>
           </section>
