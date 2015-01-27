@@ -69,13 +69,16 @@
 <script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
 <script>
     $(document).ready(function() {
-        var stores = getStoresList();
-    var category_stores = getStoresListByCategory();
-    var categories = getStoreCategories();
-    renderPageData('#store_list_container','#store_list_template', stores, "stores");
-    // renderPageData('#categories_container', '#categories_list_template', categories, "categories");
-    render_categories(categories);
-    render_category_stores();
+        
+        function renderPageData(){
+            var stores = getStoresList();
+            var category_stores = getStoresListByCategory();
+            var categories = getStoreCategories();
+            renderPageData('#store_list_container','#store_list_template', stores, "stores");
+            // renderPageData('#categories_container', '#categories_list_template', categories, "categories");
+            render_categories(categories);
+            render_category_stores();
+        }
     
     function render_categories(categories){
         
