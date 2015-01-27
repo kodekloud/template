@@ -25,7 +25,7 @@
                               <figure style="background-image:url('{{alt_promo_image_url}}')"></figure>
                          </div>
                          <div class="service_details col-sm-8 col-md-8">
-                              <h2 class="section_header skincolored"><b>{{name}}</b><p style="font-size:14px;color:gray">TEST</p></h2>
+                              <h2 class="section_header skincolored"><b>{{name}}</b><p style="font-size:14px;color:gray">{{store_name}}</p></h2>
                               <p>{{description}}</p>
                               <a href="../promotions/{{slug}}" class="btn btn-primary pull-right">view detail</a> </div>
                     </div>
