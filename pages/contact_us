@@ -1,12 +1,4 @@
-<div class="full_page_photo" style="background-image: url(http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/b309b89e3422c7a2016a03dd15394306/leasing.jpg);">
-     <div class="container">
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.7486684261853!2d-79.36803456047156!3d43.653397155255035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cacb611c5f%3A0x4c69204eabe095dc!2s10+Dundas+St+E!5e0!3m2!1sen!2sca!4v1422383159810" width="800" height="600" frameborder="0" style="border:0"></iframe>
-          <!-- <section class="call_to_action">
-               <h3 class="animated bounceInDown">we really <strong>love</strong> what we do</h3>
-               <h4 class="animated bounceInUp skincolored">while <strong>always trying</strong> to get the job done!</h4>
-          </section> -->
-     </div>
-</div>
+<div class="full_page_photo"><div id="map"></div></div>
 <div class="main">
      <div class="container">
           <section class="hgroup">
@@ -23,10 +15,33 @@
           </section>
           <section class="article-text">
                <div class="row">
-                    <div class="col-sm-8 col-md-8">
-                         
-                         
-                         
+                    <div class="contact_form col-sm-8 col-md-8">
+                         <form name="contact_form" id="contact_form" method="post">
+                              <div class="row">
+                                   <div class="col-sm-6 col-md-6">
+                                        <label>Name</label>
+                                        <input name="name" id="name" class="form-control" type="text" value="">
+                                   </div>
+                                   <div class="col-sm-6 col-md-6">
+                                        <label>E-mail</label>
+                                        <input name="email" id="email" class="form-control" type="text" value="">
+                                   </div>
+                              </div>
+                              <div class="row">
+                                   <div class="col-sm-12 col-md-12">
+                                        <label>Subject</label>
+                                        <input name="subject" id="subject" class="form-control" type="text">
+                                   </div>
+                              </div>
+                              <div class="row">
+                                   <div class="col-sm-12 col-md-12">
+                                        <label>Message</label>
+                                        <textarea name="message" id="message" rows="8" class="form-control"></textarea>
+                                   </div>
+                                   <div class="col-sm-12 col-md-12"><br/>
+                                        <a id="submit_btn" class="btn btn-primary" name="submit">Submit Message</a> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span> </div>
+                              </div>
+                         </form>
                     </div>
                     <div class="col-sm-4 col-md-4">
                          <div class="service_teaser vertical">
