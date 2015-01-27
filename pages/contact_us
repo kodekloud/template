@@ -18,8 +18,9 @@
           <section class="article-text">
             <h1>Customer Feedback</h1>
                <div class="row">
-                    <div class="contact_form col-sm-8 col-md-8">
-                         <form name="contact_form" id="contact_form" method="post" action="mailto:test@test.com?subject=10 Dundas East Website Feedback." enctype="text/plain" >
+                    <div class="contact_form col-sm-8 col-md-8" id="contact_form_container">
+                        <script id="contact__form_template" type="x-tmpl-mustache">
+                         <form name="contact_form" id="contact_form" method="post" action="mailto:{{contact_email}}?subject={{name}} Website Feedback." enctype="text/plain" >
                               <div class="row">
                                    <div class="col-sm-6 col-md-6">
                                         <label>Name</label>
@@ -46,6 +47,7 @@
                                    </div>
                               </div>
                          </form>
+                        </script>
                     </div>
                     <div class="col-sm-4 col-md-4">
                          <div class="service_teaser vertical">
@@ -84,6 +86,7 @@
             var propertyDetails = getPropertyDetails();
             renderTemplate("#centre_info_container", "#centre_info_template", propertyDetails)
             renderTemplate("#contact_container", "#contact_template", propertyDetails)
+            renderTemplate("#contact_form_container", "#contact_form_template", propertyDetails)
         }
         
         function renderTemplate(container, template, collection){
