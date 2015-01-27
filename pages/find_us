@@ -19,16 +19,11 @@
                <div class="row">
                     
                     <div class="col-sm-4 col-md-4">
-                         <div class="service_teaser vertical">
-                            <div class="service_photo">
-                                <figure style="background-image:url(http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/b309b89e3422c7a2016a03dd15394306/serv_6.jpg)"></figure>
-                            </div>
+                        <div class="service_teaser vertical">
                             <div class="service_details" id="centre_info_container">
                                 <script id="centre_info_template" type="x-tmpl-mustache">
                                     <h2 class="section_header skincolored">Centre Information<small> <br>{{name}}</br> <br>{{address1}}, </br> <br>{{city}}, {{province_state}}</br></small></h2>
-                                    <p style="margin-bottom:0"><i class="fa fa-phone"></i> {{contact_phone}}</p>
-                                    <p style="margin-bottom:0"><i class="fa fa-print"></i> (+30) 9854-7855</p>
-                                    <p style="margin-bottom:0"><i class="fa fa-envelope"></i> {{contact_email}}</p>
+                                    
                                     
                                 </script>
                             </div>
