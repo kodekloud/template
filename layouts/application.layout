@@ -158,7 +158,7 @@
         var propertyDetails = getPropertyDetails();
         renderPropertyLogo('#logo_template','#site_logo',propertyDetails);
         renderPropertyFooter('#footer_template','#footer_teasers_wrapper',propertyDetails);
-        // renderPropertyDescription('#banner_template','#home_banner',repoList);
+        renderPropertyDescription('#banner_template','#home_banner',repoList);
     }
     function renderPropertyLogo(logo_template,site_logo,propertyDetails){
         var item_list = [];
