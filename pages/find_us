@@ -1,6 +1,6 @@
 <style>
     .service_details{
-        background:none #222222;    
+        background:none #222222 !important;    
     }
     
 </style>
