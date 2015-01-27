@@ -65,6 +65,9 @@
 
                 }
                 
+                d = new Date (val.start_date)
+                console.log(d)
+                
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
                 
