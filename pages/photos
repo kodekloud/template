@@ -12,7 +12,7 @@
                 <div class="row isotope_portfolio_container">
                     <script id="photo_template" type="x-tmpl-mustache">
                         <div class="cat_travel col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <div class="portfolio_item"> 
+                            <div class="portfolio_item" style="height:230px"> 
                                 <a href="#" data-path-hover="M 180,190 0,158 0,0 180,0 z">
                                     <figure style="background-image:url({{alt_url}})">
                                         <svg viewBox="0 0 180 320" preserveAspectRatio="none">
