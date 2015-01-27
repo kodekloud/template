@@ -35,7 +35,7 @@
 <script>
     $(document).ready(function() {
          
-        function renderPageDate(){
+        function renderPageData(){
             var repoList = getRepoList();  
             renderPhotos("#photo_container", "#photo_template", repoList);
         }
