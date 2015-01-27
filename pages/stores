@@ -69,12 +69,7 @@
 <script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
 <script>
     $(document).ready(function() {
-        alert("loaded")
-    });
-    
-    
-    
-    var stores = getStoresList();
+        var stores = getStoresList();
     var category_stores = getStoresListByCategory();
     var categories = getStoreCategories();
     renderPageData('#store_list_container','#store_list_template', stores, "stores");
@@ -177,7 +172,12 @@
             
         }
         return "http://cdn.mallmaverickstaging.com"+existing_url;
-    }
+    }    
+    });
+    
+    
+    
+    
     
     function renderSVGMap(){
         if(navigator.appVersion.indexOf("MSIE 9.") == -1){
