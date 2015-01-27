@@ -28,7 +28,7 @@
                         <div class="service_teaser vertical">
                             <div class="service_details" id="centre_info_container">
                                 <script id="centre_info_template" type="x-tmpl-mustache">
-                                    <h2 class="section_header skincolored">Centre Information<small> <br>{{name}}</br> <br>{{address1}}, </br> <br>{{city}}, {{province_state}}</br></small></h2>
+                                    <h2 class="section_header skincolored"><small>{{address1}}, </br> <br>{{city}}, {{province_state}}</br></small></h2>
                                     
                                     
                                 </script>
