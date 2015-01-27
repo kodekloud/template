@@ -10,7 +10,7 @@
           </section>
           <section class="portfolio_strict">
                 <div class="row isotope_portfolio_container" id="photo_container">
-                    <script id="promo_list_template" type="x-tmpl-mustache">
+                    <script id="photo_template" type="x-tmpl-mustache">
                         <div class="cat_travel col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <div class="portfolio_item"> <a href="#" data-path-hover="M 180,190 0,158 0,0 180,0 z">
                                 <figure style="background-image:url({{alt_url}})">
