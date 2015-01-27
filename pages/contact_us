@@ -10,7 +10,7 @@
      <div class="container">
           <section class="hgroup">
                <h1>Contact Us</h1>
-               <div id = "contact_template">
+               <div id = "contact_container">
                <script id="contact_template" type="x-tmpl-mustache">
                 <h2><strong>{{contact_name}}</strong> - {{contact_phone}} - {{contact_email}}</h2>
                </script>
