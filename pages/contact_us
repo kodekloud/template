@@ -1,6 +1,6 @@
-<div class="full_page_photo"><div id="map">
-    <p><iframe class="hidden-phone" frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23021.905602254643!2d-79.087076!3d43.84052600000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4dee0965528c7%3A0xc42b8b71ba81a8d7!2sPickering+Town+Centre!5e0!3m2!1sen!2sus!4v1403591232310" style="border:0" title="Map" width="600">Directions</iframe></p>
-</div></div>
+<div class="full_page_photo">
+    <iframe class="hidden-phone" frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23021.905602254643!2d-79.087076!3d43.84052600000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4dee0965528c7%3A0xc42b8b71ba81a8d7!2sPickering+Town+Centre!5e0!3m2!1sen!2sus!4v1403591232310" style="border:0" title="Map" width="600">Directions</iframe>
+</div>
 <div class="main">
      <div class="container">
           <section class="hgroup">
