@@ -3,6 +3,7 @@
         background:none #222222 !important;    
         text-align:center;
         color:white;
+        height:460px;
     }
     
     .service_details img{
