@@ -109,37 +109,37 @@
     {{/events}}
     </script>{% endraw %}
 
-<ul class="list-group" >
-<a href="#" class="close-search list-group-item" style="">
-
-</a>
-    
-<div id="search_results_items" class="search-results-items" style="">
-<!--RENDERED BY renderSearchResultsTemplate(..) -->
-</div>
-    
-<a href="#" class="close-search list-group-item" style="">
-<small>
-<span class="search-results-count">{{count}}</span>&nbsp;<span data-i18n="general.results"></span> 
-</small>
-</a>
-<a href="#" class="close-search list-group-item" style="">
-<small>
-<span>Today's Hours </span>
-</small>
-<small class="pull-right" id="todays-hours-search">
-
-</small>
-<script id="todays_hours_search_template" type="x-tmpl-mustache">{% raw %}
-<span style="{{is_open_css}};">
-{{open_time_localized}} - {{close_time_localized}}
-</span>
-<span style="{{is_closed_css}};">
-Closed
-</span>
-</script>{% endraw %}
-</a>
-</ul>
+    <ul class="list-group" >
+        <a href="#" class="close-search list-group-item" style="">
+        
+        </a>
+        
+        <div id="search_results_items" class="search-results-items" style="">
+        <!--RENDERED BY renderSearchResultsTemplate(..) -->
+        </div>
+        
+        <a href="#" class="close-search list-group-item" style="">
+            <small>
+                <span class="search-results-count">{{count}}</span>&nbsp;<span data-i18n="general.results"></span> 
+            </small>
+        </a>
+        <a href="#" class="close-search list-group-item" style="">
+            <small>
+                <span>Today's Hours </span>
+            </small>
+            <small class="pull-right" id="todays-hours-search">
+            
+            </small>
+            <script id="todays_hours_search_template" type="x-tmpl-mustache">{% raw %}
+                <span style="{{is_open_css}};">
+                    {{open_time_localized}} - {{close_time_localized}}
+                </span>
+                <span style="{{is_closed_css}};">
+                    Closed
+                </span>
+            </script>{% endraw %}
+        </a>
+    </ul>
 </div>
 <footer>
     <section id="footer_teasers_wrapper">
@@ -232,6 +232,8 @@ Closed
             var propertyDetails = getPropertyDetails();
             renderPropertyLogo('#logo_template','#site_logo',propertyDetails);
             renderPropertyFooter('#footer_template','#footer_container',propertyDetails);
+            renderTodaysHours('#todays_hours_search_template','#todays-hours-search');
+            
         }
         function renderPropertyLogo(logo_template,site_logo,propertyDetails){
             var item_list = [];
