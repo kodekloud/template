@@ -1,13 +1,13 @@
 <style>
     #description_section {
       /* For Safari 5.1 to 6.0 */
-      background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+      background: -webkit-linear-gradient(left,#98add0,#d2d9e9, #98add0);
       /* For Opera 11.1 to 12.0 */
-      background: -o-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+      background: -o-linear-gradient(left,#98add0,#d2d9e9, #98add0);
       /* For Fx 3.6 to 15 */
-      background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+      background: -moz-linear-gradient(left,#98add0,#d2d9e9, #98add0);
       /* Standard syntax */
-      background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+      background: linear-gradient(to right,#98add0,#d2d9e9, #98add0); 
     }
 </style>
 <section id="slider_wrapper" class="slider_wrapper full_page_photo">
