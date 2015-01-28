@@ -17,6 +17,7 @@
     
     .service_details p {
         margin-bottom:0 !important;
+        font-size:16px;
     }
     
 </style>
