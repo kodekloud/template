@@ -8,6 +8,12 @@
           </ul>
      </div>
 </section>
+<section class="call_to_action" id="description_section">
+    <script id="description_template" type="x-tmpl-mustache">
+       <h3>"{{welcome_message}}"</h3>
+       <h4>{{description}}</h4>
+    </script>
+</section>
 <!--the welcome box colour : #98add0 (outside)   #d2d9e9 (inside)-->
 <div class="main">
      <div class="container">
