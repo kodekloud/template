@@ -280,11 +280,13 @@
         
         //real time search
         $('#search_input').keyup(function(e){
+            alert("keyup");
             showSearchResults();
         });
 
         $('#search_input').on('input', function() {
             showSearchResults();
+            alert("keyup");
         });
             
             
