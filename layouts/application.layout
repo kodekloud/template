@@ -82,39 +82,7 @@
      </div>
 </header>
 <div id="page_content">{{yield}}</div>
-<footer>
-    <section id="footer_teasers_wrapper">
-        
-        <div class="container">
-            <div class="row">
-                <div class="footer_teaser col-sm-6 col-md-6">
-                    <div id="footer_container">
-                        <script id="footer_template" type="x-tmpl-mustache">
-                        {% raw %}
-                        <h3>{{name}}</h3>
-                        {{address1}}</br>
-                        {{city}}, {{province_state}}
-                        </br>
-                        </br>
-                        <p><i class="fa fa-phone"></i> {{contact_phone}}</p>
-                        <p><i class="fa fa-envelope"></i> {{contact_email}}</p>
-                        </br>
-                        {% endraw %}
-                        </script>
-                    </div>
-                    <input style="color:black" type="text" id="search_input" placeholder="Search">
-                 </div>
-                 <div class="footer_teaser col-sm-6 col-md-6">
-                      <h3>Sign up and save</h3>
-                      <p>Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
-                      NEWSLETTER BOX PLACEHOLDER
-                 </div>
-            </div>
-        </div>
-        
-        
-    </section>
-    <div class="search-results" id="search_results" style="display:none">
+<div class="search-results" id="search_results" style="display:none">
         <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
         <script id="search_results_template" type="x-tmpl-mustache">{% raw %}
             <h4 class="list-group-item header" style="{{stores_header_style}}" data-i18n="nav.stores"></h4>
@@ -180,6 +148,39 @@
             </a>
         </ul>
     </div>
+<footer>
+    <section id="footer_teasers_wrapper">
+        
+        <div class="container">
+            <div class="row">
+                <div class="footer_teaser col-sm-6 col-md-6">
+                    <div id="footer_container">
+                        <script id="footer_template" type="x-tmpl-mustache">
+                        {% raw %}
+                        <h3>{{name}}</h3>
+                        {{address1}}</br>
+                        {{city}}, {{province_state}}
+                        </br>
+                        </br>
+                        <p><i class="fa fa-phone"></i> {{contact_phone}}</p>
+                        <p><i class="fa fa-envelope"></i> {{contact_email}}</p>
+                        </br>
+                        {% endraw %}
+                        </script>
+                    </div>
+                    <input style="color:black" type="text" id="search_input" placeholder="Search">
+                 </div>
+                 <div class="footer_teaser col-sm-6 col-md-6">
+                      <h3>Sign up and save</h3>
+                      <p>Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
+                      NEWSLETTER BOX PLACEHOLDER
+                 </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    
     <section class="site-map-section">
         <div class="bottom-site-map">
             <ul>
