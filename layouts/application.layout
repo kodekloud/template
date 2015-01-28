@@ -84,13 +84,11 @@
 <div id="page_content">{{yield}}</div>
 <footer>
     <section id="footer_teasers_wrapper">
-        
+        <script id="footer_template" type="x-tmpl-mustache">
+        {% raw %}
         <div class="container">
             <div class="row">
                  <div class="footer_teaser col-sm-6 col-md-6">
-                    <div id="footer_teasers_wrapper">
-                    <script id="footer_template" type="x-tmpl-mustache">
-                    {% raw %}
                       <h3>{{name}}</h3>
                       {{address1}}</br>
                       {{city}}, {{province_state}}
@@ -100,10 +98,6 @@
                       <p><i class="fa fa-print"></i> (+30) 9854-7855</p>
                       <p><i class="fa fa-envelope"></i> {{contact_email}}</p>
                       </br>
-                    {% endraw %}
-            
-                    </script>
-                    </div>
                       <input type="text" id="search_input" placeholder="Search">
                  </div>
                  <div class="footer_teaser col-sm-6 col-md-6">
@@ -113,7 +107,9 @@
                  </div>
             </div>
         </div>
-        
+        {% endraw %}
+            
+        </script>
         
     </section>
     <div class="search-results" id="search_results" style="display:none">
