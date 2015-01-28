@@ -107,13 +107,6 @@
             <div class="description">{{description_trim}}</div>
         </a>
     {{/events}}
-    <h4 class="list-group-item header" style="{{jobs_header_style}}" data-i18n="nav.jobs"></h4>
-    {{#jobs}}
-        <a href="/jobs/{{slug}}" class="list-group-item">
-            <div class="name">{{name}}</div>
-            <div class="description">{{description_trim}}</div>
-        </a>
-    {{/jobs}}
     </script>{% endraw %}
 
 <ul class="list-group" >
