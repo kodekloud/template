@@ -84,20 +84,25 @@
 <div id="page_content">{{yield}}</div>
 <footer>
     <section id="footer_teasers_wrapper">
-        <script id="footer_template" type="x-tmpl-mustache">
-        {% raw %}
+        
         <div class="container">
             <div class="row">
-                 <div class="footer_teaser col-sm-6 col-md-6">
-                      <h3>{{name}}</h3>
-                      {{address1}}</br>
-                      {{city}}, {{province_state}}
-                      </br>
-                      </br>
-                      <p><i class="fa fa-phone"></i> {{contact_phone}}</p>
-                      <p><i class="fa fa-envelope"></i> {{contact_email}}</p>
-                      </br>
-                      <input style="color:black" onkeyup="showSearchResults()" type="text" id="search_input" placeholder="Search">
+                <div class="footer_teaser col-sm-6 col-md-6">
+                    <div id="footer_container">
+                        <script id="footer_template" type="x-tmpl-mustache">
+                        {% raw %}
+                        <h3>{{name}}</h3>
+                        {{address1}}</br>
+                        {{city}}, {{province_state}}
+                        </br>
+                        </br>
+                        <p><i class="fa fa-phone"></i> {{contact_phone}}</p>
+                        <p><i class="fa fa-envelope"></i> {{contact_email}}</p>
+                        </br>
+                        {% endraw %}
+                        </script>
+                    </div>
+                    <input style="color:black" type="text" id="search_input" placeholder="Search">
                  </div>
                  <div class="footer_teaser col-sm-6 col-md-6">
                       <h3>Sign up and save</h3>
@@ -106,9 +111,7 @@
                  </div>
             </div>
         </div>
-        {% endraw %}
-            
-        </script>
+        
         
     </section>
     <div class="search-results" id="search_results" style="display:none">
@@ -234,7 +237,7 @@
         function renderPageData (){
             var propertyDetails = getPropertyDetails();
             renderPropertyLogo('#logo_template','#site_logo',propertyDetails);
-            renderPropertyFooter('#footer_template','#footer_teasers_wrapper',propertyDetails);
+            renderPropertyFooter('#footer_template','#footer_container',propertyDetails);
         }
         function renderPropertyLogo(logo_template,site_logo,propertyDetails){
             var item_list = [];
@@ -251,7 +254,7 @@
             $(site_logo).html(item_rendered.join(''));
         }
         
-        function renderPropertyFooter(footer_template,footer_teasers_wrapper,propertyDetails){
+        function renderPropertyFooter(footer_template,footer_container,propertyDetails){
             var item_list = [];
             var item_rendered = [];
             var footer_template_html = $(footer_template).html();
@@ -261,8 +264,8 @@
                 var footer_rendered = Mustache.render(footer_template_html,val);
                 item_rendered.push(footer_rendered);
             });
-            $(footer_teasers_wrapper).show();
-            $(footer_teasers_wrapper).html(item_rendered.join(''));
+            $(footer_container).show();
+            $(footer_container).html(item_rendered.join(''));
         }
         
         function getImageURL(existing_url){
