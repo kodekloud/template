@@ -51,7 +51,7 @@
                          <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Leasing<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/leasing">Leasing</a></li>
-                                <li><a href="/stores">Store Directory</a></li>
+                                <li><a href="/photos">Photos</a></li>
                             </ul> 
                          </li>
                          <li><a href="/contact_us">contact us</a></li>
