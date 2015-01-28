@@ -48,13 +48,13 @@
                          <li><a href="/stores">Store Directory</a></li>
                          <li><a href="/events">Events</a></li>
                          <li><a href="/promotions">Promotions</a></li>
-                         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Leasing<span class="caret"></span></a>
+                         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Leasing <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="/leasing">Leasing</a></li>
                                 <li><a href="/photos">Photos</a></li>
                             </ul> 
                          </li>
-                         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">contact us<span class="caret"></span></a>
+                         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">contact us <span class="caret"></span></a>
                              <ul class="dropdown-menu">
                                 <li><a href="/contact_us">Contact Us</a></li>
                                 <li><a href="/find_us">Find Us</a></li>
