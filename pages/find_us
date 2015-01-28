@@ -45,7 +45,7 @@
                             <div class="service_details" id="centre_info_container">
                                 <script id="centre_info_template" type="x-tmpl-mustache">
                                     <img src="{{alt_site_logo}}" />
-                                    <p>{{name}}</p>
+                                    <p><strong>{{name}}</strong></p>
                                     <p>proudly manageged by Bentall Kennedy</p>
                                     <img style="margin-bottom:30px" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/4bb9dafcfb94990ab61ab58224fa9d6c/bental-logo1.png" />
                                     <br>
