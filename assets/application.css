@@ -285,6 +285,9 @@ th {
     color:black;
 }
 
+.search-results{
+    
+}
 @media print {
   * {
     text-shadow: none !important;
