@@ -15,7 +15,6 @@
           <ul class="slides" id="home_banner">
             <script id="banner_template" type="x-tmpl-mustache">
                <li class="item" style="background-image: url({{photo_url_abs}})">
-                {{id}}
                </li>
             </script>
           </ul>
@@ -123,6 +122,7 @@
                 val.alt_url = val.image_url;
                 var featureitem_rendered = Mustache.render(feature_template_html,val);
                 item_rendered.push(featureitem_rendered);
+                console.log(item_rendered)
                
             });
             
