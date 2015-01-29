@@ -64,11 +64,13 @@
 </div>
 <script>
 
-    
+
     $(document).ready(function() {
    
         
+            $('.flexslider').flexslider();
         
+                
         function renderPageData (){
             var repoList = getRepoList();
             var featureList = getFeatureList();
@@ -108,7 +110,6 @@
             $.each( item_list , function( key, val ) {
                 var repo_rendered = Mustache.render(banner_template_html,val);
                 item_rendered.push(repo_rendered);
-                console.log(item_rendered)
                
             });
             
@@ -125,6 +126,8 @@
                 val.alt_url = val.image_url;
                 var featureitem_rendered = Mustache.render(feature_template_html,val);
                 item_rendered.push(featureitem_rendered);
+                console.log(item_rendered)
+               
             });
             
            
