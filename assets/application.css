@@ -6093,8 +6093,8 @@ header .container {
   background-color: transparent;
   /* -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067);
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.067); */
-  border-bottom: solid 1px #90b5e9;
-  color: #90b5e9;
+  border-bottom: solid 1px #313131;
+  color: #313131;
 }
 .navbar .nav li.active a,
 .navbar .nav li.active a:hover {
