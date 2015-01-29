@@ -307,7 +307,7 @@
                 var search_results = getSearchResults($('#search_input').val(),10,100);
                 $('.search-results-count').html(search_results.summary.count);
                 renderSearchResultsTemplate('#search_results_template','#search_results_items',search_results);
-                $(document).i18n();
+                // $(document).i18n();
             }
         }
         
