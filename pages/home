@@ -8,6 +8,7 @@
       background: -moz-linear-gradient(left,#e1848c,#fedade, #e1848c);
       /* Standard syntax */
       background: linear-gradient(to right,#e1848c,#fedade, #e1848c); 
+      margin-top:50px;
     }
 </style>
 <section id="slider_wrapper" class="slider_wrapper full_page_photo">
