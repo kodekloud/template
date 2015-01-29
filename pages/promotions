@@ -70,7 +70,7 @@
                     }
 
                 }
-                console.log(alt_promo_image_url)
+                console.log(val.alt_promo_image_url)
                 
                 start = new Date (val.start_date);
                 end = new Date (val.end_date);
