@@ -14,10 +14,8 @@
      <div id="main_flexslider" class="flexslider">
           <ul class="slides" id="home_banner">
             <script id="banner_template" type="x-tmpl-mustache">
-                {% raw %}
                <li class="item" style="background-image: url('{{photo_url_abs}}')">
                </li>
-               {% endraw %}
             </script>
           </ul>
      </div>
