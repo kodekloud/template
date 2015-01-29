@@ -1,13 +1,13 @@
 <style>
     #description_section {
       /* For Safari 5.1 to 6.0 */
-      background: -webkit-linear-gradient(left,#e1848c,#fedade, #e1848c);
+      background: -webkit-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
       /* For Opera 11.1 to 12.0 */
-      background: -o-linear-gradient(left,#e1848c,#fedade, #e1848c);
+      background: -o-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
       /* For Fx 3.6 to 15 */
-      background: -moz-linear-gradient(left,#e1848c,#fedade, #e1848c);
+      background: -moz-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
       /* Standard syntax */
-      background: linear-gradient(to right,#e1848c,#fedade, #e1848c); 
+      background: linear-gradient(to right,#6e6e6e,#bebdbd, #6e6e6e); 
       margin-top:50px;
     }
 </style>
