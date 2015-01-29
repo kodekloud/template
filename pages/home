@@ -67,9 +67,7 @@
 
     $(document).ready(function() {
    
-        
-            $('.flexslider').flexslider();
-        
+       
                 
         function renderPageData (){
             var repoList = getRepoList();
@@ -116,6 +114,7 @@
             $(home_banner).show();
             $(home_banner).html(item_rendered.join(''));
             $('.item').first().addClass('active');
+            $('.flexslider').flexslider();
         }
         function renderFeatureItems(feature_template,feature_items,featureList){
             var item_list = [];
@@ -126,7 +125,6 @@
                 val.alt_url = val.image_url;
                 var featureitem_rendered = Mustache.render(feature_template_html,val);
                 item_rendered.push(featureitem_rendered);
-                console.log(item_rendered)
                
             });
             
