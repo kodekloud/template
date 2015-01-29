@@ -98,16 +98,14 @@
             $.each( repo , function( key, val ) {
                 if( val.name == "banner"){
                     $.each( val.images , function( key, val ) {
-                        val.alt_url = getImageURL(val.photo_url);
+                        val.alt_url = val.photo_url_abs;
                         item_list.push(val);
-                        console.log(val.alt_url)
                     });
                 }
             });
             $.each( item_list , function( key, val ) {
                 var repo_rendered = Mustache.render(banner_template_html,val);
                 item_rendered.push(repo_rendered);
-                console.log(repo_rendered)
                
             });
             
@@ -121,7 +119,7 @@
             var feature_template_html = $(feature_template).html();
             Mustache.parse(feature_template_html);   // optional, speeds up future uses
             $.each( featureList , function( key, val ) {
-                val.alt_url = getImageURL(val.image_url);
+                val.alt_url = val.image_url;
                 var featureitem_rendered = Mustache.render(feature_template_html,val);
                 item_rendered.push(featureitem_rendered);
                
