@@ -163,14 +163,7 @@
         
     }
     
-    function getImageURL(existing_url){
-        if(!existing_url ||  existing_url.indexOf('missing.png') > -1 || existing_url.length === 0){
-            //http://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/
-            return "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
-            
-        }
-        return "http://cdn.mallmaverickstaging.com"+existing_url;
-    }    
+  
     });
     
     
@@ -274,7 +267,7 @@
     function getSVGMapURL(){
         initData();
         var mallDataJSON = JSON.parse(sessionStorage.mallData);
-        return 'http://cdn.mallmaverickstaging.com' + mallDataJSON.property.svgmap_url;
+        return 'http://cdn.mallmaverick.com' + mallDataJSON.property.svgmap_url;
     }
     
     // hide #back-top first
