@@ -134,10 +134,6 @@
                         </script>{% endraw %}
                     
                         <ul class="list-group" >
-                            <a href="#" class="close-search list-group-item" style="">
-                            
-                            </a>
-                            
                             <div id="search_results_items" class="search-results-items" style="">
                             <!--RENDERED BY renderSearchResultsTemplate(..) -->
                             </div>
