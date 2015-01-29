@@ -149,8 +149,13 @@
         $('#cat'+ categoryid).append('<section class="service_teasers" id="store_for_'+store.id+'"><div class="service_teaser"><div class="row"><div class="service_photo col-sm-4 col-md-4"><figure style="background-image:url('+store.alt_store_front_url+')"></figure></div><div class="service_details col-sm-8 col-md-8"><h2 class="section_header skincolored"><b>'+store.name+'</b></h2><p>'+store.description+'</p><a href="../stores/'+store.slug+'" class="btn btn-primary pull-right">view detail</a></div></div></div></div></section>');
     }
     
+
+    
+  
+    });
+    
     function show_cat(link, type){
-       
+   
         if (type == "all"){
             $("#store_list_container").show();
             $(".cat_list_div").hide();    
@@ -159,13 +164,9 @@
             $(".cat_list_div").hide();
             $("#"+link.id).show();    
         }
-        
+    
         
     }
-    
-  
-    });
-    
     
     
     var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
