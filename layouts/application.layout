@@ -16,10 +16,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/flexslider.css" type="text/css" media="screen">
+<link href="http://kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/18e2e634c26a051a8eedcc896c229e80/flexslider.css" rel="stylesheet">
 <link rel="stylesheet" href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" type="text/css" media="screen">
 <link href="/application.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/dcd66cb0efbccf1a9dc76822e0b9da23/font-awesome.min.css" media="screen">
+ <link href="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/540373d34a616d0cccaf0000/368584aaeda8ec2d1f80a5f777235d72/font-awesome.min.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
 <!-- Fav and touch icons -->
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
@@ -221,7 +221,7 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/jquery-1.9.0.min.js"><\/script>')</script>
 <script src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/bootstrap.min.js" type="text/javascript"></script>
-<script src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/jquery.flexslider-min.js"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/18e2e634c26a051a8eedcc896c229e80/jquery.flexslider-min.js"></script>
 <script src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 <script src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/jquery.isotope.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/jquery.ui.totop.js"></script>
@@ -230,7 +230,6 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/restart_theme.js"></script>
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/collapser.js"></script>
-<link href="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/540373d34a616d0cccaf0000/368584aaeda8ec2d1f80a5f777235d72/font-awesome.min.css" rel="stylesheet" type="text/css">
 <script>
 
     $(document).ready(function() {
