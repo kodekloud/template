@@ -14,6 +14,7 @@
     .service_details i{
         height:40px;
         width:40px;
+        font-size:30px;
     }
     
     .service_details p {
