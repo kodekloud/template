@@ -22,11 +22,9 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
-<!-- Fav and touch icons -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="apple-touch-fa-57x57-precomposed.png">
-<link rel="shortcut icon" href="favicon.ico">
+<!-- favicon -->
+<link rel="shortcut icon" href="http://kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/6920cbdadef779b2bda5fada5a738af9/Londonderryicon_copy.png" type="image/x-icon" />
+
 <!-- jQuery Version 1.11.0 -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
