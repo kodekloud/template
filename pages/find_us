@@ -11,8 +11,9 @@
         margin-bottom:50px;
     }
     
-    .service_details a{
-    
+    .service_details i{
+        height:40px;
+        width:40px;
     }
     
     .service_details p {
