@@ -284,10 +284,12 @@ th {
 }
 
 #search_input{
-    color:black;
+    height:30px;
 }
 
-.search_button{}
+.search_button{
+    height:30px;
+}
 .search_button img{}
 .search-results{
     
