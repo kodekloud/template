@@ -284,7 +284,9 @@ th {
 }
 
 #search_input{
-    height:30px;
+    height:25px;
+    border:none;
+    margin:0;
 }
 
 .search_button{
