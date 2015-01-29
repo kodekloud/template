@@ -15,6 +15,7 @@
           <ul class="slides" id="home_banner">
             <script id="banner_template" type="x-tmpl-mustache">
                <li class="item" style="background-image: url({{photo_url_abs}})">
+                {{id}}
                </li>
             </script>
           </ul>
