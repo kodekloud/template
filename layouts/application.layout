@@ -135,10 +135,13 @@
                         {{/events}}
                         </script>{% endraw %}
                     
-                        <div class="list-group" >
-                            <div id="search_results_items" class="search-results-items" style="">
-                            <!--RENDERED BY renderSearchResultsTemplate(..) -->
-                            </div>
+                        <ul class="list-group" >
+                            <li>
+                                <div id="search_results_items" class="search-results-items" style="">
+                                <!--RENDERED BY renderSearchResultsTemplate(..) -->
+                                </div>    
+                            </li>
+                            
                             
                             <a href="#" class="close-search list-group-item" style="">
                                 <small>
@@ -161,7 +164,7 @@
                                     </span>
                                 </script>{% endraw %}
                             </a>
-                        </div>
+                        </ul>
                     </div>
                  </div>
                  <div class="footer_teaser col-sm-6 col-md-6">
