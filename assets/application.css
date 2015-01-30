@@ -312,20 +312,31 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 .accessible
 { 
-position:absolute; 
-left:-10000px; 
-top:auto; 
-width:1px; 
-height:1px; 
-overflow:hidden;
+    position:absolute; 
+    left:-10000px; 
+    top:auto; 
+    width:1px; 
+    height:1px; 
+    overflow:hidden;
 } 
  
 .accessible:focus 
 { 
-position:static; 
-width:auto; 
-height:auto; 
+    position:static; 
+    width:auto; 
+    height:auto; 
 } 
+#description_section {
+      /* For Safari 5.1 to 6.0 */
+      background: -webkit-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
+      /* For Opera 11.1 to 12.0 */
+      background: -o-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
+      /* For Fx 3.6 to 15 */
+      background: -moz-linear-gradient(left,#6e6e6e,#bebdbd, #6e6e6e);
+      /* Standard syntax */
+      background: linear-gradient(to right,#6e6e6e,#bebdbd, #6e6e6e); 
+      margin-top:50px;
+}
 @media print {
   * {
     text-shadow: none !important;
