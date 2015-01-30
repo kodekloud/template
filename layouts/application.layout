@@ -171,6 +171,7 @@
                             <input class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
                         <div class="checkbox">
                         <span>
+                            <label for="agree_terms" style="display:none">Agree Terms</label>
                           <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from 10 Dundas East
                         </span>
                         </div>
