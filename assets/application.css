@@ -198,15 +198,17 @@ th {
 .site-map-section a{
     color:white !important;
     text-transform:uppercase;
-    line-height:40px;
+    line-height:50px;
 }
-.bottom-site-map{}
+.bottom-site-map{
+    border-top:1px solid black;
+}
 .bottom-site-map ul{
     text-align:center;
 }
 .bottom-site-map ul li{
     list-style:none;
-    height:40px;
+    height:50px;
     display:inline-block;
     width:13%;
 }
