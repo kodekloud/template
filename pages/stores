@@ -35,7 +35,7 @@
           </div>
           
           <section class="service_teasers" id="store_list_container">
-            <script id="store_list_template" type="x-tmpl-mustache">
+            <script id="store_list_template" type="x-tmpl-mustache/text">
                <div class="service_teaser">
                     <div class="row">
                          <div class="service_photo col-sm-4 col-md-4">
@@ -50,7 +50,7 @@
             </script>
           </section> 
           <section id="store_category_list_container">
-              <script id="category_store_list_template" type="x-tmpl-mustache">
+              <script id="category_store_list_template" type="x-tmpl-mustache/text">
                 <div class="cat_list_div" id="cat{{id}}" style="display:none">
                     <h1 style="margin-top:0px">{{name}}</h1>
                 </div>
