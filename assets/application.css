@@ -283,7 +283,7 @@ th {
     height:50px;
 }
 
-#search_input{
+.search_input{
     height:30px;
     border:none;
     margin:0;
