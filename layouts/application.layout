@@ -143,7 +143,7 @@
                                     <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
                                 </small>
                             </a>
-                            <a href="#" class="close-search list-group-item" style="">
+                            <a  class="close-search list-group-item" style="">
                                 <small>
                                     <span>Today's Hours </span>
                                 </small>
