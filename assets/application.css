@@ -287,6 +287,8 @@ th {
     height:30px;
     border:none;
     margin:0;
+    padding-left:10px;
+    color:black;
 }
 
 .search_button{
