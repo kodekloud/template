@@ -36,6 +36,7 @@
 </div>
 
 <script>
+    $("#event_link").addClass("active");
     $(document).ready(function() {
         
         function renderPageData (){
