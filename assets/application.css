@@ -309,6 +309,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 .gmap{
     width:100%;
+    border:none;
+    height:480px;
 }
 .accessible
 { 
