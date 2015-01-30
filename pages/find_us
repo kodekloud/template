@@ -75,7 +75,7 @@
 
 <script>
 
-    
+    $("#contact_link").addClass("active");
     $(document).ready(function() {
         
                 
