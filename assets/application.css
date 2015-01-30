@@ -345,6 +345,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     margin-right:auto;
     display:block;
 }
+.flex-control-paging{
+    display:none !important;
+}
 @media print {
   * {
     text-shadow: none !important;
