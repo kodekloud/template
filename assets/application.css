@@ -6981,7 +6981,6 @@ ul.portfolio_filters li .active a:hover {
 .portfolio_strict .portfolio_item {
   text-align: center;
   padding: 0px;
-  height: 320px;
   overflow: hidden;
   margin-bottom: 24px;
   -webkit-box-sizing: border-box;
