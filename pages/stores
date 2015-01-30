@@ -33,7 +33,7 @@
           </section>
           
           <div class="categories_list" id="categories_container">
-                <a href="#" onclick="show_cat('nil','all')" class="btn btn-primary">View All</a>
+                <a href="#store_list_container" onclick="show_cat('nil','all')" class="btn btn-primary">View All</a>
           </div>
           
           <section class="service_teasers" id="store_list_container">
