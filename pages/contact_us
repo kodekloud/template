@@ -4,7 +4,7 @@
           <section class="hgroup">
                <h1>Contact Us</h1>
                <div id = "contact_container">
-               <script id="contact_template" type="x-tmpl-mustache">
+               <script id="contact_template" type="x-tmpl-mustache/text">
                 <h2><strong>{{contact_name}}</strong> - {{contact_phone}} - {{contact_email}}</h2>
                </script>
                </div>
@@ -17,7 +17,7 @@
             <h1>Customer Feedback</h1>
                <div class="row">
                     <div class="contact_form col-sm-8 col-md-8" id="contact_form_container">
-                        <script id="contact_form_template" type="x-tmpl-mustache">
+                        <script id="contact_form_template" type="x-tmpl-mustache/text">
                          <form name="contact_form" id="contact_form" method="post" action="mailto:{{contact_email}}?subject={{name}} Website Feedback." enctype="text/plain" >
                               <div class="row">
                                    <div class="col-sm-6 col-md-6">
@@ -53,7 +53,7 @@
                                 <figure style="background-image:url(http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/b309b89e3422c7a2016a03dd15394306/serv_6.jpg)"></figure>
                             </div>
                             <div class="service_details" id="centre_info_container">
-                                <script id="centre_info_template" type="x-tmpl-mustache">
+                                <script id="centre_info_template" type="x-tmpl-mustache/text">
                                     <h2 class="section_header skincolored">Centre Information<small> <br>{{name}}</br> <br>{{address1}}, </br> <br>{{city}}, {{province_state}}</br></small></h2>
                                     <p style="margin-bottom:0"><i class="fa fa-phone"></i> {{contact_phone}}</p>
                                     <p style="margin-bottom:0"><i class="fa fa-print"></i> (+30) 9854-7855</p>
