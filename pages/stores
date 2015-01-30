@@ -1,7 +1,7 @@
 <div id="pop-over">
     <span class="pull-left">
-        <div id="pop-over-map-name">Default Name</div>
-        <div id="pop-over-map-phone">Phone Number</div>
+        <p id="pop-over-map-name">Default Name</p>
+        <p id="pop-over-map-phone">Phone Number</p>
     </span>
     
 </div>
