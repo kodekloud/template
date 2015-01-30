@@ -307,7 +307,9 @@ th {
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
-
+.gmap{
+    width:100%;
+}
 .accessible
 { 
 position:absolute; 
