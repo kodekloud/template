@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="footer_teaser col-sm-3 col-md-3">
                     <div id="footer_container">
-                        <script id="footer_template" type="x-tmpl-mustache">
+                        <script id="footer_template" type="x-tmpl-mustache text/template">
                         {% raw %}
                         <h3>{{name}}</h3>
                         {{address1}}</br>
@@ -110,7 +110,7 @@
                  <div class="footer_teaser col-sm-3 col-md-3">
                     <div class="search-results" id="search_results" style="display:none">
                         <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
-                        <script id="search_results_template" type="x-tmpl-mustache">{% raw %}
+                        <script id="search_results_template" type="x-tmpl-mustache text/template">{% raw %}
                         <h4 class="list-group-item header" style="{{stores_header_style}}" data-i18n="nav.stores"></h4>
                         {{#stores}}
                             <a href="/stores/{{slug}}" class="list-group-item">
@@ -152,7 +152,7 @@
                                 <small class="pull-right" id="todays-hours-search">
                                 
                                 </small>
-                                <script id="todays_hours_search_template" type="x-tmpl-mustache">{% raw %}
+                                <script id="todays_hours_search_template" type="x-tmpl-mustache text/template">{% raw %}
                                     <span style="{{is_open_css}};">
                                         {{open_time_localized}} - {{close_time_localized}}
                                     </span>
