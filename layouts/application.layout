@@ -138,12 +138,12 @@
                         <ul class="list-group" >
                             
                             
-                            <li class="close-search list-group-item" style="">
+                            <a href="#" class="close-search list-group-item" style="">
                                 <small>
                                     <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
                                 </small>
-                            </li>
-                            <li class="close-search list-group-item" style="">
+                            </a>
+                            <a href="#" class="close-search list-group-item" style="">
                                 <small>
                                     <span>Today's Hours </span>
                                 </small>
@@ -158,10 +158,10 @@
                                         Closed
                                     </span>
                                 </script>{% endraw %}
-                            </li>
-                            <li id="search_results_items" class="search-results-items" style="">
+                            </a>
+                            <div id="search_results_items" class="search-results-items" style="">
                             <!--RENDERED BY renderSearchResultsTemplate(..) -->
-                            </li>
+                            </div>
                         </ul>
                     </div>
                  </div>
