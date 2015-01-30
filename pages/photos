@@ -34,6 +34,7 @@
 
 
 <script>
+    $("#leasing_link").addClass("active");
     $(document).ready(function() {
          
         function renderPageData(){
