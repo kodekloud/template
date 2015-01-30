@@ -351,6 +351,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .flex-direction-nav li{
     list-style:none;
 }
+
+#feature_items{
+    margin-bottom:20px;
+}
 @media print {
   * {
     text-shadow: none !important;
