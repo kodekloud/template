@@ -303,6 +303,10 @@ th {
 .search-results{
     
 }
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
 @media print {
   * {
     text-shadow: none !important;
