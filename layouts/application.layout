@@ -237,7 +237,7 @@
 <script>
 
     $(document).ready(function() {
-        $.reject({  
+        jQuery.reject({  
                 reject: { all: false, msie: 9 },  
                 header: 'Thanks for visiting Londonderry', // Header Text  
                 paragraph1: 'Unfortunately your browser is not officially supported with our site', // Paragraph 1  
