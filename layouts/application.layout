@@ -167,7 +167,7 @@
                     <h3>Sign up and save</h3>
                     <p>Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
                     <form action="http://mobilefringe.createsend.com/t/d/s/tkyhii/" method="post" id="subForm">
-                        <label for="subscribe_email" style="display:none"> subscribe email </label>
+                        <label for="fieldEmail" style="display:none"> subscribe email </label>
                             <input class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
                         <div class="checkbox">
                         <span>
