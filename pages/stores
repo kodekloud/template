@@ -5,15 +5,10 @@
     </span>
     <span class="pullright"><img src="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/54205e6a6a616d39c5860000/04dd4f94364d574f0365c89cbafa12c4/btn_search_arrow.png"></span>
 </div>
-<div id="back-top"><img src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/></div>
+<div id="back-top"><img alt= "Back To Top" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/c0a5afb0d05049981f657ccf2e67d904/totop.jpg"/></div>
 
 <div class="full_page_photo" style="overflow:hidden">
-     <!--<div class="container">-->
-          <!-- <section class="call_to_action">
-               <h3 class="animated bounceInDown skincolored">we design <strong>value</strong> into profit</h3>
-               <br>
-               <h4 class="animated bounceInUp">our <strong>customers</strong> are always <strong>happy</strong>!</h4>
-          </section> -->
+
         <div style="overflow:hidden">
             <div id="zControls">
                 <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
@@ -23,15 +18,14 @@
             <div id="map" class="panzoom-elements"></div>
         </div>
             
-     <!--</div>-->
+
 </div>
 <div class="main">
      <div class="container">
           <section class="hgroup centered">
                <h1>Store Directory</h1>
-               <!-- <h2>This is a <b>hgroup.centered</b> In hac habitasse platea dictumst. Donec aliquet tellus enim, a tincidunt nulla.</h2> -->
                <ul class="breadcrumb pull-right">
-                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="/home">Home</a> </li>
                     <li class="active">Store Directory</li>
                </ul>
           </section>
