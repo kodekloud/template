@@ -171,7 +171,7 @@
                             <input class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
                         <div class="checkbox">
                         <span>
-                          <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px"/>&nbsp;I agree to receive emails from 10 Dundas East
+                          <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from 10 Dundas East
                         </span>
                         </div>
                         <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>
