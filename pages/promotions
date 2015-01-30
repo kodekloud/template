@@ -18,7 +18,7 @@
                </ul>
           </section>
         <section class="service_teasers" id="promo_list_container">
-            <script id="promo_list_template" type="x-tmpl-mustache">
+            <script id="promo_list_template" type="x-tmpl-mustache/text">
                <div class="service_teaser">
                     <div class="row">
                          <div class="service_photo col-sm-4 col-md-4">
