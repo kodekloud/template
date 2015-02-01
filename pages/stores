@@ -26,6 +26,7 @@
      <div class="container">
           <section class="hgroup centered">
                <h1>Store Directory</h1>
+               <a href="#">download store directory</a>
                <ul class="breadcrumb pull-right">
                     <li><a href="/home">Home</a> </li>
                     <li class="active">Store Directory</li>
