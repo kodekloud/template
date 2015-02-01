@@ -6057,6 +6057,7 @@ img {
 -------------------------------------------------------------- */
 header {
   background: none #000;
+  height:132px;
   /* background: none #fff;  
   border-bottom: solid 1px #cccccc; */
 }
