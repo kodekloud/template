@@ -205,7 +205,7 @@
                     <p style="width:300px">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>
                     <form action="http://mobilefringe.createsend.com/t/d/s/tkyhii/" method="post" id="subForm">
                         <label for="fieldEmail" style="display:none"> subscribe email </label>
-                            <input class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
+                            <input style="width:250px" class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
                         <div class="checkbox" style="width:300px">
                         <span>
                             <label for="agree_terms" style="display:none">Agree Terms</label>
