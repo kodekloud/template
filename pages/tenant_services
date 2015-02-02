@@ -28,6 +28,3 @@
      
 </div>
 
-<script>
-    $("#home_link").addClass("active");
-</script>
