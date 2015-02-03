@@ -1766,6 +1766,12 @@ table th[class*="col-"] {
         right:0 !important;
     }
     
+    .navbar .btn-navbar{
+        top:20px;
+        right:0;
+        position:absolute;
+    }
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
