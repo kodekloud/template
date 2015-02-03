@@ -33,7 +33,7 @@
             </script>
         </section> 
         <section class="service_teasers" style="display:none" id="no_promo_container">
-            NO PROMOS
+            <h2>NO PROMOS</h2>
         </section>
      </div>
 </div>
@@ -51,7 +51,7 @@
             } else {
                 
             }
-            renderTemplate("#promo_list_container","#promo_list_template", all_promos);    
+            // renderTemplate("#promo_list_container","#promo_list_template", all_promos);    
         }
         
         
