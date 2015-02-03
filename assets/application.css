@@ -1790,10 +1790,13 @@ table th[class*="col-"] {
     }
     .mobile_menu ul > li{
         list-style:none;
+        min-height:60px;
+        line-height:60px;
     }
     
     .mobile_menu a{
         color:white;
+        font-size:20px;
     }
     
     .navbar a.navbar-brand {
