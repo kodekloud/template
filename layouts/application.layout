@@ -297,7 +297,6 @@
         
     }
     function toggle_submenu(id){
-        console.log("00")
         if ($("#"+id).is(":visible")){
             $("#"+id).slideUp();
         }else {
