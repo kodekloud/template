@@ -1772,7 +1772,7 @@ table th[class*="col-"] {
         position:absolute;
     }
     
-    .nav > li{
+    .navbar-collapse{
         z-index:99999999;
         background:black;
         
