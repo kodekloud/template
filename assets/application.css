@@ -1776,9 +1776,9 @@ table th[class*="col-"] {
         position:absolute;
     }
     
-    .nav > li{
-        z-index:99999999 !important;
-        background:black !important;
+    .mobile_menu{
+        z-index:99999999;
+        display:block;
         
     }
     
