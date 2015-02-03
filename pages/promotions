@@ -45,7 +45,7 @@
         
         function renderPageData(){
             all_promos = getPromotionsList();
-            console.log (all_promos.count)
+            console.log (all_promos.length)
             renderTemplate("#promo_list_container","#promo_list_template", all_promos);    
         }
         
