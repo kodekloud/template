@@ -1816,6 +1816,12 @@ table th[class*="col-"] {
         background-size:100% !important;
     }
     
+    .hgroup .breadcrumb {
+        position:relative !important;
+        bottom:0;
+        margin-bottom:10px;
+    }
+    
     
   .table-responsive {
     width: 100%;
