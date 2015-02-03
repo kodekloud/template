@@ -46,6 +46,11 @@
         function renderPageData(){
             all_promos = getPromotionsList();
             console.log (all_promos.length)
+            if (all_promos.length > 0 ) {
+                $("#no_promo_container").show();
+            } else {
+                
+            }
             renderTemplate("#promo_list_container","#promo_list_template", all_promos);    
         }
         
