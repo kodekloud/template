@@ -1763,7 +1763,7 @@ table th[class*="col-"] {
     }
     
     #social_media_wrapper{
-        right:0;
+        right:0 !important;
     }
     
   .table-responsive {
