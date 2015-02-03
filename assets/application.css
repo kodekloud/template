@@ -1762,6 +1762,10 @@ table th[class*="col-"] {
         display:none;
     }
     
+    #social_media_wrapper{
+        right:0;
+    }
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
