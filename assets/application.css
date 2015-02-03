@@ -1781,7 +1781,6 @@ table th[class*="col-"] {
         display:block;
         background:black;
         position:relative;
-        color:white;
     }
     
     .mobile_menu ul{
@@ -1791,6 +1790,10 @@ table th[class*="col-"] {
     }
     .mobile_menu ul > li{
         list-style:none;
+    }
+    
+    .mobile_menu a{
+        color:white;
     }
     
     .navbar a.navbar-brand {
