@@ -41,7 +41,13 @@
         
         function renderPageData (){
             all_events = getEventsList();
-            renderTemplate("#promo_list_container","#promo_list_template", all_events);    
+            if (all_events.length > 0 ) {
+                renderTemplate("#promo_list_container","#promo_list_template", all_events);    
+            } else {
+                $("#no_event_container").show();
+            }
+            
+               
         }
         
         
