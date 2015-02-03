@@ -1772,7 +1772,7 @@ table th[class*="col-"] {
         position:absolute;
     }
     
-    .nav{
+    .navbar-nav{
         z-index:99999999 !important;
         background:black !important;
         
