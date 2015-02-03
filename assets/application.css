@@ -1779,7 +1779,8 @@ table th[class*="col-"] {
     .mobile_menu{
         z-index:99999999;
         display:block;
-        
+        background:black;
+        position:relative;
     }
     
   .table-responsive {
