@@ -1781,6 +1781,7 @@ table th[class*="col-"] {
         display:block;
         background:black;
         position:relative;
+        color:white;
     }
     
     .mobile_menu ul{
