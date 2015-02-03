@@ -24,7 +24,7 @@
 </div>
 <div class="main">
      <div class="container">
-          <section class="hgroup centered">
+          <section class="hgroup centered store_directory_hgroup">
                <h1>Store Directory</h1>
                <a href="#">Download Store Directory</a>
                <ul class="breadcrumb pull-right">
