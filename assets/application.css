@@ -1783,6 +1783,9 @@ table th[class*="col-"] {
         position:relative;
     }
     
+    .mobile_menu ul{}
+    .mobile_menu ul > li{}
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
