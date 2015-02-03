@@ -1812,6 +1812,11 @@ table th[class*="col-"] {
         text-align:center;
     }
     
+    .service_teaser .service_photo figure{
+        background-size:100% !important;
+    }
+    
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
