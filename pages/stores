@@ -1,3 +1,11 @@
+<style>
+    @media (max-width: 767px) {
+        .hgroup .breadcrumb {
+            bottom:-15px !important;
+        }
+    }
+</style>
+
 <div id="pop-over">
     <span class="pull-left">
         <p id="pop-over-map-name">Default Name</p>
