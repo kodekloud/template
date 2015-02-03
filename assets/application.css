@@ -1773,7 +1773,7 @@ table th[class*="col-"] {
     }
     
     .navbar-collapse{
-        z-index:99999999;
+        z-index:99999999 !important;
         background:black;
         
     }
