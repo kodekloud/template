@@ -1818,8 +1818,8 @@ table th[class*="col-"] {
     
     .hgroup .breadcrumb {
         position:relative !important;
-        bottom:0;
-        margin-bottom:10px;
+        bottom:0 !important;
+        margin-bottom:10px !important;
     }
     
     
