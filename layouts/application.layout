@@ -93,15 +93,15 @@
                         <li><a href="/stores">Store Directory</a></li>
                         <li><a href="/events">Events</a></li>
                         <li><a href="/promotions">Promotions</a></li>
-                        <li><a onlclick="javascript:toggle_submenu('leasing_dd');">Leasing <span class="caret"></span></a></li>
+                        <li><a onclick="javascript:toggle_submenu('leasing_dd');">Leasing <span class="caret"></span></a>
                             <div id="leasing_dd" class="submenu" style="display:none">
                                 <ul>
                                     <li><a href="/leasing">Leasing</a></li>
                                     <li><a href="/photos">Photos</a></li>
                                 </ul>    
                             </div>
-                        
-                        <li><a onlclick="javascript:toggle_submenu('contact_dd');">Contact Us <span class="caret"></span></a>
+                        </li>
+                        <li><a onclick="javascript:toggle_submenu('contact_dd');">Contact Us <span class="caret"></span></a>
                             <div id="contact_dd" class="submenu" style="display:none">
                                 <ul>
                                     <li><a href="/contact_us">Contact Us</a></li>
