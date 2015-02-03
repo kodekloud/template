@@ -1772,6 +1772,12 @@ table th[class*="col-"] {
         position:absolute;
     }
     
+    .nav > li{
+        z-index:99999999;
+        background:black;
+        
+    }
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
