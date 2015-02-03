@@ -1808,6 +1808,10 @@ table th[class*="col-"] {
         padding-bottom:35px !important;
     }
     
+    .footer-text{
+        text-align:center;
+    }
+    
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
