@@ -1803,6 +1803,10 @@ table th[class*="col-"] {
         width: 280px;
         margin: 0px 0 0px 15px;
       }
+      
+    .store_directory_hgroup{
+        padding-bottom:35px !important;
+    }
     
   .table-responsive {
     width: 100%;
