@@ -31,7 +31,10 @@
                     </div>
                </div>
             </script>
-        </section>         
+        </section> 
+        <section class="service_teasers" style="display:none" id="no_promo_container">
+            NO PROMOS
+        </section>
      </div>
 </div>
 
@@ -42,6 +45,7 @@
         
         function renderPageData(){
             all_promos = getPromotionsList();
+            console.log (all_promos.count)
             renderTemplate("#promo_list_container","#promo_list_template", all_promos);    
         }
         
