@@ -80,7 +80,7 @@
         
         function renderPageData(){
             console.log("test")
-        //     var stores = getStoresList();
+            var stores = getStoresList();
         //     var category_stores = getStoresListByCategory();
         //     var categories = getStoreCategories();
         //     renderPageData('#store_list_container','#store_list_template', stores, "stores");
