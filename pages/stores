@@ -80,9 +80,9 @@
         
         function renderPageData(){
             
-            var stores = getStoresList();
-            var category_stores = getStoresListByCategory();
-            var categories = getStoreCategories();
+            // var stores = getStoresList();
+            // var category_stores = getStoresListByCategory();
+            // var categories = getStoreCategories();
             // console.log(stores.length);
             // console.log(category_stores.length)
             // console.log(categories.length)
