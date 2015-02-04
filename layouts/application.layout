@@ -294,19 +294,7 @@
             e.preventDefault();
             var s = check_email();
             if (s == true){
-                var email = $("#fieldEmail").val();
-                $('input[name="cm-tkyhii-tkyhii"]').attr('value',email);
-                $.getJSON(
-                    "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
-                    $(this).serialize(),
-                    function (data) {
-                        if (data.Status === 400) {
-                            alert("Please try again later.");
-                        } else { // 200
-                            $('#subForm').unbind('submit').submit();
-                        }
-                });  
-                
+                $('#subForm').unbind('submit').submit();
             } else {
                 alert("Invaid E-mail address.")
             }
