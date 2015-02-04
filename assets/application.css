@@ -1827,6 +1827,14 @@ table th[class*="col-"] {
         background-size:100% !important;
     }
     
+    .slider_wrapper{
+        display:none;
+    }
+    
+    #description_section{
+        margin-top:0;
+    }
+    
     .hgroup .breadcrumb {
         position:relative !important;
         bottom:0 !important;
