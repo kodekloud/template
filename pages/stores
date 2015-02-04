@@ -151,7 +151,7 @@
         }
         
     };
-    loadMallData(renderPageData);  
+    
     function populate_stores_for_cat (categoryid, store){
         // console.log (categoryid);
         // console.log(store);
@@ -159,7 +159,7 @@
     }
     
 
-    
+    loadMallData(renderPageData);  
   
     });
     
