@@ -83,7 +83,7 @@
             var stores = getStoresList();
             var category_stores = getStoresListByCategory();
             var categories = getStoreCategories();
-            console.log(stores.length);
+            // console.log(stores.length);
             console.log(category_stores.length)
             console.log(categories.length)
             // renderPageData('#store_list_container','#store_list_template', stores, "stores");
