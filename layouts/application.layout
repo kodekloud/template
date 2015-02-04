@@ -288,6 +288,53 @@
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/restart_theme.js"></script>
 <script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/collapser.js"></script>
 <script>
+
+    $('#subForm').submit(function (e) {
+        if ($("#agree_terms").prop("checked") == true){
+            e.preventDefault();
+            var s = check_email();
+            if (s == true){
+                var email = $("#fieldEmail").val();
+                $('input[name="cm-tkyhii-tkyhii"]').attr('value',email);
+                $.getJSON(
+                    "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
+                    $(this).serialize(),
+                    function (data) {
+                        if (data.Status === 400) {
+                            alert("Please try again later.");
+                        } else { // 200
+                            $('#subForm').unbind('submit').submit();
+                        }
+                });  
+                
+            } else {
+                alert("Invaid E-mail address.")
+            }
+        } else {
+            alert("Please check the agree box if you want to proceed.")
+        }
+        
+    });
+    
+    function check_email (){
+        var email = $("#email").val();
+        if( !validateEmail(email)) {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    function validateEmail($email) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      if( !emailReg.test( $email ) ) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+
     function toggle_menu (){
         if ($(".mobile_menu").is(":visible")){
             $(".mobile_menu").slideUp();
