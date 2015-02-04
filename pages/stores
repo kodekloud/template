@@ -79,6 +79,7 @@
     $(document).ready(function() {
         
         function renderPageData(){
+            console.log("called")
             var stores = getStoresList();
             var category_stores = getStoresListByCategory();
             var categories = getStoreCategories();
