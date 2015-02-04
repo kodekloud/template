@@ -85,16 +85,13 @@
             var categories = getStoreCategories();
             // renderPageData('#store_list_container','#store_list_template', stores, "stores");
         //     // renderPageData('#categories_container', '#categories_list_template', categories, "categories");
-            render_categories(categories);
+            // render_categories(categories);
             render_category_stores();       
         }
         
     
         function render_categories(categories){
-            console.log(categories.length)
             $.each( categories , function( key, val ) {
-                
-                console.log(val)
                 val.link = "cat" + val.id;
                 $("#categories_container").append('<a href="#categories_container" onclick=(show_cat('+val.link+')) class="btn btn-primary">'+val.name+'</a>');
             });
