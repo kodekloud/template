@@ -101,10 +101,10 @@
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();
-            Mustache.parse(template_html);   // optional, speeds up future uses
+            // Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
                 if (type == "stores" || type == "category_stores"){
-                    // val.alt_store_front_url = getImageURL(val.store_front_url);    
+                    val.alt_store_front_url = getImageURL(val.store_front_url);    
                 }
                 
                 var rendered = Mustache.render(template_html,val);
