@@ -6,6 +6,9 @@
     }
     h1, .contest_description {
         text-align:center;
+        
+    }
+    .contest_description{
         margin-bottom:25px;
     }
     .contest_form_div{
