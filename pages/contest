@@ -13,6 +13,17 @@
         margin-left:auto;
         margin-right:auto;
     }
+    .full_field{
+        
+    }
+    .large_field{
+        display:inline;
+        width:50%;
+    }
+    .small_field {
+        width:20%;
+        display:inline;
+    }
 </style>
 
 
