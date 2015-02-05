@@ -29,37 +29,37 @@
             <span>
             <p>
                 <label for="firstName">First Name</label><br/>
-                <input id="firstName" type="text" required placeholder="test" />
+                <input id="firstName" type="text" required placeholder="First Name" />
             </p>
             <p>
                 <label for="lastName">Last Name</label><br/>
-                <input id="lastName" type="text" required />
+                <input id="lastName" type="text" required placeholder="Last Name"/>
             </p>
             </span>
             <p>
                 <label for="fieldEmail">Email</label><br />
-                <input id="fieldEmail" name="cm-tkhiut-tkhiut" type="email" required />
+                <input id="fieldEmail" name="cm-tkhiut-tkhiut" type="email" required placeholder="Email"/>
             </p>
             <p>
                 <label for="fieldjrihe">Phone Number</label><br />
-                <input id="fieldjrihe" name="cm-f-jrihe" type="text" required/>
+                <input id="fieldjrihe" name="cm-f-jrihe" type="text" required placeholder="Phone Number"/>
             </p>
             <p>
                 <label for="fieldjrihyh">Street Address</label><br />
-                <input id="fieldjrihyh" name="cm-f-jrihyh" type="text" />
+                <input id="fieldjrihyh" name="cm-f-jrihyh" type="text" placeholder="Street Address"/>
             </p>
             <p>
                 <label for="fieldjrihyd">City</label><br />
-                <input id="fieldjrihyd" name="cm-f-jrihyd" type="text" />
+                <input id="fieldjrihyd" name="cm-f-jrihyd" type="text" placeholder="City"/>
             </p>
             
             <p>
                 <label for="fieldjrihs">Postal Code</label><br />
-                <input id="fieldjrihs" name="cm-f-jrihs" type="text" required/>
+                <input id="fieldjrihs" name="cm-f-jrihs" type="text" required placeholder="Postal Code"/>
             </p>
             <p>
                 <label for="fieldjrihg">Year of Birth</label><br />
-                <input id="fieldjrihg" name="cm-f-jrihg" type="text" required />
+                <input id="fieldjrihg" name="cm-f-jrihg" type="text" required placeholder= "Year of Birth"/>
             </p>
             <p style="display:none">
                 <label for="fieldjrihw">Contest ID</label><br />
