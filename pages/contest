@@ -28,15 +28,13 @@
     }
     @media (max-width: 767px) {
         .main{
-            width:100%;
+            width:95%;
         }
         .large_field, .small_field {
             width:100%;
         }
         .contest_form_div{
             width:100%;
-            margin-left:10px;
-            margin-right:10px;
         }
     }
 </style>
