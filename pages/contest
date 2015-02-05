@@ -26,6 +26,11 @@
     .large_field input, .small_field input {
         width:98%;
     }
+    @media (max-width: 767px) {
+        .main{
+            width:100%;
+        }
+    }
 </style>
 
 
