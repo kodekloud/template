@@ -84,12 +84,41 @@
             var date = new Date;
             contest_id = (get_month(date.getMonth())) + date.getFullYear();
             $('input[name="cm-f-jrihw"]').attr('value',contest_id);
-            $('#contest_form').unbind('submit').submit();
+            if ($("#newsletter_signup").prop("checked") == true){
+                var s = check_email();
+                if (s == true){
+                    
+                } else {
+                    alert("Invaid E-mail address.")
+                }
+                
+            } else {
+                $('#contest_form').unbind('submit').submit();    
+            }
+            
         } else {
             alert("Please agree to the terms and conditions before submitting!")
         }
         
     });
+    
+    function check_email (){
+        var email = $("#fieldEmail").val();
+        if( !validateEmail(email)) {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    function validateEmail($email) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      if( !emailReg.test( $email ) ) {
+        return false;
+      } else {
+        return true;
+      }
+    }
     
     function get_month (id){
         switch(id) {
