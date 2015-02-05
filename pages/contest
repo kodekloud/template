@@ -42,6 +42,10 @@
                 <input id="fieldjrihw" name="cm-f-jrihw" type="text" />
             </p>
             <span>
+                <label for="newsletter_signup" style="display:none">Agree Terms</label>
+              <input type="checkbox" class="info_check" id="newsletter_signup" required/>&nbsp;I agree to receive emails from 10 Dundas East
+            </span>
+            <span>
                 <label for="agree_terms" style="display:none">Agree Terms</label>
               <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the terms and conditions. 
             </span>
