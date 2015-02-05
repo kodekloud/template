@@ -84,7 +84,7 @@
             var date = new Date;
             contest_id = (get_month(date.getMonth())) + date.getFullYear();
             $('input[name="cm-f-jrihw"]').attr('value',contest_id);
-            $('#subForm').unbind('submit').submit();
+            $('#contest_form').unbind('submit').submit();
         } else {
             alert("Please agree to the terms and conditions before submitting!")
         }
