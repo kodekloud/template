@@ -8,7 +8,18 @@
      <img src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/f6dbff9c3ff2572186f780a16fceabf0/img4.jpg" />
      <div class="contest_form_div">
          <form>
-             
+            <div class="">
+                <label for="fieldEmail" style="display:none"> subscribe email </label>
+                            <input style="width:290px" class="search_input" id="fieldEmail" name="cm-tkyhii-tkyhii" type="email" required placeholder="enter email" /> 
+                        <div class="checkbox footer_text" style="width:300px">
+                        <span>
+                            <label for="agree_terms" style="display:none">Agree Terms</label>
+                          <input type="checkbox" class="info_check" id="agree_terms" style="margin-left:-15px; width:15px" required/>&nbsp;I agree to receive emails from 10 Dundas East
+                        </span>
+                        </div>
+                        <button class="btn btn-default feature-item-button"  data-i18n="general.submit">Submit</button>
+                        <br>
+            </div> 
          </form>
      </div>
 </div>
