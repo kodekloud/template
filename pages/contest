@@ -1,11 +1,12 @@
 <style>
     
 </style>
-<h1>H1 title</h1>
-<p>description</p>
+
 
 <div class="main">
-     <img src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/f6dbff9c3ff2572186f780a16fceabf0/img4.jpg" />
+    <h1>H1 title</h1>
+    <p>description</p>
+     <img class="contest_image" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/f6dbff9c3ff2572186f780a16fceabf0/img4.jpg" />
      <div class="contest_form_div">
          <form action="http://mobilefringe.createsend.com/t/d/s/tkhiut/" method="post">
             <p>
