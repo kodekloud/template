@@ -75,17 +75,16 @@
 </div>
 
 <script>
-    var date = new Date;
-    console.log((date.getFullYear()))
+    
     $('#contest_form').submit(function (e) {
         e.preventDefault();
         if ($("#agree_terms").prop("checked") == true){
             var name = $("#firstName").val() + " " + $("#lastName").val();
             $('input[name="cm-name"]').attr('value',name);
-            
-            
-            
-            // $('#subForm').unbind('submit').submit();
+            var date = new Date;
+            contest_id = (get_month(date.getMonth())) + date.getFullYear();
+            $('input[name="cm-f-jrihw"]').attr('value',contest_id);
+            $('#subForm').unbind('submit').submit();
         } else {
             alert("Please agree to the terms and conditions before submitting!")
         }
