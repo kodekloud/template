@@ -80,7 +80,9 @@
         e.preventDefault();
         if ($("#agree_terms").prop("checked") == true){
             var name = $("#firstName").val() + " " + $("#lastName").val();
-            console.log (name)
+            $('input[name="cm-name"]').attr('value',name);
+            
+            
             // $('#subForm').unbind('submit').submit();
         } else {
             alert("Please agree to the terms and conditions before submitting!")
