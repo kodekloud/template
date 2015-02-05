@@ -89,6 +89,7 @@
                 <label for="agree_terms" style="display:none">Agree Terms</label>
               <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the terms and conditions. 
             </span>
+            <br>
             <p>
                 <button type="submit">submit</button>
             </p>
