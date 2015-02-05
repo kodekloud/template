@@ -166,7 +166,7 @@
     
     
     function verify_required_fields (){
-        if ($("#firstName")!= "" && $("#lastName")!= "" && $("#fieldEmail")!= "" && $("#fieldjrihe")!= "" && $("#fieldjrihs")!= "" && $("#fieldjrihg")!= "") {
+        if ($("#firstName").val() != "" && $("#lastName").val() != "" && $("#fieldEmail").val() != "" && $("#fieldjrihe").val() != "" && $("#fieldjrihs").val() != "" && $("#fieldjrihg").val() != "") {
             return true;
         } else {
             return false;
