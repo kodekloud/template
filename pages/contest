@@ -123,6 +123,7 @@
     $('#contest_form').submit(function (e) {
         e.preventDefault();
         if ($("#agree_terms").prop("checked") == true){
+            var e = verify_required_fields();
             var name = $("#firstName").val() + " " + $("#lastName").val();
             $('input[name="cm-name"]').attr('value',name);
             var date = new Date;
@@ -157,6 +158,15 @@
         }
         
     });
+    
+    
+    function verify_required_fields (){
+        if ($("#firstName")!= "" && $("#lastName")!= "" && $("#fieldEmail")!= "" && $("#fieldjrihe")!= "" && $("#fieldjrihs")!= "" && $("#fieldjrihg")!= "") {
+            return true;
+        } else {
+            return false;
+        }
+    }
     
     function check_email (){
         var email = $("#fieldEmail").val();
