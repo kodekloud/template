@@ -75,13 +75,13 @@
 </div>
 
 <script>
-
+    var date = new Date;
+    console.log(get_month(date.getMonth))
     $('#contest_form').submit(function (e) {
         e.preventDefault();
         if ($("#agree_terms").prop("checked") == true){
             var name = $("#firstName").val() + " " + $("#lastName").val();
             $('input[name="cm-name"]').attr('value',name);
-            var date = new Date;
             
             
             
