@@ -23,9 +23,10 @@
         display:inline-block;
     }
     
-    .large_field input, .small_field input {
+    .full_field input, .large_field input, .small_field input {
         width:98%;
     }
+    
     @media (max-width: 767px) {
         .main{
             width:95%;
