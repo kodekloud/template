@@ -76,7 +76,7 @@
 
 <script>
     var date = new Date;
-    console.log((date.getYear()))
+    console.log((date.getFullYear()))
     $('#contest_form').submit(function (e) {
         e.preventDefault();
         if ($("#agree_terms").prop("checked") == true){
