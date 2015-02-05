@@ -17,7 +17,7 @@
      <img class="contest_image" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/f6dbff9c3ff2572186f780a16fceabf0/img4.jpg" />
      <div class="contest_form_div">
          <form action="http://mobilefringe.createsend.com/t/d/s/tkhiut/" method="post" id="contest_form">
-            <p>
+            <p style="display:none">
                 <label for="fieldName">Name</label><br />
                 <input id="fieldName" name="cm-name" type="text" required />
             </p>
@@ -71,7 +71,7 @@
     $('#contest_form').submit(function (e) {
         e.preventDefault();
         if ($("#agree_terms").prop("checked") == true){
-            $('#subForm').unbind('submit').submit();
+            // $('#subForm').unbind('submit').submit();
         } else {
             alert("Please agree to the terms and conditions before submitting!")
         }
