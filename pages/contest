@@ -35,6 +35,8 @@
         }
         .contest_form_div{
             width:100%;
+            margin-left:10px;
+            margin-right:10px;
         }
     }
 </style>
