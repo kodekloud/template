@@ -79,6 +79,8 @@
     $('#contest_form').submit(function (e) {
         e.preventDefault();
         if ($("#agree_terms").prop("checked") == true){
+            var name = $("#firstName").val() + " " + $("#lastName").val();
+            console.log (name)
             // $('#subForm').unbind('submit').submit();
         } else {
             alert("Please agree to the terms and conditions before submitting!")
