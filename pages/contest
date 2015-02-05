@@ -112,7 +112,7 @@
             <br>
             <br>
             <p>
-                <button type="submit">submit</button>
+                <button class="btn btn-primary" type="submit">submit</button>
             </p>
         </form>
      </div>
