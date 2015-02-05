@@ -96,10 +96,10 @@
                 if (s == true){
                     var email = $("#fieldEmail").val();
                     $('input[name="cm-tkyhii-tkyhii"]').attr('value',email);
-                    console.log($(this).serialize())
+                    console.log($("#subForm").serialize())
                      $.getJSON(
                         "http://mobilefringe.createsend.com/t/d/s/tkyhii/?callback=?",
-                       $(this).serialize(),
+                       $("#subForm").serialize(),
                         function (data) {
                             if (data.Status === 400) {
                                 alert("Please try again later.");
