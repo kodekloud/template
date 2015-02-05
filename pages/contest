@@ -7,7 +7,9 @@
     h1, .contest_description {
         text-align:center;
     }
-    
+    .contest_form_div{
+        margin-top:20px;
+    }
 </style>
 
 
