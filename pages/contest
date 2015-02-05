@@ -19,7 +19,15 @@
          <form action="http://mobilefringe.createsend.com/t/d/s/tkhiut/" method="post" id="contest_form">
             <p style="display:none">
                 <label for="fieldName">Name</label><br />
-                <input id="fieldName" name="cm-name" type="text" required />
+                <input id="fieldName" name="cm-name" type="text" />
+            </p>
+            <p>
+                <label for="firstName">First Name</label><br/>
+                <input id="firstName" type="text" required />
+            </p>
+            <p>
+                <label for="lastName">First Name</label><br/>
+                <input id="lastName" type="text" required />
             </p>
             <p>
                 <label for="fieldEmail">Email</label><br />
