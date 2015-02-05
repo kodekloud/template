@@ -30,6 +30,9 @@
         .main{
             width:100%;
         }
+        .large_field, .small_field {
+            width:100%;
+        }
     }
 </style>
 
