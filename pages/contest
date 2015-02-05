@@ -80,7 +80,6 @@
             </p>
             <br>
             <br>
-            <br>
             <span>
                 <label for="newsletter_signup" style="display:none">Agree Terms</label>
               <input type="checkbox" class="info_check" id="newsletter_signup"/>&nbsp;I agree to receive emails from 10 Dundas East
