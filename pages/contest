@@ -18,7 +18,7 @@
     }
     .large_field{
         display:inline;
-        width:50%;
+        width:49%;
     }
     .small_field {
         width:20%;
