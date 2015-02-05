@@ -23,6 +23,7 @@
                 <label for="fieldName">Name</label><br />
                 <input id="fieldName" name="cm-name" type="text" />
             </p>
+            <span>
             <p>
                 <label for="firstName">First Name</label><br/>
                 <input id="firstName" type="text" required />
@@ -31,6 +32,7 @@
                 <label for="lastName">Last Name</label><br/>
                 <input id="lastName" type="text" required />
             </p>
+            </span>
             <p>
                 <label for="fieldEmail">Email</label><br />
                 <input id="fieldEmail" name="cm-tkhiut-tkhiut" type="email" required />
