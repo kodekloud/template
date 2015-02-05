@@ -96,7 +96,7 @@
               <input type="checkbox" class="info_check" id="newsletter_signup"/>&nbsp;I agree to receive emails from 10 Dundas East
             </span>
             <br>
-            <span>
+            <span style="margin-top:10px">
                 <label for="agree_terms" style="display:none">Agree Terms</label>
               <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the terms and conditions. 
             </span>
