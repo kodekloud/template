@@ -33,6 +33,9 @@
         .large_field, .small_field {
             width:100%;
         }
+        .contest_form_div{
+            width:100%;
+        }
     }
 </style>
 
