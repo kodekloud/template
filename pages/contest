@@ -24,12 +24,12 @@
          <form action="http://mobilefringe.createsend.com/t/d/s/tkhiut/" method="post" id="contest_form">
             <p style="display:none">
                 <label for="fieldName">Name</label><br />
-                <input id="fieldName" name="cm-name" type="text" />
+                <input id="fieldName" name="cm-name" type="text"/>
             </p>
             <span>
             <p>
                 <label for="firstName">First Name</label><br/>
-                <input id="firstName" type="text" required />
+                <input id="firstName" type="text" required placeholder="test" />
             </p>
             <p>
                 <label for="lastName">Last Name</label><br/>
