@@ -87,7 +87,7 @@
             if ($("#newsletter_signup").prop("checked") == true){
                 var s = check_email();
                 if (s == true){
-                    console.log($(this).serialize())
+                    console.log($("#subForm").serialize())
                 } else {
                     alert("Invaid E-mail address.")
                 }
