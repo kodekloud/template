@@ -30,6 +30,15 @@
                 <input id="fieldjrihe" name="cm-f-jrihe" type="text" required/>
             </p>
             <p>
+                <label for="fieldjrihyh">Street Address</label><br />
+                <input id="fieldjrihyh" name="cm-f-jrihyh" type="text" />
+            </p>
+            <p>
+                <label for="fieldjrihyd">City</label><br />
+                <input id="fieldjrihyd" name="cm-f-jrihyd" type="text" />
+            </p>
+            
+            <p>
                 <label for="fieldjrihs">Postal Code</label><br />
                 <input id="fieldjrihs" name="cm-f-jrihs" type="text" required/>
             </p>
@@ -51,7 +60,7 @@
               <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the terms and conditions. 
             </span>
             <p>
-                <button type="submit">Subscribe</button>
+                <button type="submit">submit</button>
             </p>
         </form>
      </div>
@@ -64,7 +73,7 @@
         if ($("#agree_terms").prop("checked") == true){
             $('#subForm').unbind('submit').submit();
         } else {
-            alert("Please check the agree box if you want to proceed.")
+            alert("Please agree to the terms and conditions before submitting!")
         }
         
     });
